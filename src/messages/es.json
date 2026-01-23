@@ -156,19 +156,31 @@
       "subtitle": "Comienza en minutos con nuestra aplicación de Windows fácil de instalar."
     },
     "options": {
-      "title": "Elige tu Descarga",
-      "msi": {
-        "title": "Instalador de Windows (MSI)",
-        "description": "Recomendado para la mayoría de usuarios. Incluye actualizaciones automáticas.",
-        "size": "15 MB",
-        "button": "Descargar MSI"
-      },
-      "zip": {
-        "title": "Versión Portable (ZIP)",
-        "description": "No requiere instalación. Ejecuta desde cualquier carpeta o USB.",
-        "size": "12 MB",
-        "button": "Descargar ZIP"
+      "title": "Descargar StockAlert",
+      "exe": {
+        "badge": "Windows 10/11",
+        "title": "StockAlert para Windows",
+        "description": "Instalador de un clic con actualizaciones automáticas. Incluye servicio en segundo plano para alertas en tiempo real incluso minimizado.",
+        "size": "Tamaño: 18 MB",
+        "button": "Descargar para Windows"
       }
+    },
+    "security": {
+      "title": "Seguro y Protegido",
+      "subtitle": "Tu seguridad es nuestra prioridad. Tomamos todas las medidas para garantizar que StockAlert sea seguro de instalar y usar.",
+      "signed": {
+        "title": "Firmado Digitalmente",
+        "description": "Nuestro instalador está firmado con un certificado de firma de código verificado."
+      },
+      "scanned": {
+        "title": "Escaneado por Antivirus",
+        "description": "Cada versión es escaneada por más de 70 motores antivirus en VirusTotal."
+      },
+      "noDataCollection": {
+        "title": "Sin Código Oculto",
+        "description": "No recopilamos datos personales ni incluimos software de rastreo."
+      },
+      "viewReport": "Ver Informe de VirusTotal"
     },
     "requirements": {
       "title": "Requisitos del Sistema",
