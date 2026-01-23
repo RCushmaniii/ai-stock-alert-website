@@ -31,7 +31,7 @@ test.describe("Responsive Design", () => {
 
     // Hero should still be visible and properly laid out
     await expect(page.locator("h1")).toBeVisible();
-    await expect(page.getByRole("link", { name: /download free/i })).toBeVisible();
+    await expect(page.getByRole("link", { name: /download free/i }).first()).toBeVisible();
   });
 
   test("pricing cards stack on mobile", async ({ page }) => {

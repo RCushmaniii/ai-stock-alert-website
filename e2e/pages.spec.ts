@@ -50,12 +50,13 @@ test.describe("Pricing Page", () => {
   test("displays all pricing tiers", async ({ page }) => {
     await page.goto("/en/pricing");
 
-    await expect(page.getByText("Free")).toBeVisible();
-    await expect(page.getByText("Premium")).toBeVisible();
-    await expect(page.getByText("Pro")).toBeVisible();
-    await expect(page.getByText("$0")).toBeVisible();
-    await expect(page.getByText("$9.99")).toBeVisible();
-    await expect(page.getByText("$24.99")).toBeVisible();
+    // Check for pricing card headings (use exact match to avoid FAQ matches)
+    await expect(page.getByRole("heading", { name: "Free", exact: true }).first()).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Premium", exact: true })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Pro", exact: true })).toBeVisible();
+    await expect(page.getByText("$0").first()).toBeVisible();
+    await expect(page.getByText("$9.99").first()).toBeVisible();
+    await expect(page.getByText("$24.99").first()).toBeVisible();
   });
 });
 
@@ -63,9 +64,10 @@ test.describe("Contact Page", () => {
   test("displays contact form", async ({ page }) => {
     await page.goto("/en/contact");
 
-    await expect(page.getByLabel(/name/i)).toBeVisible();
-    await expect(page.getByLabel(/email/i)).toBeVisible();
-    await expect(page.getByLabel(/message/i)).toBeVisible();
-    await expect(page.getByRole("button", { name: /send/i })).toBeVisible();
+    // Use more specific selectors for form fields
+    await expect(page.getByRole("textbox", { name: /your name/i })).toBeVisible();
+    await expect(page.getByRole("textbox", { name: /email address/i })).toBeVisible();
+    await expect(page.getByRole("textbox", { name: /message/i })).toBeVisible();
+    await expect(page.getByRole("button", { name: /send message/i })).toBeVisible();
   });
 });
