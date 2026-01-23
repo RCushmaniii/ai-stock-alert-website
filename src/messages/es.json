@@ -1,0 +1,396 @@
+{
+  "common": {
+    "appName": "StockAlert",
+    "getStarted": "Comenzar",
+    "learnMore": "Saber Mas",
+    "download": "Descargar",
+    "downloadNow": "Descargar Ahora",
+    "viewPricing": "Ver Precios",
+    "contactUs": "Contactanos",
+    "freeDownload": "Descarga Gratuita",
+    "startFreeTrial": "Iniciar Prueba Gratuita"
+  },
+  "nav": {
+    "home": "Inicio",
+    "features": "Caracteristicas",
+    "download": "Descargar",
+    "pricing": "Precios",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "description": "Alertas de acciones en tiempo real y monitoreo del mercado para Windows. Nunca pierdas una oportunidad de trading.",
+    "product": "Producto",
+    "company": "Empresa",
+    "legal": "Legal",
+    "about": "Acerca de",
+    "blog": "Blog",
+    "privacy": "Politica de Privacidad",
+    "terms": "Terminos de Servicio",
+    "copyright": "Todos los derechos reservados."
+  },
+  "home": {
+    "hero": {
+      "title": "Nunca Pierdas una",
+      "titleHighlight": "Alerta de Acciones",
+      "titleEnd": "Jamas",
+      "subtitle": "Alertas de precios en tiempo real, disparadores personalizados y monitoreo del mercado directamente en tu escritorio Windows. Mantente adelante del mercado con notificaciones instantaneas.",
+      "cta": "Descargar Gratis",
+      "ctaSecondary": "Ver Caracteristicas"
+    },
+    "features": {
+      "title": "Funciones Potentes para",
+      "titleHighlight": "Trading Inteligente",
+      "realTimeAlerts": {
+        "title": "Alertas en Tiempo Real",
+        "description": "Recibe notificaciones instantaneas cuando las acciones alcancen tus precios objetivo. Nunca pierdas una oportunidad."
+      },
+      "customTriggers": {
+        "title": "Disparadores Personalizados",
+        "description": "Crea condiciones de alerta complejas basadas en precio, volumen, cambios porcentuales e indicadores tecnicos."
+      },
+      "multipleStocks": {
+        "title": "Rastrea Acciones Ilimitadas",
+        "description": "Monitorea todo tu portafolio y lista de seguimiento simultaneamente sin limitaciones."
+      },
+      "desktopNotifications": {
+        "title": "Notificaciones de Escritorio",
+        "description": "Recibe alertas directamente en tu escritorio Windows, incluso cuando la app esta minimizada."
+      }
+    },
+    "howItWorks": {
+      "title": "Como",
+      "titleHighlight": "Funciona",
+      "step1": {
+        "title": "Descarga e Instala",
+        "description": "Obtén StockAlert desde nuestro sitio web. La instalación toma menos de un minuto."
+      },
+      "step2": {
+        "title": "Agrega tus Acciones",
+        "description": "Busca y agrega acciones a tu lista de seguimiento. Importa portafolios existentes fácilmente."
+      },
+      "step3": {
+        "title": "Configura Alertas y Relájate",
+        "description": "Configura tus precios objetivo y condiciones de alerta. Te notificaremos al instante."
+      }
+    },
+    "screenshots": {
+      "title": "Mira StockAlert en",
+      "titleHighlight": "Accion"
+    },
+    "pricing": {
+      "title": "Precios Simples y",
+      "titleHighlight": "Transparentes",
+      "subtitle": "Comienza gratis y actualiza cuando necesites mas poder."
+    },
+    "cta": {
+      "title": "Listo para Tomar Control de tus",
+      "titleHighlight": "Inversiones",
+      "subtitle": "Únete a miles de traders que nunca pierden una oportunidad con StockAlert.",
+      "button": "Descargar Ahora - Es Gratis"
+    }
+  },
+  "features": {
+    "hero": {
+      "title": "Todo lo que Necesitas para",
+      "titleHighlight": "Alertas Inteligentes",
+      "subtitle": "Herramientas completas para monitorear el mercado y nunca perder una oportunidad."
+    },
+    "grid": {
+      "priceAlerts": {
+        "title": "Alertas de Precio",
+        "description": "Configura alertas cuando las acciones alcancen precios específicos. Soporte para umbrales superiores e inferiores."
+      },
+      "percentageAlerts": {
+        "title": "Alertas de Cambio Porcentual",
+        "description": "Recibe notificaciones cuando las acciones se muevan un cierto porcentaje en cualquier dirección."
+      },
+      "volumeAlerts": {
+        "title": "Alertas de Volumen",
+        "description": "Monitorea volumen de trading inusual que podría indicar movimientos significativos del mercado."
+      },
+      "technicalIndicators": {
+        "title": "Indicadores Técnicos",
+        "description": "Crea alertas basadas en RSI, MACD, medias móviles y otros indicadores populares."
+      },
+      "portfolioTracking": {
+        "title": "Seguimiento de Portafolio",
+        "description": "Importa y rastrea todo tu portafolio con actualizaciones de valor en tiempo real."
+      },
+      "watchlists": {
+        "title": "Múltiples Listas de Seguimiento",
+        "description": "Organiza acciones en listas personalizadas para diferentes estrategias o sectores."
+      },
+      "notifications": {
+        "title": "Notificaciones Flexibles",
+        "description": "Elige cómo quieres ser alertado: notificaciones de escritorio, sonidos o email."
+      },
+      "marketData": {
+        "title": "Datos de Mercado en Tiempo Real",
+        "description": "Accede a datos de mercado en vivo con retraso mínimo para toma de decisiones precisa."
+      }
+    },
+    "comparison": {
+      "title": "¿Por Qué Elegir StockAlert?",
+      "feature": "Característica",
+      "stockAlert": "StockAlert",
+      "others": "Otros",
+      "features": {
+        "realTimeAlerts": "Alertas en Tiempo Real",
+        "unlimitedStocks": "Acciones Ilimitadas",
+        "customIndicators": "Indicadores Personalizados",
+        "desktopApp": "App de Escritorio Nativa",
+        "offlineMode": "Modo Sin Conexión",
+        "noSubscription": "Sin Suscripción Mensual"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Probar Estas Características?",
+      "subtitle": "Descarga StockAlert gratis y experimenta la diferencia.",
+      "button": "Descargar Gratis"
+    }
+  },
+  "download": {
+    "hero": {
+      "title": "Descargar",
+      "titleHighlight": "StockAlert",
+      "subtitle": "Comienza en minutos con nuestra aplicación de Windows fácil de instalar."
+    },
+    "options": {
+      "title": "Elige tu Descarga",
+      "msi": {
+        "title": "Instalador de Windows (MSI)",
+        "description": "Recomendado para la mayoría de usuarios. Incluye actualizaciones automáticas.",
+        "size": "15 MB",
+        "button": "Descargar MSI"
+      },
+      "zip": {
+        "title": "Versión Portable (ZIP)",
+        "description": "No requiere instalación. Ejecuta desde cualquier carpeta o USB.",
+        "size": "12 MB",
+        "button": "Descargar ZIP"
+      }
+    },
+    "requirements": {
+      "title": "Requisitos del Sistema",
+      "os": "Windows 10/11 (64-bit)",
+      "ram": "4 GB RAM mínimo",
+      "storage": "50 MB de espacio disponible",
+      "internet": "Conexión a Internet para datos de mercado",
+      "dotnet": ".NET 6.0 Runtime (incluido en el instalador)"
+    },
+    "installation": {
+      "title": "Pasos de Instalación",
+      "step1": {
+        "title": "Descargar",
+        "description": "Haz clic en el botón de descarga arriba para obtener el instalador."
+      },
+      "step2": {
+        "title": "Ejecutar Instalador",
+        "description": "Haz doble clic en el archivo descargado y sigue las instrucciones."
+      },
+      "step3": {
+        "title": "Iniciar",
+        "description": "Abre StockAlert desde el menú Inicio o el acceso directo del escritorio."
+      },
+      "step4": {
+        "title": "Configurar",
+        "description": "Agrega tus primeras acciones y configura alertas para comenzar."
+      }
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "q1": {
+        "question": "¿StockAlert es realmente gratis?",
+        "answer": "¡Sí! La versión básica de StockAlert es completamente gratuita sin límites de tiempo. Las funciones premium están disponibles para usuarios avanzados que necesitan más."
+      },
+      "q2": {
+        "question": "¿Funciona en Mac o Linux?",
+        "answer": "Actualmente, StockAlert solo está disponible para Windows. Las versiones para Mac y Linux están en nuestra hoja de ruta para desarrollo futuro."
+      },
+      "q3": {
+        "question": "¿Con qué frecuencia se actualizan los datos del mercado?",
+        "answer": "Los datos del mercado se actualizan en tiempo real durante las horas de mercado, con un retraso mínimo de 1-2 segundos para la mayoría de las cotizaciones."
+      },
+      "q4": {
+        "question": "¿Puedo usarlo con múltiples monitores?",
+        "answer": "¡Absolutamente! StockAlert está diseñado para funcionar perfectamente con configuraciones de múltiples monitores. Puedes posicionar alertas en cualquier pantalla."
+      }
+    }
+  },
+  "pricing": {
+    "hero": {
+      "title": "Precios Simples y",
+      "titleHighlight": "Transparentes",
+      "subtitle": "Elige el plan que se adapte a tus necesidades de trading. Comienza gratis, actualiza cuando quieras."
+    },
+    "plans": {
+      "free": {
+        "name": "Gratis",
+        "price": "$0",
+        "period": "para siempre",
+        "description": "Perfecto para comenzar",
+        "features": [
+          "Hasta 10 alertas de acciones",
+          "Alertas de precio básicas",
+          "Notificaciones de escritorio",
+          "Datos de mercado en tiempo real",
+          "Soporte de la comunidad"
+        ],
+        "cta": "Descargar Gratis"
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "$9.99",
+        "period": "pago único",
+        "description": "Para traders activos",
+        "features": [
+          "Alertas de acciones ilimitadas",
+          "Alertas de porcentaje y volumen",
+          "Múltiples listas de seguimiento",
+          "Notificaciones por email",
+          "Soporte prioritario",
+          "Sin anuncios"
+        ],
+        "cta": "Actualizar a Premium",
+        "popular": "Más Popular"
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "$24.99",
+        "period": "pago único",
+        "description": "Para traders profesionales",
+        "features": [
+          "Todo en Premium",
+          "Indicadores técnicos",
+          "Condiciones de alerta personalizadas",
+          "Acceso a API",
+          "Integraciones webhook",
+          "Soporte dedicado"
+        ],
+        "cta": "Actualizar a Pro"
+      }
+    },
+    "guarantee": {
+      "title": "Garantía de Devolución de 30 Días",
+      "description": "¿No estás satisfecho? Obtén un reembolso completo dentro de los 30 días de la compra, sin preguntas."
+    },
+    "comparison": {
+      "title": "Comparar Planes",
+      "feature": "Característica",
+      "features": {
+        "stockAlerts": "Alertas de Acciones",
+        "priceAlerts": "Alertas de Precio",
+        "percentageAlerts": "Alertas de Porcentaje",
+        "volumeAlerts": "Alertas de Volumen",
+        "technicalIndicators": "Indicadores Técnicos",
+        "watchlists": "Listas de Seguimiento",
+        "desktopNotifications": "Notificaciones de Escritorio",
+        "emailNotifications": "Notificaciones por Email",
+        "webhooks": "Webhooks",
+        "apiAccess": "Acceso a API",
+        "support": "Soporte"
+      },
+      "values": {
+        "free": {
+          "stockAlerts": "10",
+          "priceAlerts": "Sí",
+          "percentageAlerts": "No",
+          "volumeAlerts": "No",
+          "technicalIndicators": "No",
+          "watchlists": "1",
+          "desktopNotifications": "Sí",
+          "emailNotifications": "No",
+          "webhooks": "No",
+          "apiAccess": "No",
+          "support": "Comunidad"
+        },
+        "premium": {
+          "stockAlerts": "Ilimitadas",
+          "priceAlerts": "Sí",
+          "percentageAlerts": "Sí",
+          "volumeAlerts": "Sí",
+          "technicalIndicators": "No",
+          "watchlists": "Ilimitadas",
+          "desktopNotifications": "Sí",
+          "emailNotifications": "Sí",
+          "webhooks": "No",
+          "apiAccess": "No",
+          "support": "Prioritario"
+        },
+        "pro": {
+          "stockAlerts": "Ilimitadas",
+          "priceAlerts": "Sí",
+          "percentageAlerts": "Sí",
+          "volumeAlerts": "Sí",
+          "technicalIndicators": "Sí",
+          "watchlists": "Ilimitadas",
+          "desktopNotifications": "Sí",
+          "emailNotifications": "Sí",
+          "webhooks": "Sí",
+          "apiAccess": "Sí",
+          "support": "Dedicado"
+        }
+      }
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes sobre Precios",
+      "q1": {
+        "question": "¿Es realmente un pago único?",
+        "answer": "¡Sí! A diferencia de otros servicios, no cobramos suscripciones mensuales. Paga una vez y es tuyo para siempre."
+      },
+      "q2": {
+        "question": "¿Recibo actualizaciones gratis?",
+        "answer": "Sí, todas las actualizaciones dentro de la misma versión principal son gratuitas. Las actualizaciones de versiones principales pueden ofrecerse a un precio con descuento."
+      },
+      "q3": {
+        "question": "¿Puedo actualizar después?",
+        "answer": "¡Absolutamente! Puedes comenzar con Gratis y actualizar a Premium o Pro en cualquier momento. Solo pagas la diferencia."
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Ponte en",
+      "titleHighlight": "Contacto",
+      "subtitle": "¿Tienes preguntas? Nos encantaría saber de ti. Envíanos un mensaje y responderemos lo antes posible."
+    },
+    "options": {
+      "email": {
+        "title": "Envíanos un Email",
+        "description": "support@stockalert.app",
+        "subtitle": "Normalmente respondemos en 24 horas"
+      },
+      "twitter": {
+        "title": "Twitter",
+        "description": "@StockAlertApp",
+        "subtitle": "Síguenos para actualizaciones y consejos"
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Reporta errores y solicita funciones",
+        "subtitle": "Contribuciones de código abierto bienvenidas"
+      }
+    },
+    "form": {
+      "title": "Enviar un Mensaje",
+      "name": "Tu Nombre",
+      "namePlaceholder": "Juan Pérez",
+      "email": "Correo Electrónico",
+      "emailPlaceholder": "juan@ejemplo.com",
+      "subject": "Asunto",
+      "subjectPlaceholder": "¿Cómo podemos ayudarte?",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos más sobre tu pregunta o comentario...",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado con éxito! Te responderemos pronto.",
+      "error": "Algo salió mal. Por favor intenta de nuevo más tarde."
+    },
+    "response": {
+      "title": "Tiempos de Respuesta",
+      "general": "Consultas generales: 24-48 horas",
+      "technical": "Soporte técnico: 12-24 horas",
+      "billing": "Preguntas de facturación: 12-24 horas"
+    }
+  }
+}
