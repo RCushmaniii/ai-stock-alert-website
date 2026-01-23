@@ -404,5 +404,106 @@
       "technical": "Technical support: 12-24 hours",
       "billing": "Billing questions: 12-24 hours"
     }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last Updated",
+    "sections": {
+      "acceptance": {
+        "title": "1. Acceptance of Terms",
+        "content": "By downloading, installing, or using StockAlert, you agree to be bound by these Terms of Service. If you do not agree to these terms, do not use the software."
+      },
+      "license": {
+        "title": "2. License Grant",
+        "content": "StockAlert grants you a limited, non-exclusive, non-transferable license to use the software for personal or commercial purposes in accordance with these terms. The Free version may be used indefinitely. Premium and Pro versions require a valid license purchase."
+      },
+      "restrictions": {
+        "title": "3. Restrictions",
+        "content": "You agree not to:",
+        "items": {
+          "reverse": "Reverse engineer, decompile, or disassemble the software",
+          "distribute": "Redistribute, sell, or sublicense the software",
+          "commercial": "Use the software to create a competing product",
+          "remove": "Remove or alter any proprietary notices or labels"
+        }
+      },
+      "disclaimer": {
+        "title": "4. Disclaimer of Warranties",
+        "content": "StockAlert is provided \"as is\" without warranty of any kind. We do not guarantee the accuracy, completeness, or timeliness of market data. Stock prices and alerts are for informational purposes only and should not be considered financial advice."
+      },
+      "limitation": {
+        "title": "5. Limitation of Liability",
+        "content": "In no event shall StockAlert or its developers be liable for any indirect, incidental, special, consequential, or punitive damages, including lost profits, lost data, or business interruption, arising from your use of the software."
+      },
+      "thirdParty": {
+        "title": "6. Third-Party Services",
+        "content": "StockAlert integrates with third-party market data providers. Your use of such services is subject to their respective terms and conditions. We are not responsible for the availability or accuracy of third-party data."
+      },
+      "termination": {
+        "title": "7. Termination",
+        "content": "We reserve the right to terminate or suspend your access to StockAlert at any time, without notice, for conduct that we believe violates these terms or is harmful to other users or the service."
+      },
+      "changes": {
+        "title": "8. Changes to Terms",
+        "content": "We may update these terms from time to time. Continued use of StockAlert after changes constitutes acceptance of the new terms. We will notify users of significant changes through the application or our website."
+      },
+      "contact": {
+        "title": "9. Contact",
+        "content": "For questions about these Terms of Service, please contact us at"
+      }
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated",
+    "sections": {
+      "overview": {
+        "title": "1. Overview",
+        "content": "StockAlert is committed to protecting your privacy. This policy explains what information we collect, how we use it, and your rights regarding your data. We believe in transparency and minimal data collection."
+      },
+      "collection": {
+        "title": "2. Information We Collect",
+        "content": "We collect minimal data necessary to provide and improve our service:",
+        "items": {
+          "usage": "Anonymous usage statistics (features used, error reports)",
+          "device": "Basic device information (OS version, app version)",
+          "preferences": "Application preferences and settings (stored locally)"
+        }
+      },
+      "notCollected": {
+        "title": "3. Information We Do NOT Collect",
+        "content": "We explicitly do not collect:",
+        "items": {
+          "personal": "Personal identification information (name, email, address)",
+          "financial": "Financial information or brokerage credentials",
+          "stocks": "Your specific stock watchlists or portfolio data",
+          "alerts": "Your alert configurations or trading strategies"
+        }
+      },
+      "localStorage": {
+        "title": "4. Local Data Storage",
+        "content": "All your watchlists, alerts, and preferences are stored locally on your device. This data never leaves your computer and is not transmitted to our servers. You maintain complete control over your data."
+      },
+      "thirdParty": {
+        "title": "5. Third-Party Services",
+        "content": "StockAlert uses third-party APIs to fetch real-time market data. These providers have their own privacy policies. We do not share any personal information with these providers; only anonymous market data requests are made."
+      },
+      "security": {
+        "title": "6. Data Security",
+        "content": "We implement industry-standard security measures to protect any data we do collect. All network communications use encrypted HTTPS connections. Your local data is stored using standard Windows security mechanisms."
+      },
+      "children": {
+        "title": "7. Children's Privacy",
+        "content": "StockAlert is not intended for use by children under 18. We do not knowingly collect information from children. If you believe a child has provided us with information, please contact us immediately."
+      },
+      "changes": {
+        "title": "8. Changes to This Policy",
+        "content": "We may update this privacy policy from time to time. We will notify users of any material changes through the application or our website. Your continued use of StockAlert after changes constitutes acceptance."
+      },
+      "contact": {
+        "title": "9. Contact Us",
+        "content": "For questions about this Privacy Policy or our data practices, please contact us at"
+      }
+    }
   }
 }

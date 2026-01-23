@@ -404,5 +404,106 @@
       "technical": "Soporte técnico: 12-24 horas",
       "billing": "Preguntas de facturación: 12-24 horas"
     }
+  },
+  "terms": {
+    "title": "Términos de Servicio",
+    "lastUpdated": "Última Actualización",
+    "sections": {
+      "acceptance": {
+        "title": "1. Aceptación de Términos",
+        "content": "Al descargar, instalar o usar StockAlert, aceptas estar sujeto a estos Términos de Servicio. Si no estás de acuerdo con estos términos, no uses el software."
+      },
+      "license": {
+        "title": "2. Concesión de Licencia",
+        "content": "StockAlert te otorga una licencia limitada, no exclusiva e intransferible para usar el software con fines personales o comerciales de acuerdo con estos términos. La versión gratuita puede usarse indefinidamente. Las versiones Premium y Pro requieren una compra de licencia válida."
+      },
+      "restrictions": {
+        "title": "3. Restricciones",
+        "content": "Aceptas no:",
+        "items": {
+          "reverse": "Realizar ingeniería inversa, descompilar o desensamblar el software",
+          "distribute": "Redistribuir, vender o sublicenciar el software",
+          "commercial": "Usar el software para crear un producto competidor",
+          "remove": "Eliminar o alterar avisos o etiquetas de propiedad"
+        }
+      },
+      "disclaimer": {
+        "title": "4. Descargo de Garantías",
+        "content": "StockAlert se proporciona \"tal cual\" sin garantía de ningún tipo. No garantizamos la precisión, integridad o puntualidad de los datos del mercado. Los precios de acciones y alertas son solo para fines informativos y no deben considerarse asesoramiento financiero."
+      },
+      "limitation": {
+        "title": "5. Limitación de Responsabilidad",
+        "content": "En ningún caso StockAlert o sus desarrolladores serán responsables de daños indirectos, incidentales, especiales, consecuentes o punitivos, incluyendo pérdida de ganancias, pérdida de datos o interrupción del negocio, derivados del uso del software."
+      },
+      "thirdParty": {
+        "title": "6. Servicios de Terceros",
+        "content": "StockAlert se integra con proveedores de datos de mercado de terceros. Tu uso de dichos servicios está sujeto a sus respectivos términos y condiciones. No somos responsables de la disponibilidad o precisión de los datos de terceros."
+      },
+      "termination": {
+        "title": "7. Terminación",
+        "content": "Nos reservamos el derecho de terminar o suspender tu acceso a StockAlert en cualquier momento, sin previo aviso, por conducta que consideremos viola estos términos o es perjudicial para otros usuarios o el servicio."
+      },
+      "changes": {
+        "title": "8. Cambios en los Términos",
+        "content": "Podemos actualizar estos términos de vez en cuando. El uso continuado de StockAlert después de los cambios constituye la aceptación de los nuevos términos. Notificaremos a los usuarios sobre cambios significativos a través de la aplicación o nuestro sitio web."
+      },
+      "contact": {
+        "title": "9. Contacto",
+        "content": "Para preguntas sobre estos Términos de Servicio, contáctanos en"
+      }
+    }
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última Actualización",
+    "sections": {
+      "overview": {
+        "title": "1. Resumen",
+        "content": "StockAlert está comprometido a proteger tu privacidad. Esta política explica qué información recopilamos, cómo la usamos y tus derechos sobre tus datos. Creemos en la transparencia y la recopilación mínima de datos."
+      },
+      "collection": {
+        "title": "2. Información que Recopilamos",
+        "content": "Recopilamos datos mínimos necesarios para proporcionar y mejorar nuestro servicio:",
+        "items": {
+          "usage": "Estadísticas de uso anónimas (funciones usadas, informes de errores)",
+          "device": "Información básica del dispositivo (versión del SO, versión de la app)",
+          "preferences": "Preferencias y configuraciones de la aplicación (almacenadas localmente)"
+        }
+      },
+      "notCollected": {
+        "title": "3. Información que NO Recopilamos",
+        "content": "Explícitamente no recopilamos:",
+        "items": {
+          "personal": "Información de identificación personal (nombre, email, dirección)",
+          "financial": "Información financiera o credenciales de corretaje",
+          "stocks": "Tus listas de seguimiento de acciones o datos de cartera específicos",
+          "alerts": "Tus configuraciones de alertas o estrategias de trading"
+        }
+      },
+      "localStorage": {
+        "title": "4. Almacenamiento Local de Datos",
+        "content": "Todas tus listas de seguimiento, alertas y preferencias se almacenan localmente en tu dispositivo. Estos datos nunca salen de tu computadora y no se transmiten a nuestros servidores. Mantienes el control completo sobre tus datos."
+      },
+      "thirdParty": {
+        "title": "5. Servicios de Terceros",
+        "content": "StockAlert utiliza APIs de terceros para obtener datos de mercado en tiempo real. Estos proveedores tienen sus propias políticas de privacidad. No compartimos información personal con estos proveedores; solo se realizan solicitudes anónimas de datos de mercado."
+      },
+      "security": {
+        "title": "6. Seguridad de Datos",
+        "content": "Implementamos medidas de seguridad estándar de la industria para proteger cualquier dato que recopilemos. Todas las comunicaciones de red usan conexiones HTTPS encriptadas. Tus datos locales se almacenan usando mecanismos de seguridad estándar de Windows."
+      },
+      "children": {
+        "title": "7. Privacidad de Menores",
+        "content": "StockAlert no está destinado para uso de menores de 18 años. No recopilamos información de menores conscientemente. Si crees que un menor nos ha proporcionado información, contáctanos inmediatamente."
+      },
+      "changes": {
+        "title": "8. Cambios a Esta Política",
+        "content": "Podemos actualizar esta política de privacidad de vez en cuando. Notificaremos a los usuarios sobre cualquier cambio material a través de la aplicación o nuestro sitio web. Tu uso continuado de StockAlert después de los cambios constituye la aceptación."
+      },
+      "contact": {
+        "title": "9. Contáctanos",
+        "content": "Para preguntas sobre esta Política de Privacidad o nuestras prácticas de datos, contáctanos en"
+      }
+    }
   }
 }

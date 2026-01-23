@@ -133,20 +133,20 @@ export function Footer() {
               </h3>
               <ul className="space-y-3">
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/privacy"
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
                     {t("privacy")}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/terms"
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
                     {t("terms")}
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
