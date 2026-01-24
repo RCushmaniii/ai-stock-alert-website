@@ -1,6 +1,6 @@
 # StockAlert Marketing Website
 
-Marketing website for StockAlert, a Windows desktop application that delivers real-time stock price alerts directly to your desktop. Built with Next.js 16 and designed for fast static deployment.
+Marketing website for StockAlert, a Windows desktop application that delivers real-time stock price alerts. Built with Next.js 16 for static deployment with zero server costs.
 
 ## Tech Stack
 
@@ -13,16 +13,17 @@ Marketing website for StockAlert, a Windows desktop application that delivers re
 | Framer Motion | 12.x | Page animations |
 | next-intl | 4.7.0 | Internationalization (EN/ES) |
 | next-themes | 0.4.6 | Light/dark mode switching |
+| Playwright | 1.58.0 | End-to-end testing |
 
 ## Features
 
 | Feature | Benefit |
 |---------|---------|
 | Static Site Generation | Sub-second page loads, zero server costs |
-| Internationalization | English and Spanish support out of the box |
+| Internationalization | English and Spanish with localized URLs |
 | Dark/Light Theme | System preference detection with manual toggle |
-| Responsive Design | Optimized for mobile, tablet, and desktop |
-| Accessible Components | WAI-ARIA compliant via Radix UI primitives |
+| Responsive Design | Mobile-first, tested on iPhone 14 viewport |
+| E2E Test Coverage | 23 Playwright tests across all pages |
 | Security Headers | X-Frame-Options, CSP, and caching configured |
 
 ## Quick Start
@@ -44,7 +45,7 @@ Marketing website for StockAlert, a Windows desktop application that delivers re
    ```powershell
    npm install
    ```
-   Expected output: `added 247 packages in 30s`
+   Expected output: `added 440 packages in 30s`
 
 3. **Start development server**
    ```powershell
@@ -65,38 +66,40 @@ npm run build
 Expected output:
 ```
 ✓ Compiled successfully
-✓ Generating static pages (13/13)
+✓ Generating static pages (17/17)
 ```
 
 ## Project Structure
 
 ```
-src/
-├── app/
-│   ├── [locale]/              # Locale-specific pages (en, es)
-│   │   ├── page.tsx           # Homepage
-│   │   ├── download/          # Download page components
-│   │   ├── features/          # Features page components
-│   │   ├── pricing/           # Pricing page components
-│   │   └── contact/           # Contact page components
-│   ├── globals.css            # Theme CSS variables and base styles
-│   └── layout.tsx             # Root layout with fonts
-├── components/
-│   ├── layout/                # Header, Footer, ThemeSwitcher
-│   ├── sections/              # Hero, Features, FAQ, PricingCards
-│   ├── ui/                    # shadcn/ui components (Button, Card, etc.)
-│   ├── shared/                # AnimatedSection wrapper
-│   └── providers/             # ThemeProvider context
-├── i18n/                      # Internationalization config
-│   ├── routing.ts             # Locale routing setup
-│   ├── navigation.ts          # Localized Link/useRouter
-│   └── request.ts             # Server-side locale handling
-├── lib/
-│   └── utils.ts               # cn() utility for class merging
-├── messages/
-│   ├── en.json                # English translations
-│   └── es.json                # Spanish translations
-└── middleware.ts              # Locale detection middleware
+├── e2e/                       # Playwright test specs
+│   ├── navigation.spec.ts     # Page navigation tests
+│   ├── i18n.spec.ts           # Language switching tests
+│   ├── theme.spec.ts          # Dark/light mode tests
+│   ├── pages.spec.ts          # Page rendering tests
+│   └── responsive.spec.ts     # Mobile viewport tests
+├── src/
+│   ├── app/
+│   │   ├── [locale]/          # Locale-specific pages (en, es)
+│   │   │   ├── page.tsx       # Homepage
+│   │   │   ├── download/      # Download page
+│   │   │   ├── features/      # Features page
+│   │   │   ├── pricing/       # Pricing page
+│   │   │   ├── contact/       # Contact page
+│   │   │   ├── terms/         # Terms of Service
+│   │   │   └── privacy/       # Privacy Policy
+│   │   ├── globals.css        # Theme CSS variables
+│   │   └── layout.tsx         # Root layout with fonts
+│   ├── components/
+│   │   ├── layout/            # Header, Footer, ThemeSwitcher
+│   │   ├── sections/          # Hero, Features, FAQ, PricingCards
+│   │   ├── ui/                # shadcn/ui components
+│   │   └── providers/         # ThemeProvider context
+│   ├── i18n/                  # Internationalization config
+│   ├── lib/                   # Utilities (cn helper)
+│   └── messages/              # Translation files (en.json, es.json)
+├── playwright.config.ts       # E2E test configuration
+└── netlify.toml               # Deployment configuration
 ```
 
 ## Available Scripts
@@ -107,6 +110,36 @@ src/
 | `npm run build` | Generate production build with SSG |
 | `npm run start` | Serve production build locally |
 | `npm run lint` | Run ESLint checks |
+| `npm test` | Run all Playwright tests |
+| `npm run test:ui` | Open Playwright test UI |
+| `npm run test:headed` | Run tests with visible browser |
+
+## Testing
+
+23 end-to-end tests covering:
+
+- Navigation between all pages
+- Language switching (EN ↔ ES)
+- Theme toggling (light ↔ dark)
+- Page rendering for all 10 routes
+- Mobile responsive behavior
+
+```powershell
+# Run all tests
+npm test
+
+# Run specific test file
+npx playwright test e2e\navigation.spec.ts
+
+# Run with browser visible
+npm run test:headed
+```
+
+Expected output:
+```
+Running 23 tests using 14 workers
+  23 passed (6.8s)
+```
 
 ## Deployment
 
@@ -137,6 +170,18 @@ npm run build
 # Deploy contents of .next/ directory to any static host
 ```
 
+## Pages
+
+| Route | EN URL | ES URL |
+|-------|--------|--------|
+| Home | `/en` | `/es` |
+| Features | `/en/features` | `/es/caracteristicas` |
+| Download | `/en/download` | `/es/descargar` |
+| Pricing | `/en/pricing` | `/es/precios` |
+| Contact | `/en/contact` | `/es/contacto` |
+| Terms | `/en/terms` | `/es/terminos` |
+| Privacy | `/en/privacy` | `/es/privacidad` |
+
 ## Customization
 
 ### Adding a New Language
@@ -146,7 +191,7 @@ npm run build
    copy src\messages\en.json src\messages\fr.json
    ```
 
-2. Add locale to routing config in `src/i18n/routing.ts`:
+2. Add locale to `src/i18n/routing.ts`:
    ```typescript
    export const locales = ['en', 'es', 'fr'] as const;
    ```
@@ -170,7 +215,7 @@ Edit CSS variables in `src/app/globals.css`:
 
 ### Adding New Pages
 
-1. Create directory in `src/app/[locale]/`:
+1. Create directory:
    ```powershell
    mkdir src\app\[locale]\about
    ```
@@ -180,7 +225,9 @@ Edit CSS variables in `src/app/globals.css`:
    notepad src\app\[locale]\about\page.tsx
    ```
 
-3. Add translations to `src/messages/en.json` and `src/messages/es.json`
+3. Add route to `src/i18n/routing.ts`
+
+4. Add translations to `src/messages/en.json` and `src/messages/es.json`
 
 ## Security
 
@@ -210,11 +257,3 @@ Edit CSS variables in `src/app/globals.css`:
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.
-
-## Related Projects
-
-- [StockAlert Desktop App](https://github.com/RCushmaniii/stockalert) - The Windows application this site markets
-
----
-
-Built with Next.js 16 and deployed on Netlify.
