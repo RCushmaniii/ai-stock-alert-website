@@ -266,7 +266,7 @@
         "period": "pago único",
         "description": "Para traders activos",
         "features": [
-          "Alertas de acciones ilimitadas",
+          "Hasta 100 alertas de acciones",
           "Notificaciones WhatsApp",
           "Notificaciones por email",
           "Múltiples listas de seguimiento",
@@ -282,7 +282,7 @@
         "period": "pago único",
         "description": "Para traders profesionales",
         "features": [
-          "Todo en Premium",
+          "Hasta 250 alertas de acciones",
           "Indicadores técnicos",
           "Condiciones de alerta personalizadas",
           "Acceso a API",
@@ -329,7 +329,7 @@
           "support": "Comunidad"
         },
         "premium": {
-          "stockAlerts": "Ilimitadas",
+          "stockAlerts": "100",
           "priceAlerts": "Sí",
           "whatsappNotifications": "Sí",
           "percentageAlerts": "Sí",
@@ -343,7 +343,7 @@
           "support": "Prioritario"
         },
         "pro": {
-          "stockAlerts": "Ilimitadas",
+          "stockAlerts": "250",
           "priceAlerts": "Sí",
           "whatsappNotifications": "Sí",
           "percentageAlerts": "Sí",

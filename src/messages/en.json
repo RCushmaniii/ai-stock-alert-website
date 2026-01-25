@@ -266,7 +266,7 @@
         "period": "one-time",
         "description": "For active traders",
         "features": [
-          "Unlimited stock alerts",
+          "Up to 100 stock alerts",
           "WhatsApp notifications",
           "Email notifications",
           "Multiple watchlists",
@@ -282,7 +282,7 @@
         "period": "one-time",
         "description": "For professional traders",
         "features": [
-          "Everything in Premium",
+          "Up to 250 stock alerts",
           "Technical indicators",
           "Custom alert conditions",
           "API access",
@@ -329,7 +329,7 @@
           "support": "Community"
         },
         "premium": {
-          "stockAlerts": "Unlimited",
+          "stockAlerts": "100",
           "priceAlerts": "Yes",
           "whatsappNotifications": "Yes",
           "percentageAlerts": "Yes",
@@ -343,7 +343,7 @@
           "support": "Priority"
         },
         "pro": {
-          "stockAlerts": "Unlimited",
+          "stockAlerts": "250",
           "priceAlerts": "Yes",
           "whatsappNotifications": "Yes",
           "percentageAlerts": "Yes",
