@@ -10,6 +10,12 @@
     "freeDownload": "Free Download",
     "startFreeTrial": "Start Free Trial"
   },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "homeButton": "Back to Home",
+    "contactButton": "Contact Support"
+  },
   "nav": {
     "home": "Home",
     "features": "Features",

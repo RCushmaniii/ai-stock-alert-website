@@ -10,6 +10,12 @@
     "freeDownload": "Descarga Gratuita",
     "startFreeTrial": "Iniciar Prueba Gratuita"
   },
+  "notFound": {
+    "title": "Pagina No Encontrada",
+    "description": "La pagina que buscas no existe o ha sido movida.",
+    "homeButton": "Volver al Inicio",
+    "contactButton": "Contactar Soporte"
+  },
   "nav": {
     "home": "Inicio",
     "features": "Caracteristicas",
