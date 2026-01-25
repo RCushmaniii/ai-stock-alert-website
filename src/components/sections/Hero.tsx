@@ -72,7 +72,7 @@ export function Hero() {
             </AnimatedSection>
           </div>
 
-          {/* App Screenshot Placeholder */}
+          {/* App Video Demo */}
           <AnimatedSection delay={0.2} direction="right">
             <div className="relative">
               <div className="relative rounded-2xl p-4 shadow-2xl bg-muted border border-border">
@@ -82,15 +82,18 @@ export function Hero() {
                   <div className="w-3 h-3 rounded-full bg-yellow-500" />
                   <div className="w-3 h-3 rounded-full bg-green-500" />
                 </div>
-                {/* Placeholder content */}
-                <div className="aspect-[16/10] rounded-lg flex items-center justify-center bg-card">
-                  <div className="text-center">
-                    <div className="w-16 h-16 mx-auto mb-4 rounded-xl flex items-center justify-center bg-primary/20">
-                      <Play className="w-8 h-8 text-primary" />
-                    </div>
-                    <p className="text-sm text-muted-foreground">App Screenshot Placeholder</p>
-                    <p className="text-xs mt-1 text-muted-foreground/70">Replace with actual app screenshot</p>
-                  </div>
+                {/* Video content */}
+                <div className="aspect-[16/10] rounded-lg overflow-hidden bg-card">
+                  <video
+                    className="w-full h-full object-cover"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  >
+                    <source src="/videos/AI_StockAlert.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
               </div>
               {/* Decorative elements */}
