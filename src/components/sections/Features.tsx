@@ -15,12 +15,26 @@ interface FeatureCardProps {
 function FeatureCard({ icon, title, description }: FeatureCardProps) {
   return (
     <Card variant="feature" hover className="h-full">
-      <div className="flex flex-col h-full">
-        <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 bg-primary/10">
+      <div className="flex flex-col h-full p-2">
+        <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-5 bg-primary/10">
           <div className="text-primary">{icon}</div>
         </div>
-        <h3 className="text-xl font-semibold mb-2 text-foreground">{title}</h3>
+        <h3 className="text-xl font-semibold mb-3 text-foreground">{title}</h3>
         <p className="leading-relaxed text-muted-foreground">{description}</p>
+      </div>
+    </Card>
+  );
+}
+
+function LargeFeatureCard({ icon, title, description }: FeatureCardProps) {
+  return (
+    <Card variant="feature" hover className="h-full">
+      <div className="flex flex-col h-full p-3">
+        <div className="w-16 h-16 rounded-xl flex items-center justify-center mb-5 bg-primary/10">
+          <div className="text-primary [&>svg]:w-8 [&>svg]:h-8">{icon}</div>
+        </div>
+        <h3 className="text-2xl font-semibold mb-3 text-foreground">{title}</h3>
+        <p className="text-lg leading-relaxed text-muted-foreground">{description}</p>
       </div>
     </Card>
   );
@@ -125,10 +139,10 @@ export function FeaturesGrid() {
   ];
 
   return (
-    <StaggeredContainer className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+    <StaggeredContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
       {features.map((feature, index) => (
         <StaggeredItem key={index}>
-          <FeatureCard {...feature} />
+          <LargeFeatureCard {...feature} />
         </StaggeredItem>
       ))}
     </StaggeredContainer>
