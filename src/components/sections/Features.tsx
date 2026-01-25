@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Bell, MessageCircle, Smartphone, Mail, Activity, Building2, Newspaper, Clock, Globe, Monitor } from "lucide-react";
+import { Bell, MessageCircle, Mail, Activity, Building2, Newspaper, Clock, Globe, Monitor } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Card } from "@/components/ui/Card";
 import { AnimatedSection, StaggeredContainer, StaggeredItem } from "@/components/shared/AnimatedSection";
@@ -86,11 +86,6 @@ export function FeaturesGrid() {
       icon: <MessageCircle className="w-6 h-6" />,
       title: t("whatsappAlerts.title"),
       description: t("whatsappAlerts.description"),
-    },
-    {
-      icon: <Smartphone className="w-6 h-6" />,
-      title: t("smsAlerts.title"),
-      description: t("smsAlerts.description"),
     },
     {
       icon: <Mail className="w-6 h-6" />,

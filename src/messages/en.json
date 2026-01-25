@@ -18,7 +18,7 @@
     "contact": "Contact"
   },
   "footer": {
-    "description": "Real-time stock alerts via Windows, WhatsApp, SMS & Email. 24/7 monitoring for Windows.",
+    "description": "Real-time stock alerts via Windows, WhatsApp & Email. 24/7 monitoring for Windows.",
     "product": "Product",
     "company": "Company",
     "legal": "Legal",
@@ -33,7 +33,7 @@
       "title": "Never Miss a",
       "titleHighlight": "Market Move",
       "titleEnd": "Again",
-      "subtitle": "Real-time stock alerts via Windows, WhatsApp, SMS & Email. Set your price targets. Get notified instantly.",
+      "subtitle": "Real-time stock alerts via Windows, WhatsApp & Email. Set your price targets. Get notified instantly.",
       "cta": "Start Monitoring Free",
       "ctaSecondary": "See Features"
     },
@@ -42,7 +42,7 @@
       "titleHighlight": "Smart Trading",
       "multiChannelAlerts": {
         "title": "Multi-Channel Alerts",
-        "description": "Get notified your way - Windows notifications, WhatsApp, SMS text, or email. Never miss a price move."
+        "description": "Get notified your way - Windows notifications, WhatsApp, or email. Never miss a price move."
       },
       "backgroundMonitoring": {
         "title": "24/7 Background Monitoring",
@@ -85,7 +85,7 @@
     "cta": {
       "title": "Ready to Take Control of Your",
       "titleHighlight": "Investments",
-      "subtitle": "Markets move fast. Your alerts should too. Get notified via WhatsApp, SMS, or Email - anywhere, anytime.",
+      "subtitle": "Markets move fast. Your alerts should too. Get notified via WhatsApp or Email - anywhere, anytime.",
       "button": "Start Monitoring Free"
     }
   },
@@ -103,10 +103,6 @@
       "whatsappAlerts": {
         "title": "WhatsApp Alerts",
         "description": "Get notified on your phone anywhere. Instant mobile alerts without a separate app."
-      },
-      "smsAlerts": {
-        "title": "SMS Text Alerts",
-        "description": "Never miss a move, even without internet. Alerts delivered directly to your phone."
       },
       "emailAlerts": {
         "title": "Email Alerts",
@@ -161,14 +157,14 @@
     "hero": {
       "title": "Download",
       "titleHighlight": "StockAlert v3.0",
-      "subtitle": "Multi-channel alerts via Windows, WhatsApp, SMS & Email. 24/7 background monitoring."
+      "subtitle": "Multi-channel alerts via Windows, WhatsApp & Email. 24/7 background monitoring."
     },
     "options": {
       "title": "Download StockAlert",
       "exe": {
         "badge": "Windows 10/11",
         "title": "StockAlert v3.0 for Windows",
-        "description": "One-click installer with 24/7 background service. Get alerts via Windows, WhatsApp, SMS, or Email - even when your computer is off.",
+        "description": "One-click installer with 24/7 background service. Get alerts via Windows, WhatsApp, or Email - even when your computer is off.",
         "size": "File size: 22 MB",
         "button": "Download for Windows"
       }

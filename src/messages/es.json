@@ -18,7 +18,7 @@
     "contact": "Contacto"
   },
   "footer": {
-    "description": "Alertas de acciones via Windows, WhatsApp, SMS y Email. Monitoreo 24/7 para Windows.",
+    "description": "Alertas de acciones via Windows, WhatsApp y Email. Monitoreo 24/7 para Windows.",
     "product": "Producto",
     "company": "Empresa",
     "legal": "Legal",
@@ -33,7 +33,7 @@
       "title": "Nunca Pierdas un",
       "titleHighlight": "Movimiento del Mercado",
       "titleEnd": "Jamas",
-      "subtitle": "Alertas de acciones en tiempo real via Windows, WhatsApp, SMS y Email. Configura tus precios objetivo. Recibe notificaciones al instante.",
+      "subtitle": "Alertas de acciones en tiempo real via Windows, WhatsApp y Email. Configura tus precios objetivo. Recibe notificaciones al instante.",
       "cta": "Comenzar Monitoreo Gratis",
       "ctaSecondary": "Ver Caracteristicas"
     },
@@ -42,7 +42,7 @@
       "titleHighlight": "Trading Inteligente",
       "multiChannelAlerts": {
         "title": "Alertas Multicanal",
-        "description": "Recibe notificaciones como prefieras - Windows, WhatsApp, SMS o email. Nunca pierdas un movimiento de precio."
+        "description": "Recibe notificaciones como prefieras - Windows, WhatsApp o email. Nunca pierdas un movimiento de precio."
       },
       "backgroundMonitoring": {
         "title": "Monitoreo 24/7 en Segundo Plano",
@@ -85,7 +85,7 @@
     "cta": {
       "title": "Listo para Tomar Control de tus",
       "titleHighlight": "Inversiones",
-      "subtitle": "Los mercados se mueven rapido. Tus alertas tambien. Recibe notificaciones via WhatsApp, SMS o Email - donde sea, cuando sea.",
+      "subtitle": "Los mercados se mueven rapido. Tus alertas tambien. Recibe notificaciones via WhatsApp o Email - donde sea, cuando sea.",
       "button": "Comenzar Monitoreo Gratis"
     }
   },
@@ -103,10 +103,6 @@
       "whatsappAlerts": {
         "title": "Alertas WhatsApp",
         "description": "Recibe notificaciones en tu telefono donde sea. Alertas moviles instantaneas sin una app separada."
-      },
-      "smsAlerts": {
-        "title": "Alertas SMS",
-        "description": "Nunca pierdas un movimiento, incluso sin internet. Alertas entregadas directamente a tu telefono."
       },
       "emailAlerts": {
         "title": "Alertas por Email",
@@ -161,14 +157,14 @@
     "hero": {
       "title": "Descargar",
       "titleHighlight": "StockAlert v3.0",
-      "subtitle": "Alertas multicanal via Windows, WhatsApp, SMS y Email. Monitoreo 24/7 en segundo plano."
+      "subtitle": "Alertas multicanal via Windows, WhatsApp y Email. Monitoreo 24/7 en segundo plano."
     },
     "options": {
       "title": "Descargar StockAlert",
       "exe": {
         "badge": "Windows 10/11",
         "title": "StockAlert v3.0 para Windows",
-        "description": "Instalador de un clic con servicio 24/7 en segundo plano. Recibe alertas via Windows, WhatsApp, SMS o Email - incluso cuando tu computadora esta apagada.",
+        "description": "Instalador de un clic con servicio 24/7 en segundo plano. Recibe alertas via Windows, WhatsApp o Email - incluso cuando tu computadora esta apagada.",
         "size": "Tamano: 22 MB",
         "button": "Descargar para Windows"
       }
