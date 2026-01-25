@@ -422,6 +422,10 @@
   "terms": {
     "title": "Términos de Servicio",
     "lastUpdated": "Última Actualización",
+    "demoNotice": {
+      "title": "Aviso de Proyecto de Demostración",
+      "content": "Este sitio web es un ejemplo de sitio de marketing SaaS creado solo con fines de demostración de portafolio. StockAlert no es un producto real. No hay software disponible para descargar y no se pueden procesar transacciones. Todas las características, precios y funcionalidades descritas son ficticias."
+    },
     "sections": {
       "acceptance": {
         "title": "1. Aceptación de Términos",

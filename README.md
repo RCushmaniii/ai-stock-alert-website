@@ -1,6 +1,8 @@
 # StockAlert Marketing Website
 
-Marketing website for StockAlert, a Windows desktop application that delivers real-time stock price alerts. Built with Next.js 16 for static deployment with zero server costs.
+> **Demo Project**: This is an example SaaS marketing website built for portfolio demonstration purposes only. StockAlert is not a real product and no actual software is available for download.
+
+Marketing website for StockAlert, a fictional Windows desktop application that delivers real-time stock price alerts. Built with Next.js 16 for static deployment with zero server costs.
 
 ## Tech Stack
 

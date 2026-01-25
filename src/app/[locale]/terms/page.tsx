@@ -21,6 +21,11 @@ export default function TermsPage() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.1}>
+            <div className="mb-8 p-4 rounded-lg border-2 border-primary bg-primary/10">
+              <h2 className="text-lg font-semibold mb-2 text-primary">{t("demoNotice.title")}</h2>
+              <p className="text-muted-foreground">{t("demoNotice.content")}</p>
+            </div>
+
             <div className="prose prose-neutral dark:prose-invert max-w-none">
               <div className="space-y-8">
                 <section>
