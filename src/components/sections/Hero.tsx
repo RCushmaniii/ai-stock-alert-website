@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 import { ArrowRight, Play } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { VideoPlayer } from "@/components/ui/VideoPlayer";
 import { AnimatedSection } from "@/components/shared/AnimatedSection";
 
 export function Hero() {
@@ -82,19 +83,11 @@ export function Hero() {
                   <div className="w-3 h-3 rounded-full bg-yellow-500" />
                   <div className="w-3 h-3 rounded-full bg-green-500" />
                 </div>
-                {/* Video content */}
-                <div className="aspect-[16/10] rounded-lg overflow-hidden bg-card">
-                  <video
-                    className="w-full h-full object-cover"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                  >
-                    <source src="/videos/AI_StockAlert.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
+                {/* Video player */}
+                <VideoPlayer
+                  url="/videos/AI_StockAlert.mp4"
+                  className="aspect-[16/10] rounded-lg overflow-hidden bg-card"
+                />
               </div>
               {/* Decorative elements */}
               <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full blur-2xl bg-primary/30" />
