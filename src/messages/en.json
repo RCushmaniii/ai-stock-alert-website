@@ -267,9 +267,9 @@
         "description": "For active traders",
         "features": [
           "Unlimited stock alerts",
-          "Percentage & volume alerts",
-          "Multiple watchlists",
+          "WhatsApp notifications",
           "Email notifications",
+          "Multiple watchlists",
           "Priority support",
           "No ads"
         ],
@@ -302,6 +302,7 @@
       "features": {
         "stockAlerts": "Stock Alerts",
         "priceAlerts": "Price Alerts",
+        "whatsappNotifications": "WhatsApp Notifications",
         "percentageAlerts": "Percentage Alerts",
         "volumeAlerts": "Volume Alerts",
         "technicalIndicators": "Technical Indicators",
@@ -316,6 +317,7 @@
         "free": {
           "stockAlerts": "10",
           "priceAlerts": "Yes",
+          "whatsappNotifications": "No",
           "percentageAlerts": "No",
           "volumeAlerts": "No",
           "technicalIndicators": "No",
@@ -329,6 +331,7 @@
         "premium": {
           "stockAlerts": "Unlimited",
           "priceAlerts": "Yes",
+          "whatsappNotifications": "Yes",
           "percentageAlerts": "Yes",
           "volumeAlerts": "Yes",
           "technicalIndicators": "No",
@@ -342,6 +345,7 @@
         "pro": {
           "stockAlerts": "Unlimited",
           "priceAlerts": "Yes",
+          "whatsappNotifications": "Yes",
           "percentageAlerts": "Yes",
           "volumeAlerts": "Yes",
           "technicalIndicators": "Yes",

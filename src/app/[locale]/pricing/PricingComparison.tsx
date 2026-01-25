@@ -13,6 +13,7 @@ export function PricingComparison() {
   const features = [
     "stockAlerts",
     "priceAlerts",
+    "whatsappNotifications",
     "percentageAlerts",
     "volumeAlerts",
     "technicalIndicators",
