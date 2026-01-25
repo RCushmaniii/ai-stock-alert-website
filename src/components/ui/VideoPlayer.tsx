@@ -144,8 +144,8 @@ export function VideoPlayer({ url, thumbnail, className = "" }: VideoPlayerProps
 
         {/* Play button overlay - show when not playing */}
         {!isPlaying && (
-          <div className="absolute inset-0 flex items-center justify-center bg-black/30 transition-opacity group-hover:bg-black/40">
-            <div className="w-20 h-20 rounded-full bg-primary flex items-center justify-center shadow-lg transition-transform group-hover:scale-110">
+          <div className="absolute inset-0 flex items-center justify-center bg-black/30 transition-opacity group-hover:bg-black/40 pointer-events-none">
+            <div className="w-20 h-20 rounded-full bg-primary flex items-center justify-center shadow-lg transition-transform group-hover:scale-110 pointer-events-auto">
               <Play className="w-8 h-8 text-primary-foreground ml-1" fill="currentColor" />
             </div>
           </div>
@@ -189,7 +189,7 @@ export function VideoPlayer({ url, thumbnail, className = "" }: VideoPlayerProps
         {!hasStarted && (
           <button
             onClick={handleFullscreen}
-            className="absolute bottom-4 right-4 p-2 rounded-lg bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70"
+            className="absolute bottom-4 right-4 z-10 p-2 rounded-lg bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70"
             aria-label="Open fullscreen"
           >
             <Maximize2 className="w-5 h-5" />
