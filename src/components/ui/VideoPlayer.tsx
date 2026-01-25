@@ -13,35 +13,59 @@ export function VideoPlayer({ url, thumbnail, className = "" }: VideoPlayerProps
   const [isPlaying, setIsPlaying] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
-  const [showControls, setShowControls] = useState(false);
+  const [showControls, setShowControls] = useState(true);
+  const [hasStarted, setHasStarted] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const fullscreenVideoRef = useRef<HTMLVideoElement>(null);
   const controlsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const handlePlay = () => {
-    setIsPlaying(true);
     if (videoRef.current) {
-      videoRef.current.play();
+      videoRef.current.play().then(() => {
+        setIsPlaying(true);
+        setHasStarted(true);
+      }).catch((err) => {
+        console.error("Video play failed:", err);
+      });
     }
   };
 
   const handlePause = () => {
-    setIsPlaying(false);
     if (videoRef.current) {
       videoRef.current.pause();
+      setIsPlaying(false);
+    }
+  };
+
+  const togglePlayPause = () => {
+    if (isPlaying) {
+      handlePause();
+    } else {
+      handlePlay();
     }
   };
 
   const handleFullscreen = (e: React.MouseEvent) => {
     e.stopPropagation();
-    setIsFullscreen(true);
+    if (videoRef.current) {
+      const currentTime = videoRef.current.currentTime;
+      setIsFullscreen(true);
+      // Sync time to fullscreen video after render
+      setTimeout(() => {
+        if (fullscreenVideoRef.current) {
+          fullscreenVideoRef.current.currentTime = currentTime;
+          fullscreenVideoRef.current.play();
+        }
+      }, 100);
+    }
   };
 
   const handleCloseFullscreen = () => {
-    setIsFullscreen(false);
-    if (fullscreenVideoRef.current) {
-      fullscreenVideoRef.current.pause();
+    if (fullscreenVideoRef.current && videoRef.current) {
+      const currentTime = fullscreenVideoRef.current.currentTime;
+      videoRef.current.currentTime = currentTime;
     }
+    setIsFullscreen(false);
   };
 
   const toggleMute = (e: React.MouseEvent) => {
@@ -54,13 +78,14 @@ export function VideoPlayer({ url, thumbnail, className = "" }: VideoPlayerProps
     if (controlsTimeoutRef.current) {
       clearTimeout(controlsTimeoutRef.current);
     }
-    controlsTimeoutRef.current = setTimeout(() => {
-      if (isPlaying) {
+    if (isPlaying) {
+      controlsTimeoutRef.current = setTimeout(() => {
         setShowControls(false);
-      }
-    }, 2000);
+      }, 2000);
+    }
   };
 
+  // Sync muted state
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.muted = isMuted;
@@ -70,6 +95,7 @@ export function VideoPlayer({ url, thumbnail, className = "" }: VideoPlayerProps
     }
   }, [isMuted]);
 
+  // Cleanup timeout
   useEffect(() => {
     return () => {
       if (controlsTimeoutRef.current) {
@@ -89,67 +115,90 @@ export function VideoPlayer({ url, thumbnail, className = "" }: VideoPlayerProps
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isFullscreen]);
 
-  // Thumbnail view with play button
-  if (!isPlaying && !isFullscreen) {
-    return (
+  return (
+    <>
+      {/* Main player */}
       <div
         className={`relative group cursor-pointer ${className}`}
-        onClick={handlePlay}
+        onClick={togglePlayPause}
+        onMouseMove={handleMouseMove}
         onMouseEnter={() => setShowControls(true)}
-        onMouseLeave={() => setShowControls(false)}
+        onMouseLeave={() => isPlaying && setShowControls(false)}
       >
-        {/* Thumbnail - use first frame of video */}
-        {thumbnail ? (
-          <img
-            src={thumbnail}
-            alt="Video thumbnail"
-            className="w-full h-full object-cover"
-          />
-        ) : (
-          <video
-            src={url}
-            className="w-full h-full object-cover"
-            muted
-            playsInline
-            preload="metadata"
-          />
+        {/* Video element - always present */}
+        <video
+          ref={videoRef}
+          src={url}
+          poster={thumbnail}
+          className="w-full h-full object-cover"
+          muted={isMuted}
+          playsInline
+          preload="auto"
+          onEnded={() => {
+            setIsPlaying(false);
+            setHasStarted(false);
+          }}
+          onPlay={() => setIsPlaying(true)}
+          onPause={() => setIsPlaying(false)}
+        />
+
+        {/* Play button overlay - show when not playing */}
+        {!isPlaying && (
+          <div className="absolute inset-0 flex items-center justify-center bg-black/30 transition-opacity group-hover:bg-black/40">
+            <div className="w-20 h-20 rounded-full bg-primary flex items-center justify-center shadow-lg transition-transform group-hover:scale-110">
+              <Play className="w-8 h-8 text-primary-foreground ml-1" fill="currentColor" />
+            </div>
+          </div>
         )}
 
-        {/* Play button overlay */}
-        <div className="absolute inset-0 flex items-center justify-center bg-black/30 transition-opacity group-hover:bg-black/40">
-          <div className="w-20 h-20 rounded-full bg-primary flex items-center justify-center shadow-lg transition-transform group-hover:scale-110">
-            <Play className="w-8 h-8 text-primary-foreground ml-1" fill="currentColor" />
-          </div>
-        </div>
+        {/* Controls overlay - show on hover or when paused */}
+        {hasStarted && (showControls || !isPlaying) && (
+          <>
+            {/* Center play/pause */}
+            {isPlaying && (
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="w-16 h-16 rounded-full bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity pointer-events-auto">
+                  <Pause className="w-6 h-6 text-white" fill="currentColor" />
+                </div>
+              </div>
+            )}
 
-        {/* Fullscreen button */}
-        <button
-          onClick={handleFullscreen}
-          className="absolute bottom-4 right-4 p-2 rounded-lg bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70"
-          aria-label="Open fullscreen"
-        >
-          <Maximize2 className="w-5 h-5" />
-        </button>
+            {/* Bottom controls */}
+            <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
+              <div className="flex items-center justify-end gap-2">
+                <button
+                  onClick={toggleMute}
+                  className="p-2 rounded-lg bg-black/50 text-white hover:bg-black/70 transition-colors"
+                  aria-label={isMuted ? "Unmute" : "Mute"}
+                >
+                  {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
+                </button>
+                <button
+                  onClick={handleFullscreen}
+                  className="p-2 rounded-lg bg-black/50 text-white hover:bg-black/70 transition-colors"
+                  aria-label="Fullscreen"
+                >
+                  <Maximize2 className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+          </>
+        )}
+
+        {/* Fullscreen button on thumbnail (before first play) */}
+        {!hasStarted && (
+          <button
+            onClick={handleFullscreen}
+            className="absolute bottom-4 right-4 p-2 rounded-lg bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70"
+            aria-label="Open fullscreen"
+          >
+            <Maximize2 className="w-5 h-5" />
+          </button>
+        )}
       </div>
-    );
-  }
 
-  // Fullscreen modal
-  if (isFullscreen) {
-    return (
-      <>
-        {/* Placeholder to maintain layout */}
-        <div className={className}>
-          <video
-            src={url}
-            className="w-full h-full object-cover"
-            muted
-            playsInline
-            preload="metadata"
-          />
-        </div>
-
-        {/* Fullscreen overlay */}
+      {/* Fullscreen modal */}
+      {isFullscreen && (
         <div
           className="fixed inset-0 z-50 bg-black flex items-center justify-center"
           onClick={handleCloseFullscreen}
@@ -175,70 +224,7 @@ export function VideoPlayer({ url, thumbnail, className = "" }: VideoPlayerProps
             />
           </div>
         </div>
-      </>
-    );
-  }
-
-  // Inline player view (playing)
-  return (
-    <div
-      className={`relative ${className}`}
-      onMouseMove={handleMouseMove}
-      onMouseEnter={() => setShowControls(true)}
-      onMouseLeave={() => !isPlaying && setShowControls(false)}
-    >
-      <video
-        ref={videoRef}
-        src={url}
-        className="w-full h-full object-cover"
-        muted={isMuted}
-        playsInline
-        onEnded={() => setIsPlaying(false)}
-        onClick={() => isPlaying ? handlePause() : handlePlay()}
-      />
-
-      {/* Controls overlay */}
-      <div
-        className={`absolute inset-0 flex items-center justify-center transition-opacity ${
-          showControls || !isPlaying ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        {/* Center play/pause button */}
-        <button
-          onClick={() => isPlaying ? handlePause() : handlePlay()}
-          className="w-16 h-16 rounded-full bg-black/50 flex items-center justify-center text-white hover:bg-black/70 transition-colors"
-        >
-          {isPlaying ? (
-            <Pause className="w-6 h-6" fill="currentColor" />
-          ) : (
-            <Play className="w-6 h-6 ml-1" fill="currentColor" />
-          )}
-        </button>
-      </div>
-
-      {/* Bottom controls */}
-      <div
-        className={`absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent transition-opacity ${
-          showControls || !isPlaying ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        <div className="flex items-center justify-end gap-2">
-          <button
-            onClick={toggleMute}
-            className="p-2 rounded-lg bg-black/50 text-white hover:bg-black/70 transition-colors"
-            aria-label={isMuted ? "Unmute" : "Mute"}
-          >
-            {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
-          </button>
-          <button
-            onClick={handleFullscreen}
-            className="p-2 rounded-lg bg-black/50 text-white hover:bg-black/70 transition-colors"
-            aria-label="Fullscreen"
-          >
-            <Maximize2 className="w-5 h-5" />
-          </button>
-        </div>
-      </div>
-    </div>
+      )}
+    </>
   );
 }
