@@ -4,7 +4,7 @@ test.describe("Navigation", () => {
   test("homepage loads and displays hero section", async ({ page }) => {
     await page.goto("/en");
 
-    await expect(page.locator("h1")).toContainText("Market Move");
+    await expect(page.locator("h1")).toContainText("Stock alerts");
     await expect(page.getByRole("link", { name: /download/i }).first()).toBeVisible();
   });
 

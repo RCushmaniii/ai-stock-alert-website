@@ -30,6 +30,10 @@ export const routing = defineRouting({
       en: "/privacy",
       es: "/privacidad",
     },
+    "/setup": {
+      en: "/setup",
+      es: "/configuracion",
+    },
   },
 });
 

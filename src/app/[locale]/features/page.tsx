@@ -30,7 +30,7 @@ export default async function FeaturesPage({
   return (
     <>
       <FeaturesHero />
-      <section className="py-20 md:py-32" style={{ backgroundColor: '#121212' }}>
+      <section className="py-20 md:py-32 bg-card">
         <Container>
           <FeaturesGrid />
         </Container>

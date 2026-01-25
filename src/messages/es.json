@@ -1,183 +1,282 @@
 {
   "common": {
-    "appName": "StockAlert",
+    "appName": "AI StockAlert",
     "getStarted": "Comenzar",
-    "learnMore": "Saber Mas",
+    "learnMore": "Saber Más",
     "download": "Descargar",
     "downloadNow": "Descargar Ahora",
     "viewPricing": "Ver Precios",
-    "contactUs": "Contactanos",
+    "contactUs": "Contáctanos",
     "freeDownload": "Descarga Gratuita",
-    "startFreeTrial": "Iniciar Prueba Gratuita"
+    "startFreeTrial": "Iniciar Prueba Gratuita",
+    "downloadForWindows": "Descargar para Windows"
   },
   "notFound": {
-    "title": "Pagina No Encontrada",
-    "description": "La pagina que buscas no existe o ha sido movida.",
+    "title": "Página No Encontrada",
+    "description": "La página que buscas no existe o ha sido movida.",
     "homeButton": "Volver al Inicio",
     "contactButton": "Contactar Soporte"
   },
   "nav": {
     "home": "Inicio",
-    "features": "Caracteristicas",
+    "features": "Características",
+    "setup": "Guía de Configuración",
     "download": "Descargar",
     "pricing": "Precios",
     "contact": "Contacto"
   },
   "footer": {
-    "description": "Alertas de acciones via Windows, WhatsApp y Email. Monitoreo 24/7 para Windows.",
+    "description": "Alertas de acciones por WhatsApp en inglés y español para Windows. Trae tu propia clave de API de Finnhub.",
     "product": "Producto",
     "company": "Empresa",
     "legal": "Legal",
     "about": "Acerca de",
     "blog": "Blog",
-    "privacy": "Politica de Privacidad",
-    "terms": "Terminos de Servicio",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
     "copyright": "Todos los derechos reservados."
   },
   "home": {
     "hero": {
-      "title": "Nunca Pierdas un",
-      "titleHighlight": "Movimiento del Mercado",
-      "titleEnd": "Jamas",
-      "subtitle": "Alertas de acciones en tiempo real via Windows, WhatsApp y Email. Configura tus precios objetivo. Recibe notificaciones al instante.",
-      "cta": "Comenzar Monitoreo Gratis",
-      "ctaSecondary": "Ver Caracteristicas"
+      "title": "Alertas de acciones que te llegan por",
+      "titleHighlight": "WhatsApp",
+      "titleEnd": "",
+      "subtitle": "Configura tus disparadores de precio y recibe notificaciones al instante—en español o inglés. Sin necesidad de mirar gráficos.",
+      "cta": "Descargar para Windows",
+      "ctaSecondary": "Ver Cómo Funciona",
+      "trustLine": "Usa un modelo Trae Tu Propia Clave: conecta tu clave gratuita de Finnhub en segundos."
+    },
+    "why": {
+      "title": "Deja de actualizar gráficos.",
+      "titleHighlight": "Comienza a recibir señales.",
+      "subtitle": "Los mercados se mueven rápido. No quieres otro panel—quieres el momento que importa entregado a ti.",
+      "rules": {
+        "title": "Tus reglas",
+        "description": "Elige umbrales altos/bajos por acción"
+      },
+      "language": {
+        "title": "Tu idioma",
+        "description": "Inglés o español"
+      },
+      "channel": {
+        "title": "Tu canal",
+        "description": "Notificaciones de WhatsApp que realmente ves"
+      }
     },
     "features": {
-      "title": "Funciones Potentes para",
-      "titleHighlight": "Trading Inteligente",
-      "multiChannelAlerts": {
-        "title": "Alertas Multicanal",
-        "description": "Recibe notificaciones como prefieras - Windows, WhatsApp o email. Nunca pierdas un movimiento de precio."
+      "title": "Diseñado para la",
+      "titleHighlight": "Vida Real",
+      "whatsappFirst": {
+        "title": "Alertas WhatsApp Primero",
+        "description": "Porque el email no es urgente y las notificaciones push se ignoran."
       },
-      "backgroundMonitoring": {
-        "title": "Monitoreo 24/7 en Segundo Plano",
-        "description": "Funciona mientras duermes. Monitorea tus acciones las 24 horas, incluso cuando tu computadora esta apagada."
+      "bilingual": {
+        "title": "Experiencia Bilingüe (EN/ES)",
+        "description": "Alertas e interfaz claras sin jerga financiera."
       },
-      "companyIntelligence": {
-        "title": "Inteligencia de Empresas",
-        "description": "Logos de empresas, clasificacion industrial, insignias de capitalizacion y graficos TradingView con un clic."
+      "byoKey": {
+        "title": "Trae Tu Propia Clave API",
+        "description": "Conecta tu propia clave de Finnhub—mantienes el control y puedes usar el nivel gratuito."
       },
-      "liveNewsFeed": {
-        "title": "Noticias en Vivo",
-        "description": "Mantente informado con noticias del mercado de tu lista de seguimiento, cripto, forex y cobertura de fusiones."
+      "realLife": {
+        "title": "Hecho para la Vida Real",
+        "description": "Perfecto para inversores ocupados que no quieren mirar gráficos."
       }
     },
     "howItWorks": {
-      "title": "Como",
+      "title": "Cómo",
       "titleHighlight": "Funciona",
       "step1": {
-        "title": "Descarga e Instala",
-        "description": "Obtén StockAlert desde nuestro sitio web. La instalación toma menos de un minuto."
+        "title": "Elige una Acción",
+        "description": "Agrega los símbolos que te interesan."
       },
       "step2": {
-        "title": "Agrega tus Acciones",
-        "description": "Busca y agrega acciones a tu lista de seguimiento. Importa portafolios existentes fácilmente."
+        "title": "Configura tus Disparadores",
+        "description": "Elige un precio arriba/abajo que te importe."
       },
       "step3": {
-        "title": "Configura Alertas y Relájate",
-        "description": "Configura tus precios objetivo y condiciones de alerta. Te notificaremos al instante."
+        "title": "Recibe Notificaciones en WhatsApp",
+        "description": "Cuando se cumple la condición, enviamos la alerta—para que puedas actuar."
       }
     },
     "screenshots": {
-      "title": "Mira StockAlert en",
-      "titleHighlight": "Accion"
+      "title": "Mira AI StockAlert en",
+      "titleHighlight": "Acción"
     },
     "pricing": {
       "title": "Precios Simples y",
       "titleHighlight": "Transparentes",
-      "subtitle": "Comienza gratis y actualiza cuando necesites mas poder."
+      "subtitle": "Comienza gratis y actualiza cuando necesites más poder."
     },
     "cta": {
-      "title": "Listo para Tomar Control de tus",
-      "titleHighlight": "Inversiones",
-      "subtitle": "Los mercados se mueven rapido. Tus alertas tambien. Recibe notificaciones via WhatsApp o Email - donde sea, cuando sea.",
-      "button": "Comenzar Monitoreo Gratis"
+      "title": "¿Listo para dejar de revisar",
+      "titleHighlight": "precios todo el día",
+      "subtitle": "Descarga la app, conecta tu clave, y configura tu primera alerta en minutos.",
+      "button": "Descargar para Windows"
     }
   },
   "features": {
     "hero": {
-      "title": "Todo lo que Necesitas para",
-      "titleHighlight": "Trading Inteligente",
-      "subtitle": "Alertas multicanal, monitoreo en tiempo real e inteligencia de mercado - todo en una poderosa aplicacion."
+      "title": "Funciones diseñadas para",
+      "titleHighlight": "señal, no ruido",
+      "subtitle": "Todo está construido alrededor de un objetivo: entregar la señal de mercado correcta, en el momento correcto, en el lugar correcto."
     },
     "grid": {
-      "windowsAlerts": {
-        "title": "Notificaciones Windows",
-        "description": "Alertas de escritorio instantaneas con notificaciones de sonido. Recibe notificaciones en segundos, no minutos."
+      "priceAlerts": {
+        "title": "Alertas de Precio Personalizadas",
+        "description": "Configura alertas cuando el precio de una acción sube o baja de un nivel que elijas. Umbrales superiores e inferiores, fáciles de editar por símbolo."
       },
       "whatsappAlerts": {
-        "title": "Alertas WhatsApp",
-        "description": "Recibe notificaciones en tu telefono donde sea. Alertas moviles instantaneas sin una app separada."
-      },
-      "emailAlerts": {
-        "title": "Alertas por Email",
-        "description": "Alertas profesionales a tu bandeja de entrada. Perfecto para mantener registros de todos tus disparadores."
-      },
-      "realTimeMonitoring": {
-        "title": "Monitoreo en Tiempo Real",
-        "description": "Seguimiento de precios en vivo desde la API de Finnhub con intervalos configurables desde segundos hasta horas."
-      },
-      "companyProfiles": {
-        "title": "Inteligencia de Empresas",
-        "description": "Logos de empresas, clasificacion industrial, insignias de capitalizacion y graficos TradingView con un clic."
-      },
-      "newsFeed": {
-        "title": "Noticias en Vivo",
-        "description": "Noticias del mercado de tu lista de seguimiento mas categorias de General, Cripto, Forex y Fusiones."
-      },
-      "backgroundService": {
-        "title": "Servicio 24/7 en Segundo Plano",
-        "description": "Monitorea tus acciones las 24 horas, incluso cuando la app esta cerrada. No requiere permisos de administrador."
-      },
-      "marketHours": {
-        "title": "Horario de Mercado Inteligente",
-        "description": "Deteccion automatica de horarios de mercado. Sin alertas molestas a las 2am los fines de semana."
+        "title": "Notificaciones WhatsApp",
+        "description": "Los mensajes de WhatsApp son rápidos, personales y siempre visibles. Entrega instantánea con formato de alerta limpio y legible."
       },
       "bilingual": {
-        "title": "Soporte Bilingue",
-        "description": "Interfaces completas en ingles y espanol con cambio de idioma en tiempo de ejecucion."
+        "title": "Experiencia Bilingüe (EN/ES)",
+        "description": "Cambia entre inglés y español en cualquier momento. Las alertas e interfaz se mantienen simples, claras y consistentes."
+      },
+      "byoKey": {
+        "title": "Trae Tu Propia Clave API",
+        "description": "Conecta usando tu propia clave de API de Finnhub. Comienza con el nivel gratuito, actualiza solo si necesitas más. Tu clave permanece en tu dispositivo."
+      },
+      "lightweight": {
+        "title": "Ligero y Enfocado",
+        "description": "Sin desorden, sin distracciones. AI StockAlert está intencionalmente enfocado en alertas, no gráficos."
+      },
+      "comingSoon": {
+        "title": "Próximamente",
+        "description": "Opciones de respaldo por SMS y email están en la hoja de ruta para futuras versiones."
+      }
+    },
+    "details": {
+      "priceAlerts": {
+        "title": "Tus niveles de precio. Tu estrategia.",
+        "description": "Configura alertas cuando el precio de una acción sube o baja de un nivel que elijas.",
+        "features": ["Disparadores de precio superior", "Disparadores de precio inferior", "Fácil de editar y gestionar"],
+        "note": "Ideal para inversores a largo plazo, traders de swing, y cualquiera que quiera claridad en lugar de ruido."
+      },
+      "whatsapp": {
+        "title": "Alertas que no te perderás.",
+        "description": "Los mensajes de WhatsApp son rápidos, personales y siempre visibles.",
+        "features": ["Entrega instantánea", "Alertas limpias y legibles", "Diseñado para atención móvil"],
+        "note": "Notificaciones por SMS y email próximamente."
+      },
+      "bilingual": {
+        "title": "Los mercados son globales. Tus alertas también deberían serlo.",
+        "description": "Cambia entre inglés y español en cualquier momento.",
+        "features": ["Inglés + Español", "Redacción simple (sin jerga)", "Mejor accesibilidad para inversores globales"]
+      },
+      "byoKey": {
+        "title": "Tú mantienes el control.",
+        "description": "AI StockAlert se conecta usando tu propia clave de API de Finnhub.",
+        "whyTitle": "Por qué esto importa:",
+        "features": ["Comienza con el plan gratuito de Finnhub", "Actualiza solo si quieres más funciones", "Tu clave se almacena de forma segura en tu dispositivo"],
+        "note": "No vendemos datos de mercado—te ayudamos a usarlos mejor."
       }
     },
     "comparison": {
-      "title": "¿Por Que Elegir StockAlert?",
-      "feature": "Caracteristica",
-      "stockAlert": "StockAlert",
+      "title": "¿Por Qué Elegir AI StockAlert?",
+      "feature": "Característica",
+      "stockAlert": "AI StockAlert",
       "others": "Otros",
       "features": {
-        "multiChannelAlerts": "Alertas Multicanal",
-        "whatsappIntegration": "Integracion WhatsApp",
-        "backgroundMonitoring": "Monitoreo 24/7 en Segundo Plano",
-        "companyIntelligence": "Inteligencia de Empresas",
-        "liveNewsFeed": "Noticias en Vivo",
-        "noSubscription": "Sin Suscripcion Mensual"
+        "whatsappAlerts": "Alertas WhatsApp",
+        "bilingualSupport": "Bilingüe (EN/ES)",
+        "byoApiKey": "Trae Tu Propia Clave API",
+        "noDataFees": "Sin Tarifas Ocultas de Datos",
+        "localStorage": "Almacenamiento Local Seguro",
+        "noSubscription": "Sin Suscripción Mensual"
       }
     },
     "cta": {
-      "title": "¿Listo para Probar Estas Caracteristicas?",
-      "subtitle": "Descarga StockAlert gratis y comienza a monitorear tus acciones hoy.",
-      "button": "Comenzar Monitoreo Gratis"
+      "title": "Deja que el mercado venga a ti.",
+      "subtitle": "Descarga AI StockAlert y configura tu primera alerta en minutos.",
+      "button": "Descargar para Windows"
+    }
+  },
+  "setup": {
+    "hero": {
+      "title": "Cómo Obtener Tu",
+      "titleHighlight": "Clave API Gratuita",
+      "subtitle": "Guía paso a paso para conectar AI StockAlert con Finnhub."
+    },
+    "whatIs": {
+      "title": "¿Qué es una clave API?",
+      "description": "Una clave API es como una contraseña que permite a AI StockAlert solicitar precios de acciones de Finnhub."
+    },
+    "whyNeed": {
+      "title": "¿Por qué necesito una?",
+      "description": "AI StockAlert usa un modelo Trae Tu Propia Clave API. Esto significa que usualmente puedes usar el nivel gratuito de Finnhub, mantienes el control de tu uso de datos, y no hay tarifas ocultas de datos."
+    },
+    "isSafe": {
+      "title": "¿Es seguro?",
+      "description": "Sí. Tu clave API se almacena localmente en tu computadora, nunca se comparte ni vende, y solo se usa para solicitar datos de mercado de Finnhub."
+    },
+    "steps": {
+      "title": "Paso a paso: Obtén tu clave API gratuita de Finnhub",
+      "step1": {
+        "title": "Abre el panel de Finnhub",
+        "description": "Ve a finnhub.io/dashboard"
+      },
+      "step2": {
+        "title": "Crea una cuenta",
+        "description": "Si aún no tienes una, haz clic en Registrarse y completa el registro."
+      },
+      "step3": {
+        "title": "Encuentra tu clave API",
+        "description": "Una vez conectado, verás tu Clave API en el panel."
+      },
+      "step4": {
+        "title": "Copia la clave",
+        "description": "Haz clic en Copiar (o resáltala y presiona Ctrl+C)."
+      },
+      "step5": {
+        "title": "Pega la clave en AI StockAlert",
+        "description": "Abre AI StockAlert → Configuración → Datos de Mercado → Pega tu clave API → Probar Conexión → Guardar"
+      },
+      "step6": {
+        "title": "Confirma que funciona",
+        "description": "Si la prueba tiene éxito, estás listo para crear alertas."
+      }
+    },
+    "troubleshooting": {
+      "title": "Problemas Comunes",
+      "invalidKey": {
+        "title": "Clave API inválida",
+        "description": "Asegúrate de que la clave completa esté copiada correctamente sin espacios extra."
+      },
+      "rateLimit": {
+        "title": "Límite de solicitudes alcanzado",
+        "description": "Los planes gratuitos tienen límites. Reduce la velocidad de actualización o el número de acciones rastreadas."
+      },
+      "noData": {
+        "title": "No se muestran datos",
+        "description": "Verifica tu conexión a internet e intenta de nuevo. Algunas redes corporativas bloquean llamadas API."
+      }
+    },
+    "limits": {
+      "title": "Sobre los límites de claves gratuitas",
+      "description": "Las claves gratuitas de Finnhub tienen límites de solicitudes. Para la mayoría de las listas de seguimiento y alertas personales, el plan gratuito es suficiente. Si después quieres actualizaciones más rápidas o más símbolos, Finnhub ofrece planes de pago."
     }
   },
   "download": {
     "hero": {
       "title": "Descargar",
-      "titleHighlight": "StockAlert v3.0",
-      "subtitle": "Alertas multicanal via Windows, WhatsApp y Email. Monitoreo 24/7 en segundo plano."
+      "titleHighlight": "AI StockAlert",
+      "subtitle": "Alertas de acciones por WhatsApp en inglés y español. Trae tu propia clave de API de Finnhub."
     },
     "options": {
-      "title": "Descargar StockAlert",
+      "title": "Descargar AI StockAlert",
       "exe": {
         "badge": "Windows 10/11",
-        "title": "StockAlert v3.0 para Windows",
-        "description": "Instalador de un clic con servicio 24/7 en segundo plano. Recibe alertas via Windows, WhatsApp o Email - incluso cuando tu computadora esta apagada.",
-        "size": "Tamano: 22 MB",
+        "title": "AI StockAlert para Windows",
+        "description": "Instalador de un clic. Conecta tu clave de API de Finnhub y comienza a recibir alertas de WhatsApp en minutos.",
+        "size": "Tamaño: 22 MB",
         "button": "Descargar para Windows"
       }
     },
     "security": {
       "title": "Seguro y Protegido",
-      "subtitle": "Tu seguridad es nuestra prioridad. Tomamos todas las medidas para garantizar que StockAlert sea seguro de instalar y usar.",
+      "subtitle": "Tu seguridad es nuestra prioridad. Tomamos todas las medidas para garantizar que AI StockAlert sea seguro de instalar y usar.",
       "signed": {
         "title": "Firmado Digitalmente",
         "description": "Nuestro instalador está firmado con un certificado de firma de código verificado."
@@ -212,7 +311,7 @@
       },
       "step3": {
         "title": "Iniciar",
-        "description": "Abre StockAlert desde el menú Inicio o el acceso directo del escritorio."
+        "description": "Abre AI StockAlert desde el menú Inicio o el acceso directo del escritorio."
       },
       "step4": {
         "title": "Configurar",
@@ -222,12 +321,12 @@
     "faq": {
       "title": "Preguntas Frecuentes",
       "q1": {
-        "question": "¿StockAlert es realmente gratis?",
-        "answer": "¡Sí! La versión básica de StockAlert es completamente gratuita sin límites de tiempo. Las funciones premium están disponibles para usuarios avanzados que necesitan más."
+        "question": "¿AI StockAlert es realmente gratis?",
+        "answer": "¡Sí! La versión básica de AI StockAlert es completamente gratuita sin límites de tiempo. Las funciones premium están disponibles para usuarios avanzados que necesitan más."
       },
       "q2": {
         "question": "¿Funciona en Mac o Linux?",
-        "answer": "Actualmente, StockAlert solo está disponible para Windows. Las versiones para Mac y Linux están en nuestra hoja de ruta para desarrollo futuro."
+        "answer": "Actualmente, AI StockAlert solo está disponible para Windows. Las versiones para Mac y Linux están en nuestra hoja de ruta para desarrollo futuro."
       },
       "q3": {
         "question": "¿Con qué frecuencia se actualizan los datos del mercado?",
@@ -235,7 +334,7 @@
       },
       "q4": {
         "question": "¿Puedo usarlo con múltiples monitores?",
-        "answer": "¡Absolutamente! StockAlert está diseñado para funcionar perfectamente con configuraciones de múltiples monitores. Puedes posicionar alertas en cualquier pantalla."
+        "answer": "¡Absolutamente! AI StockAlert está diseñado para funcionar perfectamente con configuraciones de múltiples monitores. Puedes posicionar alertas en cualquier pantalla."
       }
     }
   },
@@ -388,7 +487,7 @@
       },
       "twitter": {
         "title": "Twitter",
-        "description": "@StockAlertApp",
+        "description": "@AIStockAlert",
         "subtitle": "Síguenos para actualizaciones y consejos"
       },
       "github": {
@@ -424,16 +523,16 @@
     "lastUpdated": "Última Actualización",
     "demoNotice": {
       "title": "Aviso de Proyecto de Demostración",
-      "content": "Este sitio web es un ejemplo de sitio de marketing SaaS creado solo con fines de demostración de portafolio. StockAlert no es un producto real. No hay software disponible para descargar y no se pueden procesar transacciones. Todas las características, precios y funcionalidades descritas son ficticias."
+      "content": "Este sitio web es un ejemplo de sitio de marketing SaaS creado solo con fines de demostración de portafolio. AI StockAlert no es un producto real. No hay software disponible para descargar y no se pueden procesar transacciones. Todas las características, precios y funcionalidades descritas son ficticias."
     },
     "sections": {
       "acceptance": {
         "title": "1. Aceptación de Términos",
-        "content": "Al descargar, instalar o usar StockAlert, aceptas estar sujeto a estos Términos de Servicio. Si no estás de acuerdo con estos términos, no uses el software."
+        "content": "Al descargar, instalar o usar AI StockAlert, aceptas estar sujeto a estos Términos de Servicio. Si no estás de acuerdo con estos términos, no uses el software."
       },
       "license": {
         "title": "2. Concesión de Licencia",
-        "content": "StockAlert te otorga una licencia limitada, no exclusiva e intransferible para usar el software con fines personales o comerciales de acuerdo con estos términos. La versión gratuita puede usarse indefinidamente. Las versiones Premium y Pro requieren una compra de licencia válida."
+        "content": "AI StockAlert te otorga una licencia limitada, no exclusiva e intransferible para usar el software con fines personales o comerciales de acuerdo con estos términos. La versión gratuita puede usarse indefinidamente. Las versiones Premium y Pro requieren una compra de licencia válida."
       },
       "restrictions": {
         "title": "3. Restricciones",
@@ -447,23 +546,23 @@
       },
       "disclaimer": {
         "title": "4. Descargo de Garantías",
-        "content": "StockAlert se proporciona \"tal cual\" sin garantía de ningún tipo. No garantizamos la precisión, integridad o puntualidad de los datos del mercado. Los precios de acciones y alertas son solo para fines informativos y no deben considerarse asesoramiento financiero."
+        "content": "AI StockAlert se proporciona \"tal cual\" sin garantía de ningún tipo. No garantizamos la precisión, integridad o puntualidad de los datos del mercado. Los precios de acciones y alertas son solo para fines informativos y no deben considerarse asesoramiento financiero."
       },
       "limitation": {
         "title": "5. Limitación de Responsabilidad",
-        "content": "En ningún caso StockAlert o sus desarrolladores serán responsables de daños indirectos, incidentales, especiales, consecuentes o punitivos, incluyendo pérdida de ganancias, pérdida de datos o interrupción del negocio, derivados del uso del software."
+        "content": "En ningún caso AI StockAlert o sus desarrolladores serán responsables de daños indirectos, incidentales, especiales, consecuentes o punitivos, incluyendo pérdida de ganancias, pérdida de datos o interrupción del negocio, derivados del uso del software."
       },
       "thirdParty": {
         "title": "6. Servicios de Terceros",
-        "content": "StockAlert se integra con proveedores de datos de mercado de terceros. Tu uso de dichos servicios está sujeto a sus respectivos términos y condiciones. No somos responsables de la disponibilidad o precisión de los datos de terceros."
+        "content": "AI StockAlert se integra con proveedores de datos de mercado de terceros. Tu uso de dichos servicios está sujeto a sus respectivos términos y condiciones. No somos responsables de la disponibilidad o precisión de los datos de terceros."
       },
       "termination": {
         "title": "7. Terminación",
-        "content": "Nos reservamos el derecho de terminar o suspender tu acceso a StockAlert en cualquier momento, sin previo aviso, por conducta que consideremos viola estos términos o es perjudicial para otros usuarios o el servicio."
+        "content": "Nos reservamos el derecho de terminar o suspender tu acceso a AI StockAlert en cualquier momento, sin previo aviso, por conducta que consideremos viola estos términos o es perjudicial para otros usuarios o el servicio."
       },
       "changes": {
         "title": "8. Cambios en los Términos",
-        "content": "Podemos actualizar estos términos de vez en cuando. El uso continuado de StockAlert después de los cambios constituye la aceptación de los nuevos términos. Notificaremos a los usuarios sobre cambios significativos a través de la aplicación o nuestro sitio web."
+        "content": "Podemos actualizar estos términos de vez en cuando. El uso continuado de AI StockAlert después de los cambios constituye la aceptación de los nuevos términos. Notificaremos a los usuarios sobre cambios significativos a través de la aplicación o nuestro sitio web."
       },
       "contact": {
         "title": "9. Contacto",
@@ -477,7 +576,7 @@
     "sections": {
       "overview": {
         "title": "1. Resumen",
-        "content": "StockAlert está comprometido a proteger tu privacidad. Esta política explica qué información recopilamos, cómo la usamos y tus derechos sobre tus datos. Creemos en la transparencia y la recopilación mínima de datos."
+        "content": "AI StockAlert está comprometido a proteger tu privacidad. Esta política explica qué información recopilamos, cómo la usamos y tus derechos sobre tus datos. Creemos en la transparencia y la recopilación mínima de datos."
       },
       "collection": {
         "title": "2. Información que Recopilamos",
@@ -504,7 +603,7 @@
       },
       "thirdParty": {
         "title": "5. Servicios de Terceros",
-        "content": "StockAlert utiliza APIs de terceros para obtener datos de mercado en tiempo real. Estos proveedores tienen sus propias políticas de privacidad. No compartimos información personal con estos proveedores; solo se realizan solicitudes anónimas de datos de mercado."
+        "content": "AI StockAlert utiliza APIs de terceros para obtener datos de mercado en tiempo real. Estos proveedores tienen sus propias políticas de privacidad. No compartimos información personal con estos proveedores; solo se realizan solicitudes anónimas de datos de mercado."
       },
       "security": {
         "title": "6. Seguridad de Datos",
@@ -512,11 +611,11 @@
       },
       "children": {
         "title": "7. Privacidad de Menores",
-        "content": "StockAlert no está destinado para uso de menores de 18 años. No recopilamos información de menores conscientemente. Si crees que un menor nos ha proporcionado información, contáctanos inmediatamente."
+        "content": "AI StockAlert no está destinado para uso de menores de 18 años. No recopilamos información de menores conscientemente. Si crees que un menor nos ha proporcionado información, contáctanos inmediatamente."
       },
       "changes": {
         "title": "8. Cambios a Esta Política",
-        "content": "Podemos actualizar esta política de privacidad de vez en cuando. Notificaremos a los usuarios sobre cualquier cambio material a través de la aplicación o nuestro sitio web. Tu uso continuado de StockAlert después de los cambios constituye la aceptación."
+        "content": "Podemos actualizar esta política de privacidad de vez en cuando. Notificaremos a los usuarios sobre cualquier cambio material a través de la aplicación o nuestro sitio web. Tu uso continuado de AI StockAlert después de los cambios constituye la aceptación."
       },
       "contact": {
         "title": "9. Contáctanos",
