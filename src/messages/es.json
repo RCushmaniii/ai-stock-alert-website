@@ -18,7 +18,7 @@
     "contact": "Contacto"
   },
   "footer": {
-    "description": "Alertas de acciones en tiempo real y monitoreo del mercado para Windows. Nunca pierdas una oportunidad de trading.",
+    "description": "Alertas de acciones via Windows, WhatsApp, SMS y Email. Monitoreo 24/7 para Windows.",
     "product": "Producto",
     "company": "Empresa",
     "legal": "Legal",
@@ -30,31 +30,31 @@
   },
   "home": {
     "hero": {
-      "title": "Nunca Pierdas una",
-      "titleHighlight": "Alerta de Acciones",
+      "title": "Nunca Pierdas un",
+      "titleHighlight": "Movimiento del Mercado",
       "titleEnd": "Jamas",
-      "subtitle": "Alertas de precios en tiempo real, disparadores personalizados y monitoreo del mercado directamente en tu escritorio Windows. Mantente adelante del mercado con notificaciones instantaneas.",
-      "cta": "Descargar Gratis",
+      "subtitle": "Alertas de acciones en tiempo real via Windows, WhatsApp, SMS y Email. Configura tus precios objetivo. Recibe notificaciones al instante.",
+      "cta": "Comenzar Monitoreo Gratis",
       "ctaSecondary": "Ver Caracteristicas"
     },
     "features": {
       "title": "Funciones Potentes para",
       "titleHighlight": "Trading Inteligente",
-      "realTimeAlerts": {
-        "title": "Alertas en Tiempo Real",
-        "description": "Recibe notificaciones instantaneas cuando las acciones alcancen tus precios objetivo. Nunca pierdas una oportunidad."
+      "multiChannelAlerts": {
+        "title": "Alertas Multicanal",
+        "description": "Recibe notificaciones como prefieras - Windows, WhatsApp, SMS o email. Nunca pierdas un movimiento de precio."
       },
-      "customTriggers": {
-        "title": "Disparadores Personalizados",
-        "description": "Crea condiciones de alerta complejas basadas en precio, volumen, cambios porcentuales e indicadores tecnicos."
+      "backgroundMonitoring": {
+        "title": "Monitoreo 24/7 en Segundo Plano",
+        "description": "Funciona mientras duermes. Monitorea tus acciones las 24 horas, incluso cuando tu computadora esta apagada."
       },
-      "multipleStocks": {
-        "title": "Rastrea Acciones Ilimitadas",
-        "description": "Monitorea todo tu portafolio y lista de seguimiento simultaneamente sin limitaciones."
+      "companyIntelligence": {
+        "title": "Inteligencia de Empresas",
+        "description": "Logos de empresas, clasificacion industrial, insignias de capitalizacion y graficos TradingView con un clic."
       },
-      "desktopNotifications": {
-        "title": "Notificaciones de Escritorio",
-        "description": "Recibe alertas directamente en tu escritorio Windows, incluso cuando la app esta minimizada."
+      "liveNewsFeed": {
+        "title": "Noticias en Vivo",
+        "description": "Mantente informado con noticias del mercado de tu lista de seguimiento, cripto, forex y cobertura de fusiones."
       }
     },
     "howItWorks": {
@@ -85,83 +85,91 @@
     "cta": {
       "title": "Listo para Tomar Control de tus",
       "titleHighlight": "Inversiones",
-      "subtitle": "Únete a miles de traders que nunca pierden una oportunidad con StockAlert.",
-      "button": "Descargar Ahora - Es Gratis"
+      "subtitle": "Los mercados se mueven rapido. Tus alertas tambien. Recibe notificaciones via WhatsApp, SMS o Email - donde sea, cuando sea.",
+      "button": "Comenzar Monitoreo Gratis"
     }
   },
   "features": {
     "hero": {
       "title": "Todo lo que Necesitas para",
-      "titleHighlight": "Alertas Inteligentes",
-      "subtitle": "Herramientas completas para monitorear el mercado y nunca perder una oportunidad."
+      "titleHighlight": "Trading Inteligente",
+      "subtitle": "Alertas multicanal, monitoreo en tiempo real e inteligencia de mercado - todo en una poderosa aplicacion."
     },
     "grid": {
-      "priceAlerts": {
-        "title": "Alertas de Precio",
-        "description": "Configura alertas cuando las acciones alcancen precios específicos. Soporte para umbrales superiores e inferiores."
+      "windowsAlerts": {
+        "title": "Notificaciones Windows",
+        "description": "Alertas de escritorio instantaneas con notificaciones de sonido. Recibe notificaciones en segundos, no minutos."
       },
-      "percentageAlerts": {
-        "title": "Alertas de Cambio Porcentual",
-        "description": "Recibe notificaciones cuando las acciones se muevan un cierto porcentaje en cualquier dirección."
+      "whatsappAlerts": {
+        "title": "Alertas WhatsApp",
+        "description": "Recibe notificaciones en tu telefono donde sea. Alertas moviles instantaneas sin una app separada."
       },
-      "volumeAlerts": {
-        "title": "Alertas de Volumen",
-        "description": "Monitorea volumen de trading inusual que podría indicar movimientos significativos del mercado."
+      "smsAlerts": {
+        "title": "Alertas SMS",
+        "description": "Nunca pierdas un movimiento, incluso sin internet. Alertas entregadas directamente a tu telefono."
       },
-      "technicalIndicators": {
-        "title": "Indicadores Técnicos",
-        "description": "Crea alertas basadas en RSI, MACD, medias móviles y otros indicadores populares."
+      "emailAlerts": {
+        "title": "Alertas por Email",
+        "description": "Alertas profesionales a tu bandeja de entrada. Perfecto para mantener registros de todos tus disparadores."
       },
-      "portfolioTracking": {
-        "title": "Seguimiento de Portafolio",
-        "description": "Importa y rastrea todo tu portafolio con actualizaciones de valor en tiempo real."
+      "realTimeMonitoring": {
+        "title": "Monitoreo en Tiempo Real",
+        "description": "Seguimiento de precios en vivo desde la API de Finnhub con intervalos configurables desde segundos hasta horas."
       },
-      "watchlists": {
-        "title": "Múltiples Listas de Seguimiento",
-        "description": "Organiza acciones en listas personalizadas para diferentes estrategias o sectores."
+      "companyProfiles": {
+        "title": "Inteligencia de Empresas",
+        "description": "Logos de empresas, clasificacion industrial, insignias de capitalizacion y graficos TradingView con un clic."
       },
-      "notifications": {
-        "title": "Notificaciones Flexibles",
-        "description": "Elige cómo quieres ser alertado: notificaciones de escritorio, sonidos o email."
+      "newsFeed": {
+        "title": "Noticias en Vivo",
+        "description": "Noticias del mercado de tu lista de seguimiento mas categorias de General, Cripto, Forex y Fusiones."
       },
-      "marketData": {
-        "title": "Datos de Mercado en Tiempo Real",
-        "description": "Accede a datos de mercado en vivo con retraso mínimo para toma de decisiones precisa."
+      "backgroundService": {
+        "title": "Servicio 24/7 en Segundo Plano",
+        "description": "Monitorea tus acciones las 24 horas, incluso cuando la app esta cerrada. No requiere permisos de administrador."
+      },
+      "marketHours": {
+        "title": "Horario de Mercado Inteligente",
+        "description": "Deteccion automatica de horarios de mercado. Sin alertas molestas a las 2am los fines de semana."
+      },
+      "bilingual": {
+        "title": "Soporte Bilingue",
+        "description": "Interfaces completas en ingles y espanol con cambio de idioma en tiempo de ejecucion."
       }
     },
     "comparison": {
-      "title": "¿Por Qué Elegir StockAlert?",
-      "feature": "Característica",
+      "title": "¿Por Que Elegir StockAlert?",
+      "feature": "Caracteristica",
       "stockAlert": "StockAlert",
       "others": "Otros",
       "features": {
-        "realTimeAlerts": "Alertas en Tiempo Real",
-        "unlimitedStocks": "Acciones Ilimitadas",
-        "customIndicators": "Indicadores Personalizados",
-        "desktopApp": "App de Escritorio Nativa",
-        "offlineMode": "Modo Sin Conexión",
-        "noSubscription": "Sin Suscripción Mensual"
+        "multiChannelAlerts": "Alertas Multicanal",
+        "whatsappIntegration": "Integracion WhatsApp",
+        "backgroundMonitoring": "Monitoreo 24/7 en Segundo Plano",
+        "companyIntelligence": "Inteligencia de Empresas",
+        "liveNewsFeed": "Noticias en Vivo",
+        "noSubscription": "Sin Suscripcion Mensual"
       }
     },
     "cta": {
-      "title": "¿Listo para Probar Estas Características?",
-      "subtitle": "Descarga StockAlert gratis y experimenta la diferencia.",
-      "button": "Descargar Gratis"
+      "title": "¿Listo para Probar Estas Caracteristicas?",
+      "subtitle": "Descarga StockAlert gratis y comienza a monitorear tus acciones hoy.",
+      "button": "Comenzar Monitoreo Gratis"
     }
   },
   "download": {
     "hero": {
       "title": "Descargar",
-      "titleHighlight": "StockAlert",
-      "subtitle": "Comienza en minutos con nuestra aplicación de Windows fácil de instalar."
+      "titleHighlight": "StockAlert v3.0",
+      "subtitle": "Alertas multicanal via Windows, WhatsApp, SMS y Email. Monitoreo 24/7 en segundo plano."
     },
     "options": {
       "title": "Descargar StockAlert",
       "exe": {
         "badge": "Windows 10/11",
-        "title": "StockAlert para Windows",
-        "description": "Instalador de un clic con actualizaciones automáticas. Incluye servicio en segundo plano para alertas en tiempo real incluso minimizado.",
-        "size": "Tamaño: 18 MB",
+        "title": "StockAlert v3.0 para Windows",
+        "description": "Instalador de un clic con servicio 24/7 en segundo plano. Recibe alertas via Windows, WhatsApp, SMS o Email - incluso cuando tu computadora esta apagada.",
+        "size": "Tamano: 22 MB",
         "button": "Descargar para Windows"
       }
     },

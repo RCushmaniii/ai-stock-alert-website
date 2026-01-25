@@ -9,29 +9,29 @@ export function ComparisonTable() {
   const t = useTranslations("features.comparison");
 
   const features = [
-    "realTimeAlerts",
-    "unlimitedStocks",
-    "customIndicators",
-    "desktopApp",
-    "offlineMode",
+    "multiChannelAlerts",
+    "whatsappIntegration",
+    "backgroundMonitoring",
+    "companyIntelligence",
+    "liveNewsFeed",
     "noSubscription",
   ] as const;
 
   const stockAlertValues: Record<string, boolean> = {
-    realTimeAlerts: true,
-    unlimitedStocks: true,
-    customIndicators: true,
-    desktopApp: true,
-    offlineMode: true,
+    multiChannelAlerts: true,
+    whatsappIntegration: true,
+    backgroundMonitoring: true,
+    companyIntelligence: true,
+    liveNewsFeed: true,
     noSubscription: true,
   };
 
   const othersValues: Record<string, boolean> = {
-    realTimeAlerts: true,
-    unlimitedStocks: false,
-    customIndicators: false,
-    desktopApp: false,
-    offlineMode: false,
+    multiChannelAlerts: false,
+    whatsappIntegration: false,
+    backgroundMonitoring: false,
+    companyIntelligence: false,
+    liveNewsFeed: false,
     noSubscription: false,
   };
 

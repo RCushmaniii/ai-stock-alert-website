@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Bell, Settings, BarChart3, Monitor, TrendingUp, Percent, Volume2, LineChart, Briefcase, List, BellRing, Wifi } from "lucide-react";
+import { Bell, MessageCircle, Smartphone, Mail, Activity, Building2, Newspaper, Clock, Globe, Monitor } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Card } from "@/components/ui/Card";
 import { AnimatedSection, StaggeredContainer, StaggeredItem } from "@/components/shared/AnimatedSection";
@@ -32,23 +32,23 @@ export function FeaturesSection() {
   const features = [
     {
       icon: <Bell className="w-6 h-6" />,
-      title: t("realTimeAlerts.title"),
-      description: t("realTimeAlerts.description"),
+      title: t("multiChannelAlerts.title"),
+      description: t("multiChannelAlerts.description"),
     },
     {
-      icon: <Settings className="w-6 h-6" />,
-      title: t("customTriggers.title"),
-      description: t("customTriggers.description"),
+      icon: <Clock className="w-6 h-6" />,
+      title: t("backgroundMonitoring.title"),
+      description: t("backgroundMonitoring.description"),
     },
     {
-      icon: <BarChart3 className="w-6 h-6" />,
-      title: t("multipleStocks.title"),
-      description: t("multipleStocks.description"),
+      icon: <Building2 className="w-6 h-6" />,
+      title: t("companyIntelligence.title"),
+      description: t("companyIntelligence.description"),
     },
     {
-      icon: <Monitor className="w-6 h-6" />,
-      title: t("desktopNotifications.title"),
-      description: t("desktopNotifications.description"),
+      icon: <Newspaper className="w-6 h-6" />,
+      title: t("liveNewsFeed.title"),
+      description: t("liveNewsFeed.description"),
     },
   ];
 
@@ -78,44 +78,54 @@ export function FeaturesGrid() {
 
   const features = [
     {
-      icon: <TrendingUp className="w-6 h-6" />,
-      title: t("priceAlerts.title"),
-      description: t("priceAlerts.description"),
+      icon: <Monitor className="w-6 h-6" />,
+      title: t("windowsAlerts.title"),
+      description: t("windowsAlerts.description"),
     },
     {
-      icon: <Percent className="w-6 h-6" />,
-      title: t("percentageAlerts.title"),
-      description: t("percentageAlerts.description"),
+      icon: <MessageCircle className="w-6 h-6" />,
+      title: t("whatsappAlerts.title"),
+      description: t("whatsappAlerts.description"),
     },
     {
-      icon: <Volume2 className="w-6 h-6" />,
-      title: t("volumeAlerts.title"),
-      description: t("volumeAlerts.description"),
+      icon: <Smartphone className="w-6 h-6" />,
+      title: t("smsAlerts.title"),
+      description: t("smsAlerts.description"),
     },
     {
-      icon: <LineChart className="w-6 h-6" />,
-      title: t("technicalIndicators.title"),
-      description: t("technicalIndicators.description"),
+      icon: <Mail className="w-6 h-6" />,
+      title: t("emailAlerts.title"),
+      description: t("emailAlerts.description"),
     },
     {
-      icon: <Briefcase className="w-6 h-6" />,
-      title: t("portfolioTracking.title"),
-      description: t("portfolioTracking.description"),
+      icon: <Activity className="w-6 h-6" />,
+      title: t("realTimeMonitoring.title"),
+      description: t("realTimeMonitoring.description"),
     },
     {
-      icon: <List className="w-6 h-6" />,
-      title: t("watchlists.title"),
-      description: t("watchlists.description"),
+      icon: <Building2 className="w-6 h-6" />,
+      title: t("companyProfiles.title"),
+      description: t("companyProfiles.description"),
     },
     {
-      icon: <BellRing className="w-6 h-6" />,
-      title: t("notifications.title"),
-      description: t("notifications.description"),
+      icon: <Newspaper className="w-6 h-6" />,
+      title: t("newsFeed.title"),
+      description: t("newsFeed.description"),
     },
     {
-      icon: <Wifi className="w-6 h-6" />,
-      title: t("marketData.title"),
-      description: t("marketData.description"),
+      icon: <Clock className="w-6 h-6" />,
+      title: t("backgroundService.title"),
+      description: t("backgroundService.description"),
+    },
+    {
+      icon: <Bell className="w-6 h-6" />,
+      title: t("marketHours.title"),
+      description: t("marketHours.description"),
+    },
+    {
+      icon: <Globe className="w-6 h-6" />,
+      title: t("bilingual.title"),
+      description: t("bilingual.description"),
     },
   ];
 

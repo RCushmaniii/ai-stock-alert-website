@@ -18,7 +18,7 @@
     "contact": "Contact"
   },
   "footer": {
-    "description": "Real-time stock alerts and market monitoring for Windows. Never miss a trading opportunity again.",
+    "description": "Real-time stock alerts via Windows, WhatsApp, SMS & Email. 24/7 monitoring for Windows.",
     "product": "Product",
     "company": "Company",
     "legal": "Legal",
@@ -31,30 +31,30 @@
   "home": {
     "hero": {
       "title": "Never Miss a",
-      "titleHighlight": "Stock Alert",
+      "titleHighlight": "Market Move",
       "titleEnd": "Again",
-      "subtitle": "Real-time price alerts, custom triggers, and market monitoring delivered straight to your Windows desktop. Stay ahead of the market with instant notifications.",
-      "cta": "Download Free",
+      "subtitle": "Real-time stock alerts via Windows, WhatsApp, SMS & Email. Set your price targets. Get notified instantly.",
+      "cta": "Start Monitoring Free",
       "ctaSecondary": "See Features"
     },
     "features": {
       "title": "Powerful Features for",
       "titleHighlight": "Smart Trading",
-      "realTimeAlerts": {
-        "title": "Real-Time Alerts",
-        "description": "Get instant notifications when stocks hit your target prices. Never miss a trading opportunity."
+      "multiChannelAlerts": {
+        "title": "Multi-Channel Alerts",
+        "description": "Get notified your way - Windows notifications, WhatsApp, SMS text, or email. Never miss a price move."
       },
-      "customTriggers": {
-        "title": "Custom Triggers",
-        "description": "Create complex alert conditions based on price, volume, percentage changes, and technical indicators."
+      "backgroundMonitoring": {
+        "title": "24/7 Background Monitoring",
+        "description": "Works while you sleep. Monitors your stocks around the clock, even when your computer is off."
       },
-      "multipleStocks": {
-        "title": "Track Unlimited Stocks",
-        "description": "Monitor your entire portfolio and watchlist simultaneously with no limitations."
+      "companyIntelligence": {
+        "title": "Company Intelligence",
+        "description": "Company logos, industry classification, market cap badges, and one-click TradingView charts."
       },
-      "desktopNotifications": {
-        "title": "Desktop Notifications",
-        "description": "Receive alerts directly on your Windows desktop, even when the app is minimized."
+      "liveNewsFeed": {
+        "title": "Live News Feed",
+        "description": "Stay informed with market news for your watchlist, crypto, forex, and M&A coverage."
       }
     },
     "howItWorks": {
@@ -85,48 +85,56 @@
     "cta": {
       "title": "Ready to Take Control of Your",
       "titleHighlight": "Investments",
-      "subtitle": "Join thousands of traders who never miss an opportunity with StockAlert.",
-      "button": "Download Now - It's Free"
+      "subtitle": "Markets move fast. Your alerts should too. Get notified via WhatsApp, SMS, or Email - anywhere, anytime.",
+      "button": "Start Monitoring Free"
     }
   },
   "features": {
     "hero": {
       "title": "Everything You Need for",
-      "titleHighlight": "Smart Alerts",
-      "subtitle": "Comprehensive tools to monitor the market and never miss an opportunity."
+      "titleHighlight": "Smart Trading",
+      "subtitle": "Multi-channel alerts, real-time monitoring, and market intelligence - all in one powerful app."
     },
     "grid": {
-      "priceAlerts": {
-        "title": "Price Alerts",
-        "description": "Set alerts for when stocks reach specific prices. Support for both above and below thresholds."
+      "windowsAlerts": {
+        "title": "Windows Notifications",
+        "description": "Instant desktop alerts with sound notifications. Get notified in seconds, not minutes."
       },
-      "percentageAlerts": {
-        "title": "Percentage Change Alerts",
-        "description": "Get notified when stocks move by a certain percentage in any direction."
+      "whatsappAlerts": {
+        "title": "WhatsApp Alerts",
+        "description": "Get notified on your phone anywhere. Instant mobile alerts without a separate app."
       },
-      "volumeAlerts": {
-        "title": "Volume Alerts",
-        "description": "Monitor unusual trading volume that might indicate significant market moves."
+      "smsAlerts": {
+        "title": "SMS Text Alerts",
+        "description": "Never miss a move, even without internet. Alerts delivered directly to your phone."
       },
-      "technicalIndicators": {
-        "title": "Technical Indicators",
-        "description": "Create alerts based on RSI, MACD, moving averages, and other popular indicators."
+      "emailAlerts": {
+        "title": "Email Alerts",
+        "description": "Professional alerts to your inbox. Perfect for keeping records of all your triggers."
       },
-      "portfolioTracking": {
-        "title": "Portfolio Tracking",
-        "description": "Import and track your entire portfolio with real-time value updates."
+      "realTimeMonitoring": {
+        "title": "Real-Time Monitoring",
+        "description": "Live price tracking from Finnhub API with configurable check intervals from seconds to hours."
       },
-      "watchlists": {
-        "title": "Multiple Watchlists",
-        "description": "Organize stocks into custom watchlists for different strategies or sectors."
+      "companyProfiles": {
+        "title": "Company Intelligence",
+        "description": "Company logos, industry classification, market cap badges, and one-click TradingView charts."
       },
-      "notifications": {
-        "title": "Flexible Notifications",
-        "description": "Choose how you want to be alerted: desktop notifications, sounds, or email."
+      "newsFeed": {
+        "title": "Live News Feed",
+        "description": "Market news for your watchlist plus General, Crypto, Forex, and M&A categories."
       },
-      "marketData": {
-        "title": "Real-Time Market Data",
-        "description": "Access live market data with minimal delay for accurate decision making."
+      "backgroundService": {
+        "title": "24/7 Background Service",
+        "description": "Monitors your stocks around the clock, even when the app is closed. No admin rights required."
+      },
+      "marketHours": {
+        "title": "Smart Market Hours",
+        "description": "Automatic market hours detection. No annoying alerts at 2am on weekends."
+      },
+      "bilingual": {
+        "title": "Bilingual Support",
+        "description": "Full English and Spanish interfaces with runtime language switching."
       }
     },
     "comparison": {
@@ -135,33 +143,33 @@
       "stockAlert": "StockAlert",
       "others": "Others",
       "features": {
-        "realTimeAlerts": "Real-Time Alerts",
-        "unlimitedStocks": "Unlimited Stocks",
-        "customIndicators": "Custom Indicators",
-        "desktopApp": "Native Desktop App",
-        "offlineMode": "Offline Mode",
+        "multiChannelAlerts": "Multi-Channel Alerts",
+        "whatsappIntegration": "WhatsApp Integration",
+        "backgroundMonitoring": "24/7 Background Monitoring",
+        "companyIntelligence": "Company Intelligence",
+        "liveNewsFeed": "Live News Feed",
         "noSubscription": "No Monthly Subscription"
       }
     },
     "cta": {
       "title": "Ready to Try These Features?",
-      "subtitle": "Download StockAlert free and experience the difference.",
-      "button": "Download Free"
+      "subtitle": "Download StockAlert free and start monitoring your stocks today.",
+      "button": "Start Monitoring Free"
     }
   },
   "download": {
     "hero": {
       "title": "Download",
-      "titleHighlight": "StockAlert",
-      "subtitle": "Get started in minutes with our easy-to-install Windows application."
+      "titleHighlight": "StockAlert v3.0",
+      "subtitle": "Multi-channel alerts via Windows, WhatsApp, SMS & Email. 24/7 background monitoring."
     },
     "options": {
       "title": "Download StockAlert",
       "exe": {
         "badge": "Windows 10/11",
-        "title": "StockAlert for Windows",
-        "description": "One-click installer with automatic updates. Includes background service for real-time alerts even when minimized.",
-        "size": "File size: 18 MB",
+        "title": "StockAlert v3.0 for Windows",
+        "description": "One-click installer with 24/7 background service. Get alerts via Windows, WhatsApp, SMS, or Email - even when your computer is off.",
+        "size": "File size: 22 MB",
         "button": "Download for Windows"
       }
     },
