@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { AnimatedSection } from "@/components/shared/AnimatedSection";
@@ -8,9 +9,9 @@ export function ScreenshotsSection() {
   const t = useTranslations("home.screenshots");
 
   const screenshots = [
-    { label: "Dashboard View", aspect: "16/10" },
-    { label: "Alert Settings", aspect: "16/10" },
-    { label: "Stock Details", aspect: "16/10" },
+    { label: "Dashboard View", aspect: "16/10", image: null },
+    { label: "Alert Settings", aspect: "16/10", image: "/images/whatsapp_alert.jpg" },
+    { label: "Stock Details", aspect: "16/10", image: null },
   ];
 
   return (
@@ -32,15 +33,25 @@ export function ScreenshotsSection() {
                   <div className="w-2.5 h-2.5 rounded-full bg-yellow-500" />
                   <div className="w-2.5 h-2.5 rounded-full bg-green-500" />
                 </div>
-                {/* Placeholder */}
+                {/* Screenshot or Placeholder */}
                 <div
-                  className="rounded-lg flex items-center justify-center bg-card"
+                  className="rounded-lg overflow-hidden flex items-center justify-center bg-card"
                   style={{ aspectRatio: screenshot.aspect }}
                 >
-                  <div className="text-center">
-                    <p className="text-sm text-muted-foreground">{screenshot.label}</p>
-                    <p className="text-xs mt-1 text-muted-foreground/70">Placeholder</p>
-                  </div>
+                  {screenshot.image ? (
+                    <Image
+                      src={screenshot.image}
+                      alt={screenshot.label}
+                      width={640}
+                      height={400}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="text-center">
+                      <p className="text-sm text-muted-foreground">{screenshot.label}</p>
+                      <p className="text-xs mt-1 text-muted-foreground/70">Placeholder</p>
+                    </div>
+                  )}
                 </div>
               </div>
             </AnimatedSection>
