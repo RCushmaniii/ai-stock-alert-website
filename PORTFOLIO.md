@@ -8,7 +8,15 @@ priority: 1
 title: "StockAlert Marketing Website"
 tagline: "Static marketing site with i18n, theming, and e2e tests"
 category: "Marketing Website"
-tech_stack: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS 4", "Playwright", "shadcn/ui"]
+tech_stack:
+  [
+    "Next.js 16",
+    "React 19",
+    "TypeScript",
+    "Tailwind CSS 4",
+    "Playwright",
+    "shadcn/ui",
+  ]
 thumbnail: "/portfolio/stockalert-thumbnail.png"
 status: "Production"
 
@@ -24,9 +32,9 @@ key_features:
   - "Sub-second page loads via static site generation"
 
 # Links
-demo_url: ""
+demo_url: "https://ai-stock-alert-website.netlify.app/"
 repo_url: "https://github.com/RCushmaniii/ai-stock-alert-website"
-live_url: ""
+live_url: "https://ai-stock-alert-website.netlify.app/"
 
 # Optional metrics
 metrics:
@@ -45,22 +53,26 @@ Production-ready marketing website for StockAlert, a Windows desktop application
 ## Technical Highlights
 
 **Frontend Architecture**
+
 - Next.js 16.1.4 with App Router and static site generation
 - React 19.2.3 with TypeScript strict mode
 - Tailwind CSS 4 with CSS custom properties for theming
 - shadcn/ui components built on Radix UI primitives
 
 **Internationalization**
+
 - next-intl for translations with 2 languages (English, Spanish)
 - Localized URL paths (/en/features → /es/caracteristicas)
 - Language switcher preserves page context
 
 **Quality Assurance**
+
 - 23 Playwright e2e tests covering navigation, i18n, theming, and responsive behavior
 - Desktop and mobile viewport testing (iPhone 14)
 - ESLint with Next.js recommended configuration
 
 **Deployment**
+
 - Netlify configuration with security headers
 - X-Frame-Options, X-Content-Type-Options, Referrer-Policy
 - 1-year cache headers for static assets
