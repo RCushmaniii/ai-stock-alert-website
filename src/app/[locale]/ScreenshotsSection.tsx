@@ -9,9 +9,9 @@ export function ScreenshotsSection() {
   const t = useTranslations("home.screenshots");
 
   const screenshots = [
-    { label: "Dashboard View", aspect: "16/10", image: null },
+    { label: "Dashboard View", aspect: "16/10", image: "/images/ticker_tab.jpg" },
     { label: "Alert Settings", aspect: "16/10", image: "/images/whatsapp_alert.jpg" },
-    { label: "Stock Details", aspect: "16/10", image: null },
+    { label: "Stock Details", aspect: "16/10", image: "/images/settings_alert.jpg" },
   ];
 
   return (
