@@ -13,9 +13,9 @@ export function ScreenshotsSection() {
   const [lightboxLabel, setLightboxLabel] = useState<string>("");
 
   const screenshots = [
-    { label: "Dashboard View", aspect: "16/10", image: "/images/ticker_tab.jpg" },
-    { label: "Alert Settings", aspect: "16/10", image: "/images/whatsapp_alert.jpg" },
-    { label: "Stock Details", aspect: "16/10", image: "/images/settings_alert.jpg" },
+    { label: "Dashboard View", aspect: "18/10", image: "/images/ticker_tab.jpg" },
+    { label: "Alert Settings", aspect: "18/10", image: "/images/whatsapp_alert.jpg" },
+    { label: "Stock Details", aspect: "18/10", image: "/images/settings_alert.jpg" },
   ];
 
   const openLightbox = (image: string, label: string) => {
