@@ -43,24 +43,24 @@ export function ContactForm() {
     setStatus("loading");
 
     try {
-      // Build form data with readable field names for Formspree
+      // Build form data for Formspree
+      // Using lowercase field names - Formspree auto-detects 'email' for reply-to
       const formData = new FormData();
 
-      // Visible fields with human-readable names
-      formData.append("Name", data.name);
-      formData.append("Email", data.email);
-      formData.append("Subject", data.subject);
-      formData.append("Message", data.message);
+      // Core form fields (lowercase for Formspree compatibility)
+      formData.append("name", data.name);
+      formData.append("email", data.email);
+      formData.append("subject", data.subject);
+      formData.append("message", data.message);
 
-      // Hidden Formspree fields for better email formatting
+      // Formspree special fields
       formData.append("_subject", `AI StockAlert Contact: ${data.subject}`);
-      formData.append("_replyto", data.email);
       formData.append("_template", "table");
 
-      // Context fields to identify the submission source
-      formData.append("Source", "AI StockAlert Website");
-      formData.append("Page", "Contact Form");
-      formData.append("Language", locale === "es" ? "Spanish" : "English");
+      // Context fields
+      formData.append("source", "AI StockAlert Website");
+      formData.append("page", "Contact Form");
+      formData.append("language", locale === "es" ? "Spanish" : "English");
 
       const response = await fetch(FORMSPREE_ENDPOINT, {
         method: "POST",
