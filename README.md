@@ -319,6 +319,15 @@ Full i18n support via next-intl:
 - Language switcher persists selection
 - SEO-friendly locale prefixes
 
+### Contact Form
+
+Contact form (`src/components/sections/ContactForm.tsx`) powered by [Formspree](https://formspree.io):
+- Client-side validation with react-hook-form + Zod
+- Submissions sent via Formspree (no backend required)
+- Table-formatted emails with human-readable field names
+- Includes context fields: Source, Page, and Language
+- Reply-to set to submitter's email for easy responses
+
 ---
 
 ## Contributing

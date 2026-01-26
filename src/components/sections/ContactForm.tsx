@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -12,6 +12,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
+
+// Formspree endpoint
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xaqobael";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -24,6 +27,7 @@ type ContactFormData = z.infer<typeof contactSchema>;
 
 export function ContactForm() {
   const t = useTranslations("contact.form");
+  const locale = useLocale();
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const {
@@ -38,17 +42,49 @@ export function ContactForm() {
   const onSubmit = async (data: ContactFormData) => {
     setStatus("loading");
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      // Build form data with readable field names for Formspree
+      const formData = new FormData();
 
-    // For now, just log the data (no backend)
-    console.log("Form submitted:", data);
+      // Visible fields with human-readable names
+      formData.append("Name", data.name);
+      formData.append("Email", data.email);
+      formData.append("Subject", data.subject);
+      formData.append("Message", data.message);
 
-    setStatus("success");
-    reset();
+      // Hidden Formspree fields for better email formatting
+      formData.append("_subject", `AI StockAlert Contact: ${data.subject}`);
+      formData.append("_replyto", data.email);
+      formData.append("_template", "table");
 
-    // Reset status after 5 seconds
-    setTimeout(() => setStatus("idle"), 5000);
+      // Context fields to identify the submission source
+      formData.append("Source", "AI StockAlert Website");
+      formData.append("Page", "Contact Form");
+      formData.append("Language", locale === "es" ? "Spanish" : "English");
+
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        reset();
+        // Reset status after 5 seconds
+        setTimeout(() => setStatus("idle"), 5000);
+      } else {
+        setStatus("error");
+        // Reset status after 5 seconds
+        setTimeout(() => setStatus("idle"), 5000);
+      }
+    } catch {
+      setStatus("error");
+      // Reset status after 5 seconds
+      setTimeout(() => setStatus("idle"), 5000);
+    }
   };
 
   return (
