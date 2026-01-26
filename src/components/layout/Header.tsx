@@ -15,10 +15,8 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "/", label: t("home") },
     { href: "/features", label: t("features") },
     { href: "/setup", label: t("setup") },
-    { href: "/download", label: t("download") },
     { href: "/pricing", label: t("pricing") },
     { href: "/contact", label: t("contact") },
   ] as const;

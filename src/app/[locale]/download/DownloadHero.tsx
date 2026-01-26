@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { ChevronDown } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { AnimatedSection } from "@/components/shared/AnimatedSection";
 
@@ -18,9 +19,16 @@ export function DownloadHero() {
             {t("title")}{" "}
             <span className="gradient-text">{t("titleHighlight")}</span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground">
+          <p className="text-lg md:text-xl text-muted-foreground mb-8">
             {t("subtitle")}
           </p>
+          <a
+            href="#installation-steps"
+            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
+          >
+            {t("jumpToInstallation")}
+            <ChevronDown className="w-4 h-4" />
+          </a>
         </AnimatedSection>
       </Container>
     </section>

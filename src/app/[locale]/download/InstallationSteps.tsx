@@ -32,7 +32,7 @@ export function InstallationSteps() {
   ];
 
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-card">
+    <section id="installation-steps" className="py-16 md:py-24 lg:py-32 bg-card scroll-mt-24">
       <Container size="md">
         <AnimatedSection className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">

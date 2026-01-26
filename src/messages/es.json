@@ -262,7 +262,8 @@
     "hero": {
       "title": "Descargar",
       "titleHighlight": "AI StockAlert",
-      "subtitle": "Alertas de acciones por WhatsApp en inglés y español. Trae tu propia clave de API de Finnhub."
+      "subtitle": "Alertas de acciones por WhatsApp en inglés y español. Trae tu propia clave de API de Finnhub.",
+      "jumpToInstallation": "Ver pasos de instalación"
     },
     "options": {
       "title": "Descargar AI StockAlert",
@@ -302,20 +303,20 @@
     "installation": {
       "title": "Pasos de Instalación",
       "step1": {
-        "title": "Descargar",
-        "description": "Haz clic en el botón de descarga arriba para obtener el instalador."
+        "title": "Descargar el Instalador",
+        "description": "Haz clic en el botón de descarga arriba para guardar el instalador de AI StockAlert (.exe) en tu computadora. El archivo pesa aproximadamente 22 MB y normalmente se descarga en menos de un minuto."
       },
       "step2": {
-        "title": "Ejecutar Instalador",
-        "description": "Haz doble clic en el archivo descargado y sigue las instrucciones."
+        "title": "Ejecutar el Instalador",
+        "description": "Localiza el archivo descargado (generalmente en tu carpeta de Descargas) y haz doble clic para ejecutarlo. Si aparece Windows SmartScreen, haz clic en 'Más información' y luego en 'Ejecutar de todos modos' — el instalador está firmado digitalmente y es seguro."
       },
       "step3": {
-        "title": "Iniciar",
-        "description": "Abre AI StockAlert desde el menú Inicio o el acceso directo del escritorio."
+        "title": "Completar la Instalación",
+        "description": "Sigue el asistente de instalación: acepta el acuerdo de licencia, elige la ubicación de instalación (o usa la predeterminada) y haz clic en Instalar. El proceso toma aproximadamente 30 segundos."
       },
       "step4": {
-        "title": "Configurar",
-        "description": "Agrega tus primeras acciones y configura alertas para comenzar."
+        "title": "Iniciar y Configurar",
+        "description": "Abre AI StockAlert desde el menú Inicio o el acceso directo del escritorio. En el primer inicio, ve a Configuración → Datos de Mercado para ingresar tu clave de API de Finnhub. Luego agrega tus primeros símbolos de acciones y establece tus umbrales de alerta de precios."
       }
     },
     "faq": {

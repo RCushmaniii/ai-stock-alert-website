@@ -262,7 +262,8 @@
     "hero": {
       "title": "Download",
       "titleHighlight": "AI StockAlert",
-      "subtitle": "WhatsApp stock alerts in English and Spanish. Bring your own Finnhub API key."
+      "subtitle": "WhatsApp stock alerts in English and Spanish. Bring your own Finnhub API key.",
+      "jumpToInstallation": "View installation steps"
     },
     "options": {
       "title": "Download AI StockAlert",
@@ -302,20 +303,20 @@
     "installation": {
       "title": "Installation Steps",
       "step1": {
-        "title": "Download",
-        "description": "Click the download button above to get the installer."
+        "title": "Download the Installer",
+        "description": "Click the download button above to save the AI StockAlert installer (.exe) to your computer. The file is about 22 MB and typically downloads in under a minute."
       },
       "step2": {
-        "title": "Run Installer",
-        "description": "Double-click the downloaded file and follow the prompts."
+        "title": "Run the Installer",
+        "description": "Locate the downloaded file (usually in your Downloads folder) and double-click to run it. If Windows SmartScreen appears, click 'More info' then 'Run anyway' — the installer is digitally signed and safe."
       },
       "step3": {
-        "title": "Launch",
-        "description": "Open AI StockAlert from your Start menu or desktop shortcut."
+        "title": "Complete Setup",
+        "description": "Follow the installation wizard: accept the license agreement, choose your install location (or use the default), and click Install. The process takes about 30 seconds."
       },
       "step4": {
-        "title": "Configure",
-        "description": "Add your first stocks and set up alerts to get started."
+        "title": "Launch & Configure",
+        "description": "Open AI StockAlert from your Start menu or desktop shortcut. On first launch, go to Settings → Market Data to enter your Finnhub API key. Then add your first stock symbols and set your price alert thresholds."
       }
     },
     "faq": {
