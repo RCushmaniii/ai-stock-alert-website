@@ -50,7 +50,7 @@ export function ContactForm() {
       // Core form fields (lowercase for Formspree compatibility)
       formData.append("name", data.name);
       formData.append("email", data.email);
-      formData.append("subject", data.subject);
+      formData.append("regarding", data.subject);  // 'subject' conflicts with _subject
       formData.append("message", data.message);
 
       // Formspree special fields
