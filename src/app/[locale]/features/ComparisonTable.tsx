@@ -11,6 +11,7 @@ export function ComparisonTable() {
   const features = [
     "whatsappAlerts",
     "bilingualSupport",
+    "stockNews",
     "byoApiKey",
     "noDataFees",
     "localStorage",
@@ -20,6 +21,7 @@ export function ComparisonTable() {
   const stockAlertValues: Record<string, boolean> = {
     whatsappAlerts: true,
     bilingualSupport: true,
+    stockNews: true,
     byoApiKey: true,
     noDataFees: true,
     localStorage: true,
@@ -29,6 +31,7 @@ export function ComparisonTable() {
   const othersValues: Record<string, boolean> = {
     whatsappAlerts: false,
     bilingualSupport: false,
+    stockNews: false,
     byoApiKey: false,
     noDataFees: false,
     localStorage: false,

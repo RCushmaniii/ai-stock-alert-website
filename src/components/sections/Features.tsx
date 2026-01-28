@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Bell, MessageCircle, Clock, Globe, Key, Zap } from "lucide-react";
+import { Bell, MessageCircle, Globe, Key, Zap, Newspaper } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Card } from "@/components/ui/Card";
 import { AnimatedSection, StaggeredContainer, StaggeredItem } from "@/components/shared/AnimatedSection";
@@ -60,9 +60,9 @@ export function FeaturesSection() {
       description: t("byoKey.description"),
     },
     {
-      icon: <Clock className="w-6 h-6" />,
-      title: t("realLife.title"),
-      description: t("realLife.description"),
+      icon: <Newspaper className="w-6 h-6" />,
+      title: t("newsFeed.title"),
+      description: t("newsFeed.description"),
     },
   ];
 
@@ -117,9 +117,9 @@ export function FeaturesGrid() {
       description: t("lightweight.description"),
     },
     {
-      icon: <Clock className="w-6 h-6" />,
-      title: t("comingSoon.title"),
-      description: t("comingSoon.description"),
+      icon: <Newspaper className="w-6 h-6" />,
+      title: t("newsFeed.title"),
+      description: t("newsFeed.description"),
     },
   ];
 

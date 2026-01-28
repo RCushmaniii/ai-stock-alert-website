@@ -78,9 +78,9 @@
         "title": "Trae Tu Propia Clave API",
         "description": "Conecta tu propia clave de Finnhub—mantienes el control y puedes usar el nivel gratuito."
       },
-      "realLife": {
-        "title": "Hecho para la Vida Real",
-        "description": "Perfecto para inversores ocupados que no quieren mirar gráficos."
+      "newsFeed": {
+        "title": "Noticias en Tiempo Real",
+        "description": "Noticias relevantes para tus acciones—sin ruido genérico."
       }
     },
     "howItWorks": {
@@ -142,9 +142,9 @@
         "title": "Ligero y Enfocado",
         "description": "Sin desorden, sin distracciones. AI StockAlert está intencionalmente enfocado en alertas, no gráficos."
       },
-      "comingSoon": {
-        "title": "Próximamente",
-        "description": "Opciones de respaldo por SMS y email están en la hoja de ruta para futuras versiones."
+      "newsFeed": {
+        "title": "Noticias en Tiempo Real",
+        "description": "Recibe un feed de noticias enfocado en tus acciones específicas. Toma decisiones informadas con titulares relevantes, no ruido del mercado."
       }
     },
     "details": {
@@ -184,7 +184,8 @@
         "byoApiKey": "Trae Tu Propia Clave API",
         "noDataFees": "Sin Tarifas Ocultas de Datos",
         "localStorage": "Almacenamiento Local Seguro",
-        "noSubscription": "Sin Suscripción Mensual"
+        "noSubscription": "Sin Suscripción Mensual",
+        "stockNews": "Noticias en Tiempo Real"
       }
     },
     "cta": {

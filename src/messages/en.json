@@ -78,9 +78,9 @@
         "title": "Bring Your Own API Key",
         "description": "Connect your own Finnhub key—you keep control and can use the free tier."
       },
-      "realLife": {
-        "title": "Made for Real Life",
-        "description": "Perfect for busy investors who don't want to stare at charts."
+      "newsFeed": {
+        "title": "Real-Time Stock News",
+        "description": "Curated news for your stocks—no generic market noise."
       }
     },
     "howItWorks": {
@@ -142,9 +142,9 @@
         "title": "Lightweight & Focused",
         "description": "No clutter, no distractions. AI StockAlert is intentionally focused on alerts, not charts."
       },
-      "comingSoon": {
-        "title": "Coming Soon",
-        "description": "SMS and email fallback options are on the roadmap for future releases."
+      "newsFeed": {
+        "title": "Real-Time Stock News",
+        "description": "Get a curated news feed targeted to your specific stocks. Make informed decisions with relevant headlines, not market noise."
       }
     },
     "details": {
@@ -184,7 +184,8 @@
         "byoApiKey": "Bring Your Own API Key",
         "noDataFees": "No Hidden Data Fees",
         "localStorage": "Local Secure Storage",
-        "noSubscription": "No Monthly Subscription"
+        "noSubscription": "No Monthly Subscription",
+        "stockNews": "Real-Time Stock News"
       }
     },
     "cta": {
