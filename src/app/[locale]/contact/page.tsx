@@ -2,7 +2,6 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { ContactHero } from "./ContactHero";
 import { ContactOptions } from "./ContactOptions";
 import { ContactFormSection } from "./ContactFormSection";
-import { ResponseTimes } from "./ResponseTimes";
 
 export async function generateMetadata({
   params,
@@ -31,7 +30,6 @@ export default async function ContactPage({
       <ContactHero />
       <ContactOptions />
       <ContactFormSection />
-      <ResponseTimes />
     </>
   );
 }
