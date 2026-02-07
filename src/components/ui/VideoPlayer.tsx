@@ -2,24 +2,43 @@
 
 import { useState, useRef, useEffect } from "react";
 import { Play, Pause, Maximize2, X, Volume2, VolumeX } from "lucide-react";
+import Image from "next/image";
 
 interface VideoPlayerProps {
   url: string;
-  thumbnail?: string;
+  poster?: string;
   className?: string;
 }
 
-export function VideoPlayer({ url, thumbnail, className = "" }: VideoPlayerProps) {
+export function VideoPlayer({ url, poster, className = "" }: VideoPlayerProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [showControls, setShowControls] = useState(true);
   const [hasStarted, setHasStarted] = useState(false);
+  const [videoLoaded, setVideoLoaded] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const fullscreenVideoRef = useRef<HTMLVideoElement>(null);
   const controlsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const handlePlay = () => {
+    // Load video on first play (lazy loading)
+    if (!videoLoaded) {
+      setVideoLoaded(true);
+      // Wait for video element to mount, then play
+      setTimeout(() => {
+        if (videoRef.current) {
+          videoRef.current.play().then(() => {
+            setIsPlaying(true);
+            setHasStarted(true);
+          }).catch((err) => {
+            console.error("Video play failed:", err);
+          });
+        }
+      }, 100);
+      return;
+    }
+
     if (videoRef.current) {
       videoRef.current.play().then(() => {
         setIsPlaying(true);
@@ -47,17 +66,20 @@ export function VideoPlayer({ url, thumbnail, className = "" }: VideoPlayerProps
 
   const handleFullscreen = (e: React.MouseEvent) => {
     e.stopPropagation();
-    if (videoRef.current) {
-      const currentTime = videoRef.current.currentTime;
-      setIsFullscreen(true);
-      // Sync time to fullscreen video after render
-      setTimeout(() => {
-        if (fullscreenVideoRef.current) {
-          fullscreenVideoRef.current.currentTime = currentTime;
-          fullscreenVideoRef.current.play();
-        }
-      }, 100);
+    // Load video if not already loaded
+    if (!videoLoaded) {
+      setVideoLoaded(true);
     }
+
+    const currentTime = videoRef.current?.currentTime || 0;
+    setIsFullscreen(true);
+    // Sync time to fullscreen video after render
+    setTimeout(() => {
+      if (fullscreenVideoRef.current) {
+        fullscreenVideoRef.current.currentTime = currentTime;
+        fullscreenVideoRef.current.play();
+      }
+    }, 100);
   };
 
   const handleCloseFullscreen = () => {
@@ -125,22 +147,36 @@ export function VideoPlayer({ url, thumbnail, className = "" }: VideoPlayerProps
         onMouseEnter={() => setShowControls(true)}
         onMouseLeave={() => isPlaying && setShowControls(false)}
       >
-        {/* Video element - always present */}
-        <video
-          ref={videoRef}
-          src={url}
-          poster={thumbnail}
-          className="w-full h-full object-cover"
-          muted={isMuted}
-          playsInline
-          preload="auto"
-          onEnded={() => {
-            setIsPlaying(false);
-            setHasStarted(false);
-          }}
-          onPlay={() => setIsPlaying(true)}
-          onPause={() => setIsPlaying(false)}
-        />
+        {/* Poster image - shown before video loads (optimized with Next.js Image) */}
+        {!videoLoaded && poster && (
+          <Image
+            src={poster}
+            alt="Video thumbnail"
+            fill
+            className="object-cover"
+            priority={false}
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        )}
+
+        {/* Video element - only loaded when user clicks play (lazy loading) */}
+        {videoLoaded && (
+          <video
+            ref={videoRef}
+            src={url}
+            poster={poster}
+            className="w-full h-full object-cover"
+            muted={isMuted}
+            playsInline
+            preload="metadata"
+            onEnded={() => {
+              setIsPlaying(false);
+              setHasStarted(false);
+            }}
+            onPlay={() => setIsPlaying(true)}
+            onPause={() => setIsPlaying(false)}
+          />
+        )}
 
         {/* Play button overlay - show when not playing */}
         {!isPlaying && (

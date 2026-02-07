@@ -12,10 +12,14 @@ export function Hero() {
   const t = useTranslations("home.hero");
   const locale = useLocale();
 
-  // Use locale-specific video
+  // Use locale-specific video and poster
   const videoUrl = locale === "es"
     ? "/videos/es_ai_atockalert.mp4"
     : "/videos/en_ai_atockalert.mp4";
+
+  const posterUrl = locale === "es"
+    ? "/images/es_ai_atockalert_poster.jpg"
+    : "/images/en_ai_atockalert_poster.jpg";
 
   return (
     <section className="relative min-h-[90vh] flex items-center py-16 md:py-24 lg:py-32 overflow-hidden bg-background">
@@ -92,6 +96,7 @@ export function Hero() {
                 {/* Video player */}
                 <VideoPlayer
                   url={videoUrl}
+                  poster={posterUrl}
                   className="aspect-[16/10] rounded-lg overflow-hidden bg-card"
                 />
               </div>
