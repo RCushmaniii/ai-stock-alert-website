@@ -4,7 +4,7 @@
 
 A bilingual (English/Spanish) marketing website for a fictional Windows desktop application that delivers WhatsApp stock price alerts. Built with Next.js 16 and deployed as a static site with zero server costs.
 
-**[Live Demo →](https://ai-stock-alert-website.netlify.app/)**
+**[Live Demo →](https://aistockalert.app/)**
 
 ---
 
@@ -24,7 +24,7 @@ A bilingual (English/Spanish) marketing website for a fictional Windows desktop 
 
 ## Live Demo
 
-**URL**: [https://ai-stock-alert-website.netlify.app/](https://ai-stock-alert-website.netlify.app/)
+**URL**: [https://aistockalert.app/](https://aistockalert.app/)
 
 Try these scenarios:
 
@@ -84,7 +84,7 @@ npm run dev
 npm run build
 # Expected output:
 # ✓ Compiled successfully
-# ✓ Generating static pages (19/19)
+# ✓ Generating static pages (23/23)
 ```
 
 ---
@@ -111,6 +111,7 @@ ai-stock-alert-website/
 │   │   │   ├── download/          # Download page
 │   │   │   ├── pricing/           # Pricing page
 │   │   │   ├── contact/           # Contact page
+│   │   │   ├── use-cases/        # Use Cases page
 │   │   │   ├── terms/             # Terms of Service
 │   │   │   └── privacy/           # Privacy Policy
 │   │   ├── globals.css            # Theme CSS variables
@@ -142,6 +143,7 @@ ai-stock-alert-website/
 | Pricing | `/en/pricing` | `/es/precios` | Pricing tiers with feature comparison |
 | Contact | `/en/contact` | `/es/contacto` | Contact form and support options |
 | Terms | `/en/terms` | `/es/terminos` | Terms of Service |
+| Use Cases | `/en/use-cases` | `/es/casos-de-uso` | Investor personas and benefits |
 | Privacy | `/en/privacy` | `/es/privacidad` | Privacy Policy |
 
 ---

@@ -25,21 +25,21 @@ problem: "StockAlert needed a professional marketing presence to showcase featur
 solution: "Built a static Next.js site with full internationalization (EN/ES), dark/light theming, and a security trust card to build download confidence. Comprehensive Playwright testing ensures reliability."
 
 key_features:
-  - "7 pages with full English/Spanish localization and localized URLs"
+  - "9 pages with full English/Spanish localization and localized URLs"
   - "Security trust card with VirusTotal verification for download confidence"
   - "23 Playwright e2e tests with 100% pass rate"
   - "Dark/light theme with system preference detection"
   - "Sub-second page loads via static site generation"
 
 # Links
-demo_url: "https://ai-stock-alert-website.netlify.app/"
+demo_url: "https://aistockalert.app/"
 repo_url: "https://github.com/RCushmaniii/ai-stock-alert-website"
-live_url: "https://ai-stock-alert-website.netlify.app/"
+live_url: "https://aistockalert.app/"
 
 # Optional metrics
 metrics:
   - "23 e2e tests passing"
-  - "14 localized pages (7 EN + 7 ES)"
+  - "18 localized pages (9 EN + 9 ES)"
   - "0 ESLint errors"
   - "6.8s full test suite runtime"
 
@@ -85,6 +85,7 @@ Production-ready marketing website for StockAlert, a Windows desktop application
 - **Pricing** - Free/Premium/Pro tiers, feature comparison, FAQ
 - **Contact** - Contact form, support options
 - **Terms** - Terms of Service
+- **Use Cases** - Investor personas and benefits
 - **Privacy** - Privacy Policy
 
 ## Skills Demonstrated

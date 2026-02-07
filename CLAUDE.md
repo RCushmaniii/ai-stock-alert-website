@@ -42,8 +42,11 @@ src/
 │   │   ├── download/       # Download page
 │   │   ├── pricing/        # Pricing page
 │   │   ├── contact/        # Contact page
+│   │   ├── use-cases/      # Use Cases page
 │   │   ├── terms/          # Terms of Service
 │   │   └── privacy/        # Privacy Policy
+│   ├── sitemap.ts          # Dynamic sitemap with hreflang
+│   ├── robots.ts           # Robots.txt configuration
 │   ├── globals.css         # Theme CSS variables
 │   └── layout.tsx          # Root layout with fonts
 ├── components/
@@ -86,6 +89,7 @@ Routes are defined in `src/i18n/routing.ts`:
 | `/contact` | `/en/contact` | `/es/contacto` |
 | `/terms` | `/en/terms` | `/es/terminos` |
 | `/privacy` | `/en/privacy` | `/es/privacidad` |
+| `/use-cases` | `/en/use-cases` | `/es/casos-de-uso` |
 | `/setup` | `/en/setup` | `/es/configuracion` |
 
 ## Component Patterns
@@ -163,6 +167,7 @@ npx playwright test e2e/navigation.spec.ts
 
 ## Build & Deployment
 
+- **Production URL**: https://aistockalert.app/
 - Static site generation (SSG) - no server required
 - Build output in `.next/` directory
 - Deployed to Netlify (config in `netlify.toml`)
@@ -173,5 +178,8 @@ npx playwright test e2e/navigation.spec.ts
 - `src/i18n/routing.ts` - Locale and pathname configuration
 - `src/messages/*.json` - Translation strings
 - `src/app/globals.css` - Theme CSS variables
-- `netlify.toml` - Deployment configuration
+- `src/app/sitemap.ts` - Dynamic sitemap with hreflang alternates
+- `src/app/robots.ts` - Search engine crawl directives
+- `src/components/shared/JsonLd.tsx` - Structured data (Schema.org)
+- `netlify.toml` - Deployment configuration and caching headers
 - `playwright.config.ts` - Test configuration
