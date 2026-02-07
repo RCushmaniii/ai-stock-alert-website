@@ -15,7 +15,7 @@ export function ContactOptions() {
       title: t("email.title"),
       description: t("email.description"),
       subtitle: t("email.subtitle"),
-      href: "mailto:support@stockalert.app",
+      href: "mailto:support@aistockalert.app",
     },
     {
       icon: <Twitter className="w-6 h-6 text-primary" />,

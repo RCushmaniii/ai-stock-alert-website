@@ -78,8 +78,8 @@ export default function TermsPage() {
                   <h2 className="text-xl font-semibold mb-4 text-foreground">{t("sections.contact.title")}</h2>
                   <p className="text-muted-foreground leading-relaxed">
                     {t("sections.contact.content")}{" "}
-                    <a href="mailto:legal@stockalert.app" className="text-primary hover:underline">
-                      legal@stockalert.app
+                    <a href="mailto:legal@aistockalert.app" className="text-primary hover:underline">
+                      legal@aistockalert.app
                     </a>
                   </p>
                 </section>

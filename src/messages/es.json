@@ -555,7 +555,7 @@
     "options": {
       "email": {
         "title": "Envíanos un Email",
-        "description": "support@stockalert.app",
+        "description": "support@aistockalert.app",
         "subtitle": "Normalmente respondemos en 24 horas"
       },
       "twitter": {
@@ -595,7 +595,7 @@
       "description": "Nuestro equipo de soporte está dedicado a ayudarte a aprovechar al máximo AI StockAlert. Ya sea que tengas una pregunta, necesites asistencia técnica, o simplemente quieras compartir tu opinión — nos encantaría saber de ti.",
       "directContact": "Contacto Directo",
       "emailLabel": "Envíanos un correo a",
-      "email": "support@stockalert.app"
+      "email": "support@aistockalert.app"
     }
   },
   "useCases": {

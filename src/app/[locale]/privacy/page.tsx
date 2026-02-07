@@ -78,8 +78,8 @@ export default function PrivacyPage() {
                   <h2 className="text-xl font-semibold mb-4 text-foreground">{t("sections.contact.title")}</h2>
                   <p className="text-muted-foreground leading-relaxed">
                     {t("sections.contact.content")}{" "}
-                    <a href="mailto:privacy@stockalert.app" className="text-primary hover:underline">
-                      privacy@stockalert.app
+                    <a href="mailto:privacy@aistockalert.app" className="text-primary hover:underline">
+                      privacy@aistockalert.app
                     </a>
                   </p>
                 </section>

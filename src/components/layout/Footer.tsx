@@ -51,7 +51,7 @@ export function Footer() {
                   <Github className="h-5 w-5" />
                 </a>
                 <a
-                  href="mailto:support@stockalert.app"
+                  href="mailto:support@aistockalert.app"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                   aria-label="Email"
                 >

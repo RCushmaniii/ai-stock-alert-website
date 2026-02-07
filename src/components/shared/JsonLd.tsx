@@ -41,15 +41,15 @@ export function OrganizationJsonLd() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "StockAlert",
-    url: "https://stockalert.app",
-    logo: "https://stockalert.app/favicon.svg",
+    url: "https://aistockalert.app",
+    logo: "https://aistockalert.app/favicon.svg",
     sameAs: [
       "https://twitter.com/AIStockAlert",
       "https://github.com/stockalert",
     ],
     contactPoint: {
       "@type": "ContactPoint",
-      email: "support@stockalert.app",
+      email: "support@aistockalert.app",
       contactType: "customer support",
     },
   };

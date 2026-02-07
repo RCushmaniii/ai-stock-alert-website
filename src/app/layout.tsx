@@ -23,14 +23,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://stockalert.app",
+    url: "https://aistockalert.app",
     siteName: "StockAlert",
     title: "StockAlert - Real-Time Stock Alerts for Windows",
     description:
       "Real-time stock price alerts and market monitoring for Windows. Get instant notifications when stocks hit your target prices.",
     images: [
       {
-        url: "https://stockalert.app/images/ticker_tab.jpg",
+        url: "https://aistockalert.app/images/ticker_tab.jpg",
         width: 1200,
         height: 630,
         alt: "AI StockAlert - Stock Price Monitoring Dashboard",
@@ -43,17 +43,17 @@ export const metadata: Metadata = {
     description:
       "Real-time stock price alerts and market monitoring for Windows.",
     creator: "@StockAlertApp",
-    images: ["https://stockalert.app/images/ticker_tab.jpg"],
+    images: ["https://aistockalert.app/images/ticker_tab.jpg"],
   },
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://stockalert.app",
+    canonical: "https://aistockalert.app",
     languages: {
-      en: "https://stockalert.app/en",
-      es: "https://stockalert.app/es",
+      en: "https://aistockalert.app/en",
+      es: "https://aistockalert.app/es",
     },
   },
 };
