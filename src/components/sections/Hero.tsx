@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { ArrowRight, Play } from "lucide-react";
 import { Container } from "@/components/ui/Container";
@@ -10,6 +10,12 @@ import { AnimatedSection } from "@/components/shared/AnimatedSection";
 
 export function Hero() {
   const t = useTranslations("home.hero");
+  const locale = useLocale();
+
+  // Use locale-specific video
+  const videoUrl = locale === "es"
+    ? "/videos/es_ai_atockalert.mp4"
+    : "/videos/en_ai_atockalert.mp4";
 
   return (
     <section className="relative min-h-[90vh] flex items-center py-16 md:py-24 lg:py-32 overflow-hidden bg-background">
@@ -85,7 +91,7 @@ export function Hero() {
                 </div>
                 {/* Video player */}
                 <VideoPlayer
-                  url="/videos/AI_StockAlert.mp4"
+                  url={videoUrl}
                   className="aspect-[16/10] rounded-lg overflow-hidden bg-card"
                 />
               </div>
