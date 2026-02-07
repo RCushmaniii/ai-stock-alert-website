@@ -97,6 +97,7 @@ export function Hero() {
                 <VideoPlayer
                   url={videoUrl}
                   poster={posterUrl}
+                  priority
                   className="aspect-[16/10] rounded-lg overflow-hidden bg-card"
                 />
               </div>

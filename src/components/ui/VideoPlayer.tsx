@@ -8,9 +8,10 @@ interface VideoPlayerProps {
   url: string;
   poster?: string;
   className?: string;
+  priority?: boolean;
 }
 
-export function VideoPlayer({ url, poster, className = "" }: VideoPlayerProps) {
+export function VideoPlayer({ url, poster, className = "", priority = false }: VideoPlayerProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
@@ -154,7 +155,7 @@ export function VideoPlayer({ url, poster, className = "" }: VideoPlayerProps) {
             alt="Video thumbnail"
             fill
             className="object-cover"
-            priority={false}
+            priority={priority}
             sizes="(max-width: 768px) 100vw, 50vw"
           />
         )}
