@@ -62,7 +62,7 @@ export function DownloadOptions() {
                 {t("exe.size")}
               </p>
               <a
-                href="https://github.com/RCushmaniii/ai-stock-alert-website/releases/download/v1.0.0/StockAlert-3.0.0-Setup.exe"
+                href="https://github.com/RCushmaniii/ai-stock-alert-website/releases/download/v2.0.0/StockAlert-4.1.0-Setup.exe"
                 target="_blank"
                 rel="noopener noreferrer"
               >
