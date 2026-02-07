@@ -1,7 +1,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Bell, MessageCircle, Globe, Key, Zap, Newspaper, DollarSign, Settings2, Clock, Building2 } from "lucide-react";
+import { Bell, MessageCircle, Globe, Key, Zap, Newspaper, DollarSign, Settings2, Clock, Building2, Shield, ArrowRight } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { Card } from "@/components/ui/Card";
 import { AnimatedSection, StaggeredContainer, StaggeredItem } from "@/components/shared/AnimatedSection";
@@ -37,6 +38,32 @@ function LargeFeatureCard({ icon, title, description }: FeatureCardProps) {
         <p className="text-lg leading-relaxed text-muted-foreground">{description}</p>
       </div>
     </Card>
+  );
+}
+
+interface CTACardProps {
+  title: string;
+  description: string;
+  buttonText: string;
+}
+
+function CTACard({ title, description, buttonText }: CTACardProps) {
+  return (
+    <Link href="/download" className="block h-full">
+      <Card variant="feature" hover className="h-full bg-gradient-to-br from-primary/10 via-primary/5 to-transparent border-primary/20">
+        <div className="flex flex-col h-full p-3 justify-center items-center text-center">
+          <div className="w-16 h-16 rounded-xl flex items-center justify-center mb-5 bg-primary">
+            <ArrowRight className="w-8 h-8 text-primary-foreground" />
+          </div>
+          <h3 className="text-2xl font-semibold mb-3 text-foreground">{title}</h3>
+          <p className="text-lg leading-relaxed text-muted-foreground mb-4">{description}</p>
+          <span className="inline-flex items-center gap-2 text-primary font-semibold">
+            {buttonText}
+            <ArrowRight className="w-4 h-4" />
+          </span>
+        </div>
+      </Card>
+    </Link>
   );
 }
 
@@ -141,6 +168,11 @@ export function FeaturesGrid() {
       title: t("companyProfiles.title"),
       description: t("companyProfiles.description"),
     },
+    {
+      icon: <Shield className="w-6 h-6" />,
+      title: t("localStorage.title"),
+      description: t("localStorage.description"),
+    },
   ];
 
   return (
@@ -150,6 +182,13 @@ export function FeaturesGrid() {
           <LargeFeatureCard {...feature} />
         </StaggeredItem>
       ))}
+      <StaggeredItem>
+        <CTACard
+          title={t("cta.title")}
+          description={t("cta.description")}
+          buttonText={t("cta.button")}
+        />
+      </StaggeredItem>
     </StaggeredContainer>
   );
 }
