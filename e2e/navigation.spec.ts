@@ -16,9 +16,9 @@ test.describe("Navigation", () => {
     await expect(page).toHaveURL(/\/en\/features/);
     await expect(page.locator("h1")).toBeVisible();
 
-    // Navigate to Download using nav link
-    await page.locator("nav").getByRole("link", { name: "Download" }).click();
-    await expect(page).toHaveURL(/\/en\/download/);
+    // Navigate to Use Cases using nav link
+    await page.locator("nav").getByRole("link", { name: "Use Cases" }).click();
+    await expect(page).toHaveURL(/\/en\/use-cases/);
     await expect(page.locator("h1")).toBeVisible();
 
     // Navigate to Pricing using nav link
@@ -29,6 +29,11 @@ test.describe("Navigation", () => {
     // Navigate to Contact using nav link
     await page.locator("nav").getByRole("link", { name: "Contact" }).click();
     await expect(page).toHaveURL(/\/en\/contact/);
+    await expect(page.locator("h1")).toBeVisible();
+
+    // Navigate to Download using header button (not a nav link)
+    await page.getByRole("link", { name: "Download" }).first().click();
+    await expect(page).toHaveURL(/\/en\/download/);
     await expect(page.locator("h1")).toBeVisible();
   });
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Bell, MessageCircle, Globe, Key, Zap, Newspaper } from "lucide-react";
+import { Bell, MessageCircle, Globe, Key, Zap, Newspaper, DollarSign, Settings2, Clock, Building2 } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Card } from "@/components/ui/Card";
 import { AnimatedSection, StaggeredContainer, StaggeredItem } from "@/components/shared/AnimatedSection";
@@ -120,6 +120,26 @@ export function FeaturesGrid() {
       icon: <Newspaper className="w-6 h-6" />,
       title: t("newsFeed.title"),
       description: t("newsFeed.description"),
+    },
+    {
+      icon: <DollarSign className="w-6 h-6" />,
+      title: t("multiCurrency.title"),
+      description: t("multiCurrency.description"),
+    },
+    {
+      icon: <Settings2 className="w-6 h-6" />,
+      title: t("backgroundService.title"),
+      description: t("backgroundService.description"),
+    },
+    {
+      icon: <Clock className="w-6 h-6" />,
+      title: t("marketAware.title"),
+      description: t("marketAware.description"),
+    },
+    {
+      icon: <Building2 className="w-6 h-6" />,
+      title: t("companyProfiles.title"),
+      description: t("companyProfiles.description"),
     },
   ];
 

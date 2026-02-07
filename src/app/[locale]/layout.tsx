@@ -6,6 +6,7 @@ import { routing } from "@/i18n/routing";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
+import { SoftwareApplicationJsonLd, OrganizationJsonLd } from "@/components/shared/JsonLd";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -45,6 +46,8 @@ export default async function LocaleLayout({
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <SoftwareApplicationJsonLd />
+        <OrganizationJsonLd />
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased">
         <ThemeProvider>

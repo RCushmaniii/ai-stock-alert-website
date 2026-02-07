@@ -20,6 +20,7 @@
   "nav": {
     "home": "Home",
     "features": "Features",
+    "useCases": "Use Cases",
     "setup": "Setup Guide",
     "download": "Download",
     "pricing": "Pricing",
@@ -61,6 +62,18 @@
       "channel": {
         "title": "Your channel",
         "description": "WhatsApp notifications you actually see"
+      },
+      "justWorks": {
+        "title": "It just works",
+        "description": "No account creation, auto-start with Windows, single-instance architecture"
+      },
+      "professional": {
+        "title": "Professional-grade",
+        "description": "Market hours aware, rate limit protection, graceful degradation"
+      },
+      "transparent": {
+        "title": "Transparent",
+        "description": "Onboarding explains setup, Help tab documents features, open source"
       }
     },
     "features": {
@@ -124,27 +137,43 @@
     "grid": {
       "priceAlerts": {
         "title": "Custom Price Alerts",
-        "description": "Set alerts when a stock price goes above or below a level you choose. Upper and lower thresholds, easy to edit per ticker."
+        "description": "Set alerts when a stock price goes above or below a level you choose. Upper and lower thresholds, easy to edit per ticker. Cooldown period prevents notification spam (configurable). First-check protection avoids false alerts from price gaps."
       },
       "whatsappAlerts": {
         "title": "WhatsApp Notifications",
-        "description": "WhatsApp messages are fast, personal, and always visible. Instant delivery with clean, readable alert format."
+        "description": "WhatsApp messages are fast, personal, and always visible. Instant delivery with clean, readable alert format. Windows Toast Notifications as backup. Consolidated notifications—multiple alerts combined into one per check cycle."
       },
       "bilingual": {
         "title": "Bilingual Experience (EN/ES)",
-        "description": "Switch between English and Spanish at any time. Alerts and interface stay simple, clear, and consistent."
+        "description": "Switch between English and Spanish at any time. Alerts and interface stay simple, clear, and consistent. All UI elements, dialogs, and notifications fully translated."
       },
       "byoKey": {
         "title": "Bring Your Own API Key",
         "description": "Connect using your own Finnhub API key. Start with the free tier, upgrade only if you need more. Your key stays on your device."
       },
       "lightweight": {
-        "title": "Lightweight & Focused",
-        "description": "No clutter, no distractions. AI StockAlert is intentionally focused on alerts, not charts."
+        "title": "Professional UI",
+        "description": "No clutter, no distractions. AI StockAlert is intentionally focused on alerts, not charts. Professional UI with Dark/Light themes. Tabbed interface (Profile, Settings, Tickers, News, Help, About)."
       },
       "newsFeed": {
         "title": "Real-Time Stock News",
-        "description": "Get a curated news feed targeted to your specific stocks. Make informed decisions with relevant headlines, not market noise."
+        "description": "Get a curated news feed targeted to your specific stocks. Select up to 5 tickers for news tracking. Categories: My Stocks, General, Crypto, Forex, M&A."
+      },
+      "multiCurrency": {
+        "title": "Multi-Currency Display",
+        "description": "View prices in USD and MXN with live exchange rates from exchangerate-api.com. One-click toggle in header, all prices/thresholds/market caps convert automatically."
+      },
+      "backgroundService": {
+        "title": "Background Service",
+        "description": "Runs silently in system tray when window is closed. Continues monitoring and sending alerts 24/7. Auto-start with Windows option. Hot-reloads config changes."
+      },
+      "marketAware": {
+        "title": "Market-Aware Monitoring",
+        "description": "Only active during US market hours (9:30 AM - 4:00 PM ET). Respects weekends and holidays. Shows market status in UI. No pointless overnight checks."
+      },
+      "companyProfiles": {
+        "title": "Company Profiles",
+        "description": "Company logos from Finnhub, industry classification, market cap with size category (Mega/Large/Mid/Small/Micro). Click logo to open interactive price chart."
       }
     },
     "details": {
@@ -185,7 +214,17 @@
         "noDataFees": "No Hidden Data Fees",
         "localStorage": "Local Secure Storage",
         "noSubscription": "No Monthly Subscription",
-        "stockNews": "Real-Time Stock News"
+        "stockNews": "Real-Time Stock News",
+        "multiCurrency": "Multi-Currency (USD/MXN)",
+        "backgroundMonitoring": "Background Monitoring 24/7",
+        "marketHoursAwareness": "Market Hours Awareness",
+        "consolidatedNotifications": "Consolidated Notifications"
+      },
+      "othersValues": {
+        "multiCurrency": "Rarely",
+        "backgroundMonitoring": "Sometimes",
+        "marketHoursAwareness": "No",
+        "consolidatedNotifications": "No"
       }
     },
     "cta": {
@@ -300,6 +339,29 @@
       "storage": "50 MB available space",
       "internet": "Internet connection for market data",
       "dotnet": ".NET 6.0 Runtime (included in installer)"
+    },
+    "specs": {
+      "title": "Technical Specifications",
+      "platform": "Platform",
+      "platformValue": "Windows 10/11",
+      "language": "Language",
+      "languageValue": "Python 3.12 + PyQt6",
+      "stockData": "Stock Data",
+      "stockDataValue": "Finnhub API (free tier)",
+      "exchangeRates": "Exchange Rates",
+      "exchangeRatesValue": "exchangerate-api.com (free tier)",
+      "whatsapp": "WhatsApp",
+      "whatsappValue": "Twilio Business API via Vercel",
+      "maxTickers": "Max Tickers",
+      "maxTickersValue": "15 (free tier)",
+      "minInterval": "Min Check Interval",
+      "minIntervalValue": "90 seconds (free tier)",
+      "languages": "Languages",
+      "languagesValue": "English, Spanish",
+      "currencies": "Currencies",
+      "currenciesValue": "USD, MXN",
+      "themes": "Themes",
+      "themesValue": "Dark, Light"
     },
     "installation": {
       "title": "Installation Steps",
@@ -525,6 +587,89 @@
       "directContact": "Direct Contact",
       "emailLabel": "Email us anytime at",
       "email": "support@stockalert.app"
+    }
+  },
+  "useCases": {
+    "hero": {
+      "title": "Built for traders who",
+      "titleHighlight": "value their time",
+      "subtitle": "See how different investors use AI StockAlert to stay ahead without being glued to screens."
+    },
+    "cases": {
+      "dayTrader": {
+        "persona": "Day Trader",
+        "quote": "I need instant alerts when momentum stocks hit my entry points. Every second counts.",
+        "solution": "WhatsApp alerts reach you faster than email. Consolidated notifications prevent spam during volatile sessions. Market hours awareness means no false overnight alerts."
+      },
+      "swingTrader": {
+        "persona": "Swing Trader",
+        "quote": "I hold positions for days or weeks. I need to know when key support or resistance levels break.",
+        "solution": "Set upper and lower thresholds per ticker. Cooldown periods prevent notification fatigue. Background service monitors while you focus on analysis."
+      },
+      "mexicanInvestor": {
+        "persona": "Mexican Investor",
+        "quote": "I invest in US markets but think in pesos. I need prices in MXN and alerts in Spanish.",
+        "solution": "Toggle between USD and MXN with live exchange rates. Full Spanish UI and notifications. No need to mentally convert every price."
+      },
+      "partTimeInvestor": {
+        "persona": "Part-Time Investor",
+        "quote": "I have a day job. I can't watch charts but I don't want to miss opportunities.",
+        "solution": "Set it and forget it. Auto-starts with Windows, runs in system tray. Get WhatsApp alerts on your phone while you work."
+      },
+      "optionsTrader": {
+        "persona": "Options Trader",
+        "quote": "Underlying price movements trigger my options strategies. I need to know immediately.",
+        "solution": "Real-time stock price monitoring with configurable thresholds. Company profiles show market cap to assess option liquidity. News feed for sentiment."
+      },
+      "familyOffice": {
+        "persona": "Family Office",
+        "quote": "We manage multiple portfolios. We need professional-grade tools without enterprise pricing.",
+        "solution": "Track up to 15 tickers on free tier. BYOK model means no hidden data fees. Local storage keeps client data private."
+      }
+    },
+    "benefits": {
+      "activeTraders": {
+        "title": "For Active Traders",
+        "items": [
+          "WhatsApp alerts beat email latency",
+          "Consolidated notifications reduce noise",
+          "Market hours awareness prevents false signals",
+          "Background monitoring while you research"
+        ]
+      },
+      "internationalUsers": {
+        "title": "For International Users",
+        "items": [
+          "Full Spanish localization (UI + alerts)",
+          "USD/MXN currency toggle with live rates",
+          "No US phone number required for WhatsApp",
+          "Works with any Windows PC globally"
+        ]
+      },
+      "busyProfessionals": {
+        "title": "For Busy Professionals",
+        "items": [
+          "Set it and forget it—auto-starts with Windows",
+          "Runs silently in system tray",
+          "Phone notifications while you work",
+          "No chart-watching required"
+        ]
+      },
+      "costConscious": {
+        "title": "For Cost-Conscious Investors",
+        "items": [
+          "Free tier covers most personal needs",
+          "BYOK model—no data subscription fees",
+          "One-time premium purchase, not subscription",
+          "Open source—transparent and auditable"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Find your",
+      "titleHighlight": "trading edge",
+      "subtitle": "Join traders who spend less time watching charts and more time making decisions.",
+      "button": "Download for Windows"
     }
   },
   "terms": {

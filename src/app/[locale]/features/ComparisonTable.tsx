@@ -16,6 +16,10 @@ export function ComparisonTable() {
     "noDataFees",
     "localStorage",
     "noSubscription",
+    "multiCurrency",
+    "backgroundMonitoring",
+    "marketHoursAwareness",
+    "consolidatedNotifications",
   ] as const;
 
   const stockAlertValues: Record<string, boolean> = {
@@ -26,6 +30,18 @@ export function ComparisonTable() {
     noDataFees: true,
     localStorage: true,
     noSubscription: true,
+    multiCurrency: true,
+    backgroundMonitoring: true,
+    marketHoursAwareness: true,
+    consolidatedNotifications: true,
+  };
+
+  // For the new features, we use special text values instead of boolean
+  const othersTextValues: Record<string, string | null> = {
+    multiCurrency: t("othersValues.multiCurrency"),
+    backgroundMonitoring: t("othersValues.backgroundMonitoring"),
+    marketHoursAwareness: t("othersValues.marketHoursAwareness"),
+    consolidatedNotifications: t("othersValues.consolidatedNotifications"),
   };
 
   const othersValues: Record<string, boolean> = {
@@ -36,6 +52,10 @@ export function ComparisonTable() {
     noDataFees: false,
     localStorage: false,
     noSubscription: false,
+    multiCurrency: false,
+    backgroundMonitoring: false,
+    marketHoursAwareness: false,
+    consolidatedNotifications: false,
   };
 
   return (
@@ -80,7 +100,9 @@ export function ComparisonTable() {
                       )}
                     </td>
                     <td className="py-4 px-4 text-center">
-                      {othersValues[feature] ? (
+                      {othersTextValues[feature] ? (
+                        <span className="text-muted-foreground text-sm">{othersTextValues[feature]}</span>
+                      ) : othersValues[feature] ? (
                         <Check className="w-5 h-5 mx-auto text-green-500" />
                       ) : (
                         <X className="w-5 h-5 mx-auto text-red-500" />

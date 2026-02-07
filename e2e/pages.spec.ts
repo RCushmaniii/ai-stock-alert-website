@@ -41,8 +41,8 @@ test.describe("Download Page", () => {
 
     // Check security card exists
     await expect(page.getByText(/safe.*secure/i)).toBeVisible();
-    await expect(page.getByText(/digitally signed/i)).toBeVisible();
-    await expect(page.getByText(/virus scanned/i)).toBeVisible();
+    await expect(page.getByRole("heading", { name: /digitally signed/i })).toBeVisible();
+    await expect(page.getByRole("heading", { name: /virus scanned/i })).toBeVisible();
   });
 });
 

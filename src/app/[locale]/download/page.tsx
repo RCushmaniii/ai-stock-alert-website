@@ -2,6 +2,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { DownloadHero } from "./DownloadHero";
 import { DownloadOptions } from "./DownloadOptions";
 import { SystemRequirements } from "./SystemRequirements";
+import { TechnicalSpecs } from "./TechnicalSpecs";
 import { InstallationSteps } from "./InstallationSteps";
 import { DownloadFAQ } from "./DownloadFAQ";
 
@@ -32,6 +33,7 @@ export default async function DownloadPage({
       <DownloadHero />
       <DownloadOptions />
       <SystemRequirements />
+      <TechnicalSpecs />
       <InstallationSteps />
       <DownloadFAQ />
     </>

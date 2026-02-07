@@ -15,6 +15,8 @@ export const metadata: Metadata = {
     "windows stock app",
     "trading alerts",
     "price notifications",
+    "whatsapp stock alerts",
+    "bilingual stock app",
   ],
   authors: [{ name: "StockAlert" }],
   creator: "StockAlert",
@@ -26,6 +28,14 @@ export const metadata: Metadata = {
     title: "StockAlert - Real-Time Stock Alerts for Windows",
     description:
       "Real-time stock price alerts and market monitoring for Windows. Get instant notifications when stocks hit your target prices.",
+    images: [
+      {
+        url: "https://stockalert.app/images/ticker_tab.jpg",
+        width: 1200,
+        height: 630,
+        alt: "AI StockAlert - Stock Price Monitoring Dashboard",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -33,10 +43,18 @@ export const metadata: Metadata = {
     description:
       "Real-time stock price alerts and market monitoring for Windows.",
     creator: "@StockAlertApp",
+    images: ["https://stockalert.app/images/ticker_tab.jpg"],
   },
   robots: {
     index: true,
     follow: true,
+  },
+  alternates: {
+    canonical: "https://stockalert.app",
+    languages: {
+      en: "https://stockalert.app/en",
+      es: "https://stockalert.app/es",
+    },
   },
 };
 

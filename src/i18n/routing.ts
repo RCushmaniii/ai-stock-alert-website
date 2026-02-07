@@ -34,6 +34,10 @@ export const routing = defineRouting({
       en: "/setup",
       es: "/configuracion",
     },
+    "/use-cases": {
+      en: "/use-cases",
+      es: "/casos-de-uso",
+    },
   },
 });
 

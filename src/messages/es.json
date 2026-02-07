@@ -20,6 +20,7 @@
   "nav": {
     "home": "Inicio",
     "features": "Características",
+    "useCases": "Casos de Uso",
     "setup": "Guía de Configuración",
     "download": "Descargar",
     "pricing": "Precios",
@@ -61,6 +62,18 @@
       "channel": {
         "title": "Tu canal",
         "description": "Notificaciones de WhatsApp que realmente ves"
+      },
+      "justWorks": {
+        "title": "Simplemente funciona",
+        "description": "Sin crear cuenta, auto-inicio con Windows, arquitectura de instancia única"
+      },
+      "professional": {
+        "title": "Grado profesional",
+        "description": "Consciente de horarios de mercado, protección de límite de tasa, degradación elegante"
+      },
+      "transparent": {
+        "title": "Transparente",
+        "description": "El onboarding explica la configuración, la pestaña de Ayuda documenta funciones, código abierto"
       }
     },
     "features": {
@@ -124,27 +137,43 @@
     "grid": {
       "priceAlerts": {
         "title": "Alertas de Precio Personalizadas",
-        "description": "Configura alertas cuando el precio de una acción sube o baja de un nivel que elijas. Umbrales superiores e inferiores, fáciles de editar por símbolo."
+        "description": "Configura alertas cuando el precio de una acción sube o baja de un nivel que elijas. Umbrales superiores e inferiores, fáciles de editar por símbolo. Período de enfriamiento previene spam de notificaciones (configurable). Protección de primera verificación evita falsas alertas por brechas de precio."
       },
       "whatsappAlerts": {
         "title": "Notificaciones WhatsApp",
-        "description": "Los mensajes de WhatsApp son rápidos, personales y siempre visibles. Entrega instantánea con formato de alerta limpio y legible."
+        "description": "Los mensajes de WhatsApp son rápidos, personales y siempre visibles. Entrega instantánea con formato de alerta limpio y legible. Notificaciones Toast de Windows como respaldo. Notificaciones consolidadas—múltiples alertas combinadas en una por ciclo de verificación."
       },
       "bilingual": {
         "title": "Experiencia Bilingüe (EN/ES)",
-        "description": "Cambia entre inglés y español en cualquier momento. Las alertas e interfaz se mantienen simples, claras y consistentes."
+        "description": "Cambia entre inglés y español en cualquier momento. Las alertas e interfaz se mantienen simples, claras y consistentes. Todos los elementos de UI, diálogos y notificaciones completamente traducidos."
       },
       "byoKey": {
         "title": "Trae Tu Propia Clave API",
         "description": "Conecta usando tu propia clave de API de Finnhub. Comienza con el nivel gratuito, actualiza solo si necesitas más. Tu clave permanece en tu dispositivo."
       },
       "lightweight": {
-        "title": "Ligero y Enfocado",
-        "description": "Sin desorden, sin distracciones. AI StockAlert está intencionalmente enfocado en alertas, no gráficos."
+        "title": "UI Profesional",
+        "description": "Sin desorden, sin distracciones. AI StockAlert está intencionalmente enfocado en alertas, no gráficos. UI profesional con temas Oscuro/Claro. Interfaz con pestañas (Perfil, Configuración, Acciones, Noticias, Ayuda, Acerca de)."
       },
       "newsFeed": {
         "title": "Noticias en Tiempo Real",
-        "description": "Recibe un feed de noticias enfocado en tus acciones específicas. Toma decisiones informadas con titulares relevantes, no ruido del mercado."
+        "description": "Recibe un feed de noticias enfocado en tus acciones específicas. Selecciona hasta 5 símbolos para seguimiento de noticias. Categorías: Mis Acciones, General, Crypto, Forex, M&A."
+      },
+      "multiCurrency": {
+        "title": "Visualización Multi-Moneda",
+        "description": "Ve precios en USD y MXN con tasas de cambio en vivo de exchangerate-api.com. Un clic para cambiar en el encabezado, todos los precios/umbrales/capitalizaciones se convierten automáticamente."
+      },
+      "backgroundService": {
+        "title": "Servicio en Segundo Plano",
+        "description": "Se ejecuta silenciosamente en la bandeja del sistema cuando la ventana está cerrada. Continúa monitoreando y enviando alertas 24/7. Opción de auto-inicio con Windows. Recarga configuración en caliente."
+      },
+      "marketAware": {
+        "title": "Monitoreo Consciente del Mercado",
+        "description": "Solo activo durante horarios de mercado de EE.UU. (9:30 AM - 4:00 PM ET). Respeta fines de semana y feriados. Muestra estado del mercado en la UI. Sin verificaciones nocturnas innecesarias."
+      },
+      "companyProfiles": {
+        "title": "Perfiles de Empresas",
+        "description": "Logos de empresas de Finnhub, clasificación de industria, capitalización con categoría de tamaño (Mega/Grande/Mediano/Pequeño/Micro). Clic en logo para abrir gráfico de precios interactivo."
       }
     },
     "details": {
@@ -185,7 +214,17 @@
         "noDataFees": "Sin Tarifas Ocultas de Datos",
         "localStorage": "Almacenamiento Local Seguro",
         "noSubscription": "Sin Suscripción Mensual",
-        "stockNews": "Noticias en Tiempo Real"
+        "stockNews": "Noticias en Tiempo Real",
+        "multiCurrency": "Multi-Moneda (USD/MXN)",
+        "backgroundMonitoring": "Monitoreo en Segundo Plano 24/7",
+        "marketHoursAwareness": "Consciencia de Horarios de Mercado",
+        "consolidatedNotifications": "Notificaciones Consolidadas"
+      },
+      "othersValues": {
+        "multiCurrency": "Raramente",
+        "backgroundMonitoring": "A veces",
+        "marketHoursAwareness": "No",
+        "consolidatedNotifications": "No"
       }
     },
     "cta": {
@@ -300,6 +339,29 @@
       "storage": "50 MB de espacio disponible",
       "internet": "Conexión a Internet para datos de mercado",
       "dotnet": ".NET 6.0 Runtime (incluido en el instalador)"
+    },
+    "specs": {
+      "title": "Especificaciones Técnicas",
+      "platform": "Plataforma",
+      "platformValue": "Windows 10/11",
+      "language": "Lenguaje",
+      "languageValue": "Python 3.12 + PyQt6",
+      "stockData": "Datos de Acciones",
+      "stockDataValue": "Finnhub API (nivel gratuito)",
+      "exchangeRates": "Tasas de Cambio",
+      "exchangeRatesValue": "exchangerate-api.com (nivel gratuito)",
+      "whatsapp": "WhatsApp",
+      "whatsappValue": "Twilio Business API vía Vercel",
+      "maxTickers": "Máx. Símbolos",
+      "maxTickersValue": "15 (nivel gratuito)",
+      "minInterval": "Intervalo Mín. de Verificación",
+      "minIntervalValue": "90 segundos (nivel gratuito)",
+      "languages": "Idiomas",
+      "languagesValue": "Inglés, Español",
+      "currencies": "Monedas",
+      "currenciesValue": "USD, MXN",
+      "themes": "Temas",
+      "themesValue": "Oscuro, Claro"
     },
     "installation": {
       "title": "Pasos de Instalación",
@@ -525,6 +587,89 @@
       "directContact": "Contacto Directo",
       "emailLabel": "Envíanos un correo a",
       "email": "support@stockalert.app"
+    }
+  },
+  "useCases": {
+    "hero": {
+      "title": "Diseñado para traders que",
+      "titleHighlight": "valoran su tiempo",
+      "subtitle": "Descubre cómo diferentes inversores usan AI StockAlert para mantenerse adelante sin estar pegados a las pantallas."
+    },
+    "cases": {
+      "dayTrader": {
+        "persona": "Day Trader",
+        "quote": "Necesito alertas instantáneas cuando las acciones de momentum lleguen a mis puntos de entrada. Cada segundo cuenta.",
+        "solution": "Las alertas de WhatsApp te llegan más rápido que el email. Las notificaciones consolidadas previenen el spam durante sesiones volátiles. La consciencia de horarios de mercado significa sin falsas alertas nocturnas."
+      },
+      "swingTrader": {
+        "persona": "Swing Trader",
+        "quote": "Mantengo posiciones por días o semanas. Necesito saber cuándo se rompen los niveles clave de soporte o resistencia.",
+        "solution": "Configura umbrales superiores e inferiores por símbolo. Los períodos de enfriamiento previenen fatiga de notificaciones. El servicio en segundo plano monitorea mientras te enfocas en el análisis."
+      },
+      "mexicanInvestor": {
+        "persona": "Inversor Mexicano",
+        "quote": "Invierto en mercados de EE.UU. pero pienso en pesos. Necesito precios en MXN y alertas en español.",
+        "solution": "Alterna entre USD y MXN con tasas de cambio en vivo. UI y notificaciones completamente en español. Sin necesidad de convertir mentalmente cada precio."
+      },
+      "partTimeInvestor": {
+        "persona": "Inversor de Medio Tiempo",
+        "quote": "Tengo un trabajo de día. No puedo ver gráficos pero no quiero perder oportunidades.",
+        "solution": "Configúralo y olvídalo. Auto-inicio con Windows, se ejecuta en la bandeja del sistema. Recibe alertas de WhatsApp en tu teléfono mientras trabajas."
+      },
+      "optionsTrader": {
+        "persona": "Trader de Opciones",
+        "quote": "Los movimientos de precio del subyacente activan mis estrategias de opciones. Necesito saberlo inmediatamente.",
+        "solution": "Monitoreo de precios de acciones en tiempo real con umbrales configurables. Los perfiles de empresas muestran capitalización para evaluar liquidez de opciones. Feed de noticias para sentimiento."
+      },
+      "familyOffice": {
+        "persona": "Family Office",
+        "quote": "Administramos múltiples portafolios. Necesitamos herramientas de grado profesional sin precios empresariales.",
+        "solution": "Rastrea hasta 15 símbolos en el nivel gratuito. El modelo BYOK significa sin tarifas ocultas de datos. El almacenamiento local mantiene los datos de clientes privados."
+      }
+    },
+    "benefits": {
+      "activeTraders": {
+        "title": "Para Traders Activos",
+        "items": [
+          "Las alertas de WhatsApp superan la latencia del email",
+          "Las notificaciones consolidadas reducen el ruido",
+          "La consciencia de horarios de mercado previene señales falsas",
+          "Monitoreo en segundo plano mientras investigas"
+        ]
+      },
+      "internationalUsers": {
+        "title": "Para Usuarios Internacionales",
+        "items": [
+          "Localización completa en español (UI + alertas)",
+          "Cambio de moneda USD/MXN con tasas en vivo",
+          "No se requiere número de teléfono de EE.UU. para WhatsApp",
+          "Funciona con cualquier PC Windows globalmente"
+        ]
+      },
+      "busyProfessionals": {
+        "title": "Para Profesionales Ocupados",
+        "items": [
+          "Configúralo y olvídalo—auto-inicio con Windows",
+          "Se ejecuta silenciosamente en la bandeja del sistema",
+          "Notificaciones en el teléfono mientras trabajas",
+          "Sin necesidad de ver gráficos"
+        ]
+      },
+      "costConscious": {
+        "title": "Para Inversores Conscientes del Costo",
+        "items": [
+          "El nivel gratuito cubre la mayoría de necesidades personales",
+          "Modelo BYOK—sin tarifas de suscripción de datos",
+          "Compra premium única, no suscripción",
+          "Código abierto—transparente y auditable"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Encuentra tu",
+      "titleHighlight": "ventaja de trading",
+      "subtitle": "Únete a traders que pasan menos tiempo viendo gráficos y más tiempo tomando decisiones.",
+      "button": "Descargar para Windows"
     }
   },
   "terms": {
