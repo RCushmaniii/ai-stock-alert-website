@@ -1,29 +1,26 @@
 ---
-# Control flags
-include_in_portfolio: true
-featured: true
-priority: 1
+# === CONTROL FLAGS ===
+portfolio_enabled: true
+portfolio_priority: 99
+portfolio_featured: false
 
-# Card display
+# === CARD DISPLAY ===
 title: "StockAlert Marketing Website"
 tagline: "Static marketing site with i18n, theming, and e2e tests"
 category: "Marketing Website"
 tech_stack:
-  [
-    "Next.js 16",
-    "React 19",
-    "TypeScript",
-    "Tailwind CSS 4",
-    "Playwright",
-    "shadcn/ui",
-  ]
+  - "Next.js 16"
+  - "React 19"
+  - "TypeScript"
+  - "Tailwind CSS 4"
+  - "Playwright"
+  - "shadcn/ui"
 thumbnail: "/portfolio/stockalert-thumbnail.png"
 status: "Production"
 
-# Detail page
+# === DETAIL PAGE ===
 problem: "StockAlert needed a professional marketing presence to showcase features, provide secure downloads, and support international users. Trust was critical for users downloading executable files."
 solution: "Built a static Next.js site with full internationalization (EN/ES), dark/light theming, and a security trust card to build download confidence. Comprehensive Playwright testing ensures reliability."
-
 key_features:
   - "9 pages with full English/Spanish localization and localized URLs"
   - "Security trust card with VirusTotal verification for download confidence"
@@ -31,18 +28,16 @@ key_features:
   - "Dark/light theme with system preference detection"
   - "Sub-second page loads via static site generation"
 
-# Links
+# === LINKS ===
 demo_url: "https://aistockalert.app/"
-repo_url: "https://github.com/RCushmaniii/ai-stock-alert-website"
 live_url: "https://aistockalert.app/"
 
-# Optional metrics
+# === OPTIONAL ===
 metrics:
   - "23 e2e tests passing"
   - "18 localized pages (9 EN + 9 ES)"
   - "0 ESLint errors"
   - "6.8s full test suite runtime"
-
 date_completed: "2025-01"
 ---
 
