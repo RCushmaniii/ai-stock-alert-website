@@ -5,7 +5,7 @@ portfolio_priority: 4
 portfolio_featured: true
 
 # === CARD DISPLAY ===
-title: "AI StockAlert"
+title: "AI StockAlert Website"
 tagline: "Bilingual SaaS marketing site — 18 routes, e2e tested, zero server cost"
 slug: "ai-stock-alert-website"
 category: "Templates"
