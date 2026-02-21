@@ -58,38 +58,6 @@ video_brief:
   caption: "Case study video walking through the product strategy, business model, and technical decisions behind AI StockAlert."
 
 # === MEDIA: PORTFOLIO SLIDES ===
-hero_images:
-  - path: "public/images/portfolio/stockalert-01.png"
-    alt: "Moving From Market Noise to Actionable Signal — hero slide"
-    caption: "AI StockAlert delivers real-time market intelligence to the one place you actually look: WhatsApp."
-  - path: "public/images/portfolio/stockalert-02.png"
-    alt: "The Trap of Manual Monitoring"
-    caption: "Millions of investors trapped in a broken cycle: open chart, check price, close tab, repeat."
-  - path: "public/images/portfolio/stockalert-03.png"
-    alt: "Why Traditional Tools Fail"
-    caption: "Email alerts arrive too late, push notifications get swiped away, professional terminals cost $20-200/month."
-  - path: "public/images/portfolio/stockalert-04.png"
-    alt: "The Message You Actually Check — WhatsApp delivery"
-    caption: "Not an email. Not a generic push. A personal message in the app you check 50+ times a day."
-  - path: "public/images/portfolio/stockalert-05.png"
-    alt: "Intelligent Background Monitoring"
-    caption: "Auto-starts with Windows, filters for market hours only, triggers WhatsApp when criteria are met."
-  - path: "public/images/portfolio/stockalert-06.png"
-    alt: "A Business Model That Respects the User"
-    caption: "One-time purchase + BYOK vs recurring monthly fees + hidden API costs."
-  - path: "public/images/portfolio/stockalert-07.png"
-    alt: "Your Data Stays on Your Device"
-    caption: "Local-first architecture: no cloud accounts, no tracking, digitally signed installer."
-  - path: "public/images/portfolio/stockalert-08.png"
-    alt: "Beyond Code: A Case Study in Product Strategy"
-    caption: "Every feature maps to a specific pain point: slow email to WhatsApp, false alerts to market hours, hidden costs to BYOK."
-  - path: "public/images/portfolio/stockalert-09.png"
-    alt: "Trust-Building Commerce — The Anti-SaaS Model"
-    caption: "No churn anxiety, no forced retention, no hidden fees. Organic word-of-mouth driven by trust."
-  - path: "public/images/portfolio/stockalert-10.png"
-    alt: "The Bottom Line"
-    caption: "Solves a manual problem. Leverages the channel people love. Respects the user's wallet and privacy."
-# === MEDIA: WEBSITE PROJECT SLIDES ===
 website_images:
   - path: "public/images/ai-stockalert-website-01.png"
     alt: "AI StockAlert — The Blueprint for High-Performance Bilingual SaaS Marketing"
@@ -151,21 +119,6 @@ What makes this project valuable as a portfolio piece isn't just the code — it
 **Case study video** walking through the product strategy, competitive positioning, and technical decisions behind AI StockAlert — from problem definition through business model design.
 
 ## Slide Deck
-
-| # | Slide | Message |
-|---|-------|---------|
-| 1 | ![Hero](public/images/portfolio/stockalert-01.png) | **Moving From Market Noise to Actionable Signal.** Real-time intelligence delivered to WhatsApp. |
-| 2 | ![Problem](public/images/portfolio/stockalert-02.png) | **The Trap of Manual Monitoring.** Open chart. Check price. Close tab. Repeat. The gap between "I want to know" and "I found out in time" is enormous. |
-| 3 | ![Tools Fail](public/images/portfolio/stockalert-03.png) | **Why Traditional Tools Fail.** Email is buried. Push is swiped. Terminals cost $20-200/month. |
-| 4 | ![WhatsApp](public/images/portfolio/stockalert-04.png) | **The Message You Actually Check.** A personal message in the app you check 50+ times a day. |
-| 5 | ![Monitoring](public/images/portfolio/stockalert-05.png) | **Intelligent Background Monitoring.** Auto-starts with Windows. Filters for market hours. Triggers on criteria. |
-| 6 | ![Business Model](public/images/portfolio/stockalert-06.png) | **A Business Model That Respects the User.** One-time purchase + BYOK vs recurring fees + hidden costs. |
-| 7 | ![Privacy](public/images/portfolio/stockalert-07.png) | **Your Data Stays on Your Device.** Local-first. No cloud accounts. Digitally signed. |
-| 8 | ![Strategy](public/images/portfolio/stockalert-08.png) | **Beyond Code: Product Strategy.** Every feature maps to a real pain point, not an imaginary one. |
-| 9 | ![Trust](public/images/portfolio/stockalert-09.png) | **Trust-Building Commerce.** No churn anxiety. No forced retention. Organic growth through trust. |
-| 10 | ![Bottom Line](public/images/portfolio/stockalert-10.png) | **The Bottom Line.** Solves a manual problem. Leverages WhatsApp. Respects wallet and privacy. |
-
-## Website Project Slides
 
 | # | Slide | Message |
 |---|-------|---------|
