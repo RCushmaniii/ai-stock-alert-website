@@ -22,7 +22,7 @@ tech_stack:
   - "Playwright"
   - "Formspree"
   - "Netlify"
-thumbnail: "public/images/portfolio/stockalert-thumb.jpg"
+thumbnail: "public/images/ai-stockalert-website-thumb.jpg"
 status: "Complete"
 
 # === DETAIL PAGE ===
