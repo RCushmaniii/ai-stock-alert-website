@@ -89,6 +89,39 @@ hero_images:
   - path: "public/images/portfolio/stockalert-10.png"
     alt: "The Bottom Line"
     caption: "Solves a manual problem. Leverages the channel people love. Respects the user's wallet and privacy."
+# === MEDIA: WEBSITE PROJECT SLIDES ===
+website_images:
+  - path: "public/images/ai-stockalert-website-01.png"
+    alt: "AI StockAlert — The Blueprint for High-Performance Bilingual SaaS Marketing"
+    caption: "Hero slide: Next.js 16, React 19, Tailwind CSS 4 architecture."
+  - path: "public/images/ai-stockalert-website-02.png"
+    alt: "The Launch Bottleneck"
+    caption: "Agency costs $10K-30K, template trap, skill gap between developers and marketers, placeholder sites with zero visibility."
+  - path: "public/images/ai-stockalert-website-03.png"
+    alt: "Not a Wireframe. A Production Reality."
+    caption: "Live at aistockalert.app — full surface area, 9 localized routes, working forms and theme toggles."
+  - path: "public/images/ai-stockalert-website-04.png"
+    alt: "Internationalization Done Right"
+    caption: "Native routing via next-intl, context-aware language switching, deep linking with localized pathnames for SEO."
+  - path: "public/images/ai-stockalert-website-05.png"
+    alt: "Built for Speed and Scale"
+    caption: "0 server costs, sub-1s load time, 100 Lighthouse performance. Code to SSG to Netlify global CDN."
+  - path: "public/images/ai-stockalert-website-06.png"
+    alt: "Invisible Tech, Visible Results"
+    caption: "Dynamic metadata, hreflang alternates, JSON-LD structured data. You don't just launch — you rank."
+  - path: "public/images/ai-stockalert-website-07.png"
+    alt: "Polished to Perfection"
+    caption: "Theme support, Inter type system via shadcn/ui, validating forms with Zod + Formspree. Responsive, accessible, animated."
+  - path: "public/images/ai-stockalert-website-08.png"
+    alt: "Trust, Verified"
+    caption: "23 Playwright end-to-end tests confirming navigation, forms, and mobile responsiveness before every deploy."
+  - path: "public/images/ai-stockalert-website-09.png"
+    alt: "The Tech Spec to The Business Value"
+    caption: "Bilingual URLs = 2x market size. Static export = 100% uptime. Playwright tests = deployment confidence. JSON-LD = search visibility."
+  - path: "public/images/ai-stockalert-website-10.png"
+    alt: "Why Owners Love This Blueprint"
+    caption: "Cost efficiency, speed, future-proof on React 19, verified with running code — not just a concept."
+
 tags:
   - "nextjs"
   - "marketing-website"
@@ -131,3 +164,18 @@ What makes this project valuable as a portfolio piece isn't just the code — it
 | 8 | ![Strategy](public/images/portfolio/stockalert-08.png) | **Beyond Code: Product Strategy.** Every feature maps to a real pain point, not an imaginary one. |
 | 9 | ![Trust](public/images/portfolio/stockalert-09.png) | **Trust-Building Commerce.** No churn anxiety. No forced retention. Organic growth through trust. |
 | 10 | ![Bottom Line](public/images/portfolio/stockalert-10.png) | **The Bottom Line.** Solves a manual problem. Leverages WhatsApp. Respects wallet and privacy. |
+
+## Website Project Slides
+
+| # | Slide | Message |
+|---|-------|---------|
+| 1 | ![Hero](public/images/ai-stockalert-website-01.png) | **The Blueprint for High-Performance Bilingual SaaS Marketing.** Next.js 16, React 19, Tailwind CSS 4. |
+| 2 | ![Bottleneck](public/images/ai-stockalert-website-02.png) | **The Launch Bottleneck.** Agency costs, template trap, skill gap, placeholder sites with zero visibility. |
+| 3 | ![Production](public/images/ai-stockalert-website-03.png) | **Not a Wireframe. A Production Reality.** Live now. 9 localized routes, working forms, theme toggles. |
+| 4 | ![i18n](public/images/ai-stockalert-website-04.png) | **Internationalization Done Right.** Native routing, context-aware switching, localized pathnames for SEO. |
+| 5 | ![Speed](public/images/ai-stockalert-website-05.png) | **Built for Speed and Scale.** 0 server costs. Sub-1s load time. 100 Lighthouse performance. |
+| 6 | ![SEO](public/images/ai-stockalert-website-06.png) | **Invisible Tech, Visible Results.** Dynamic metadata, hreflang, JSON-LD. You don't just launch — you rank. |
+| 7 | ![Polish](public/images/ai-stockalert-website-07.png) | **Polished to Perfection.** Themes, typography, validated forms. Responsive, accessible, animated. |
+| 8 | ![Testing](public/images/ai-stockalert-website-08.png) | **Trust, Verified.** 23 Playwright e2e tests before every deploy. |
+| 9 | ![Value](public/images/ai-stockalert-website-09.png) | **Tech Spec to Business Value.** Bilingual = 2x market. Static = 100% uptime. Tests = confidence. SEO = visibility. |
+| 10 | ![Why](public/images/ai-stockalert-website-10.png) | **Why Owners Love This Blueprint.** Cost efficiency, speed, future-proof, verified with running code. |
