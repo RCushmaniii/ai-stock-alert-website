@@ -4,9 +4,9 @@ This file provides guidance for AI assistants working on the AI StockAlert marke
 
 ## Project Overview
 
-A bilingual (English/Spanish) marketing website for a fictional Windows desktop application. Built with Next.js 16 App Router and deployed as a static site on Netlify.
+A bilingual (English/Spanish) marketing website for AI StockAlert, a real Windows desktop application (source: `ai-stock-alert` repo, distinct from this repo). Built with Next.js 16 App Router and deployed as a static site on Netlify.
 
-**Note**: This is a portfolio demo project. AI StockAlert is fictional - no software is available for download.
+**Note**: AI StockAlert is a real, production application in active daily use - not a fictional portfolio placeholder. The download page links to a real installer (`StockAlert-4.1.0-Setup.exe`) hosted as a GitHub release asset on this repo. It is not code-signed (no Authenticode signing found in the build scripts) - Windows SmartScreen may warn on install.
 
 ## Tech Stack
 
@@ -80,17 +80,17 @@ src/
 
 Routes are defined in `src/i18n/routing.ts`:
 
-| Internal Path | English URL | Spanish URL |
-|---------------|-------------|-------------|
-| `/` | `/en` | `/es` |
-| `/features` | `/en/features` | `/es/caracteristicas` |
-| `/download` | `/en/download` | `/es/descargar` |
-| `/pricing` | `/en/pricing` | `/es/precios` |
-| `/contact` | `/en/contact` | `/es/contacto` |
-| `/terms` | `/en/terms` | `/es/terminos` |
-| `/privacy` | `/en/privacy` | `/es/privacidad` |
-| `/use-cases` | `/en/use-cases` | `/es/casos-de-uso` |
-| `/setup` | `/en/setup` | `/es/configuracion` |
+| Internal Path | English URL     | Spanish URL           |
+| ------------- | --------------- | --------------------- |
+| `/`           | `/en`           | `/es`                 |
+| `/features`   | `/en/features`  | `/es/caracteristicas` |
+| `/download`   | `/en/download`  | `/es/descargar`       |
+| `/pricing`    | `/en/pricing`   | `/es/precios`         |
+| `/contact`    | `/en/contact`   | `/es/contacto`        |
+| `/terms`      | `/en/terms`     | `/es/terminos`        |
+| `/privacy`    | `/en/privacy`   | `/es/privacidad`      |
+| `/use-cases`  | `/en/use-cases` | `/es/casos-de-uso`    |
+| `/setup`      | `/en/setup`     | `/es/configuracion`   |
 
 ## Component Patterns
 
@@ -111,7 +111,7 @@ export function MyComponent() {
 import { Link } from "@/i18n/navigation";
 
 // Automatically uses current locale
-<Link href="/features">Features</Link>
+<Link href="/features">Features</Link>;
 ```
 
 ### AnimatedSection wrapper
@@ -123,22 +123,25 @@ import AnimatedSection from "@/components/shared/AnimatedSection";
 
 <AnimatedSection>
   <YourContent />
-</AnimatedSection>
+</AnimatedSection>;
 ```
 
 ## Contact Form (Formspree)
 
 The contact form uses [Formspree](https://formspree.io) for submissions:
+
 - Endpoint: `https://formspree.io/f/xaqobael`
 - Component: `src/components/sections/ContactForm.tsx`
 - Validation: react-hook-form + Zod
 
 **Note**: The Formspree endpoint is hardcoded (not in .env) because:
+
 - It's client-side code - the endpoint is visible in the JS bundle regardless
 - Formspree endpoints are public by design with built-in spam protection
 - No security benefit from environment variables for this use case
 
 Fields sent to Formspree:
+
 - `Name`, `Email`, `Subject`, `Message` - user input
 - `Source`, `Page`, `Language` - context for identifying submissions
 - `_subject`, `_replyto`, `_template` - Formspree formatting options
@@ -154,6 +157,7 @@ Fields sent to Formspree:
 ## Testing
 
 23 Playwright e2e tests in `e2e/` directory covering:
+
 - Navigation between pages
 - Language switching (EN ↔ ES)
 - Theme toggling (light ↔ dark)
@@ -161,6 +165,7 @@ Fields sent to Formspree:
 - Mobile responsive behavior
 
 Run specific test file:
+
 ```bash
 npx playwright test e2e/navigation.spec.ts
 ```
@@ -183,7 +188,6 @@ npx playwright test e2e/navigation.spec.ts
 - `src/components/shared/JsonLd.tsx` - Structured data (Schema.org)
 - `netlify.toml` - Deployment configuration and caching headers
 - `playwright.config.ts` - Test configuration
-
 
 ## Session Log
 
